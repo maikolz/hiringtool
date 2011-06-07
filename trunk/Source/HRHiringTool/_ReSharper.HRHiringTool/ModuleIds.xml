@@ -1,0 +1,4 @@
+<Modules>
+  <Module PersistentId="226BEC82-C180-4E7A-82F4-8732C6E87AAA" ModuleId="HRHiringTool" />
+  <Module PersistentId="105B0C9A-968F-4E04-A64B-04F84AFFC65B" ModuleId="HRHiringTool.DataAccess" />
+</Modules>

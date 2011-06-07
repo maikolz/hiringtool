@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HRHiringTool.Presentation", "HRHiringTool\HRHiringTool.Presentation.csproj", "{226BEC82-C180-4E7A-82F4-8732C6E87AAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HRHiringTool.DataAccess", "HRHiringTool.DataAccess\HRHiringTool.DataAccess.csproj", "{105B0C9A-968F-4E04-A64B-04F84AFFC65B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{226BEC82-C180-4E7A-82F4-8732C6E87AAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{226BEC82-C180-4E7A-82F4-8732C6E87AAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{226BEC82-C180-4E7A-82F4-8732C6E87AAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{226BEC82-C180-4E7A-82F4-8732C6E87AAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{105B0C9A-968F-4E04-A64B-04F84AFFC65B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{105B0C9A-968F-4E04-A64B-04F84AFFC65B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{105B0C9A-968F-4E04-A64B-04F84AFFC65B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{105B0C9A-968F-4E04-A64B-04F84AFFC65B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
