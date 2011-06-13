@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="a24019e4-4583-4d0f-a813-c6e799652656" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:55307/HiringServices.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="HiringServices.xsd" MetadataType="Schema" ID="8e2e9433-9cc4-4e86-bcfa-eb79a7904f7b" SourceId="1" SourceUrl="http://localhost:55307/HiringServices.svc?xsd=xsd2" />
+    <MetadataFile FileName="HiringServices1.xsd" MetadataType="Schema" ID="1f300e1d-eaf7-441e-a113-3e4f3adfad5d" SourceId="1" SourceUrl="http://localhost:55307/HiringServices.svc?xsd=xsd0" />
+    <MetadataFile FileName="HiringServices2.xsd" MetadataType="Schema" ID="772dfa3c-e60f-47ca-a517-0f7a9777dfe1" SourceId="1" SourceUrl="http://localhost:55307/HiringServices.svc?xsd=xsd1" />
+    <MetadataFile FileName="HiringServices.wsdl" MetadataType="Wsdl" ID="b61a4c47-d691-4441-b237-b508983402a6" SourceId="1" SourceUrl="http://localhost:55307/HiringServices.svc?wsdl" />
+    <MetadataFile FileName="HiringServices.disco" MetadataType="Disco" ID="1c0d7ecc-29bc-4e27-93fb-a9770c3b869e" SourceId="1" SourceUrl="http://localhost:55307/HiringServices.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

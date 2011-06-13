@@ -1,0 +1,5 @@
+C:\Workspace\hiringtool\trunk\Source\HRHiringTool\HRHiringTool.DataAccess2\bin\Debug\HRHiringTool.DataAccess2.dll
+C:\Workspace\hiringtool\trunk\Source\HRHiringTool\HRHiringTool.DataAccess2\bin\Debug\HRHiringTool.DataAccess2.pdb
+C:\Workspace\hiringtool\trunk\Source\HRHiringTool\HRHiringTool.DataAccess2\obj\Debug\ResolveAssemblyReference.cache
+C:\Workspace\hiringtool\trunk\Source\HRHiringTool\HRHiringTool.DataAccess2\obj\Debug\HRHiringTool.DataAccess2.dll
+C:\Workspace\hiringtool\trunk\Source\HRHiringTool\HRHiringTool.DataAccess2\obj\Debug\HRHiringTool.DataAccess2.pdb
