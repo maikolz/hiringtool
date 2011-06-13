@@ -9,10 +9,37 @@
 //------------------------------------------------------------------------------
 
 [assembly: global::System.Data.Objects.DataClasses.EdmSchemaAttribute()]
+[assembly: global::System.Data.Objects.DataClasses.EdmRelationshipAttribute("HRHiringTool", "FK_Candidate_JobOpening", "JobOpening", global::System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(HRHiringTool.DataAccess2.Model.JobOpening), "Candidate", global::System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(HRHiringTool.DataAccess2.Model.Candidate))]
+[assembly: global::System.Data.Objects.DataClasses.EdmRelationshipAttribute("HRHiringTool", "FK_CandidateDocuments_Candidate", "Candidate", global::System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(HRHiringTool.DataAccess2.Model.Candidate), "CandidateDocuments", global::System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(HRHiringTool.DataAccess2.Model.CandidateDocuments))]
+[assembly: global::System.Data.Objects.DataClasses.EdmRelationshipAttribute("HRHiringTool", "FK_CandidatePhones_Candidate", "Candidate", global::System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(HRHiringTool.DataAccess2.Model.Candidate), "CandidatePhones", global::System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(HRHiringTool.DataAccess2.Model.CandidatePhones))]
+[assembly: global::System.Data.Objects.DataClasses.EdmRelationshipAttribute("HRHiringTool", "FK_CandidateSkills_Candidate", "Candidate", global::System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(HRHiringTool.DataAccess2.Model.Candidate), "CandidateSkills", global::System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(HRHiringTool.DataAccess2.Model.CandidateSkills))]
+[assembly: global::System.Data.Objects.DataClasses.EdmRelationshipAttribute("HRHiringTool", "FK_CandidateStatusRegistry_Candidate", "Candidate", global::System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(HRHiringTool.DataAccess2.Model.Candidate), "CandidateStatusRegistry", global::System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(HRHiringTool.DataAccess2.Model.CandidateStatusRegistry))]
+[assembly: global::System.Data.Objects.DataClasses.EdmRelationshipAttribute("HRHiringTool", "FK_Notes_Candidate", "Candidate", global::System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(HRHiringTool.DataAccess2.Model.Candidate), "Notes", global::System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(HRHiringTool.DataAccess2.Model.Notes))]
+[assembly: global::System.Data.Objects.DataClasses.EdmRelationshipAttribute("HRHiringTool", "FK_OpeningCandidates_Candidate", "Candidate", global::System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(HRHiringTool.DataAccess2.Model.Candidate), "OpeningCandidates", global::System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(HRHiringTool.DataAccess2.Model.OpeningCandidates))]
+[assembly: global::System.Data.Objects.DataClasses.EdmRelationshipAttribute("HRHiringTool", "FK_CandidateDocuments_Document", "Document", global::System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(HRHiringTool.DataAccess2.Model.Document), "CandidateDocuments", global::System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(HRHiringTool.DataAccess2.Model.CandidateDocuments))]
+[assembly: global::System.Data.Objects.DataClasses.EdmRelationshipAttribute("HRHiringTool", "FK_CandidateDocuments_User", "User", global::System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(HRHiringTool.DataAccess2.Model.User), "CandidateDocuments", global::System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(HRHiringTool.DataAccess2.Model.CandidateDocuments))]
+[assembly: global::System.Data.Objects.DataClasses.EdmRelationshipAttribute("HRHiringTool", "FK_CandidateInOpeningStatusRegistry_CandidateInOpeningStatus", "CandidateInOpeningStatus", global::System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(HRHiringTool.DataAccess2.Model.CandidateInOpeningStatus), "CandidateInOpeningStatusRegistry", global::System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(HRHiringTool.DataAccess2.Model.CandidateInOpeningStatusRegistry))]
+[assembly: global::System.Data.Objects.DataClasses.EdmRelationshipAttribute("HRHiringTool", "FK_CandidateInOpeningStatusRegistry_OpeningCandidates", "OpeningCandidates", global::System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(HRHiringTool.DataAccess2.Model.OpeningCandidates), "CandidateInOpeningStatusRegistry", global::System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(HRHiringTool.DataAccess2.Model.CandidateInOpeningStatusRegistry))]
+[assembly: global::System.Data.Objects.DataClasses.EdmRelationshipAttribute("HRHiringTool", "FK_CandidateInOpeningStatusRegistry_User", "User", global::System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(HRHiringTool.DataAccess2.Model.User), "CandidateInOpeningStatusRegistry", global::System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(HRHiringTool.DataAccess2.Model.CandidateInOpeningStatusRegistry))]
+[assembly: global::System.Data.Objects.DataClasses.EdmRelationshipAttribute("HRHiringTool", "FK_CandidatePhones_PhoneType", "PhoneType", global::System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(HRHiringTool.DataAccess2.Model.PhoneType), "CandidatePhones", global::System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(HRHiringTool.DataAccess2.Model.CandidatePhones))]
+[assembly: global::System.Data.Objects.DataClasses.EdmRelationshipAttribute("HRHiringTool", "FK_CandidateSkills_Skill", "Skill", global::System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(HRHiringTool.DataAccess2.Model.Skill), "CandidateSkills", global::System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(HRHiringTool.DataAccess2.Model.CandidateSkills))]
+[assembly: global::System.Data.Objects.DataClasses.EdmRelationshipAttribute("HRHiringTool", "FK_CandidateStatusRegistry_CandidateStatus", "CandidateStatus", global::System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(HRHiringTool.DataAccess2.Model.CandidateStatus), "CandidateStatusRegistry", global::System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(HRHiringTool.DataAccess2.Model.CandidateStatusRegistry))]
+[assembly: global::System.Data.Objects.DataClasses.EdmRelationshipAttribute("HRHiringTool", "FK_Department_User", "User", global::System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(HRHiringTool.DataAccess2.Model.User), "Department", global::System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(HRHiringTool.DataAccess2.Model.Department))]
+[assembly: global::System.Data.Objects.DataClasses.EdmRelationshipAttribute("HRHiringTool", "FK_JobOpening_Department", "Department", global::System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(HRHiringTool.DataAccess2.Model.Department), "JobOpening", global::System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(HRHiringTool.DataAccess2.Model.JobOpening))]
+[assembly: global::System.Data.Objects.DataClasses.EdmRelationshipAttribute("HRHiringTool", "FK_JobOpening_JobPosition", "JobPosition", global::System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(HRHiringTool.DataAccess2.Model.JobPosition), "JobOpening", global::System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(HRHiringTool.DataAccess2.Model.JobOpening))]
+[assembly: global::System.Data.Objects.DataClasses.EdmRelationshipAttribute("HRHiringTool", "FK_OpeningCandidates_JobOpening", "JobOpening", global::System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(HRHiringTool.DataAccess2.Model.JobOpening), "OpeningCandidates", global::System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(HRHiringTool.DataAccess2.Model.OpeningCandidates))]
+[assembly: global::System.Data.Objects.DataClasses.EdmRelationshipAttribute("HRHiringTool", "FK_OpeningNotes_JobOpening", "JobOpening", global::System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(HRHiringTool.DataAccess2.Model.JobOpening), "OpeningNotes", global::System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(HRHiringTool.DataAccess2.Model.OpeningNotes))]
+[assembly: global::System.Data.Objects.DataClasses.EdmRelationshipAttribute("HRHiringTool", "FK_JobPositionSkills_JobPosition", "JobPosition", global::System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(HRHiringTool.DataAccess2.Model.JobPosition), "JobPositionSkills", global::System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(HRHiringTool.DataAccess2.Model.JobPositionSkills))]
+[assembly: global::System.Data.Objects.DataClasses.EdmRelationshipAttribute("HRHiringTool", "FK_JobPositionSkills_Skill", "Skill", global::System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(HRHiringTool.DataAccess2.Model.Skill), "JobPositionSkills", global::System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(HRHiringTool.DataAccess2.Model.JobPositionSkills))]
+[assembly: global::System.Data.Objects.DataClasses.EdmRelationshipAttribute("HRHiringTool", "FK_Notes_User", "User", global::System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(HRHiringTool.DataAccess2.Model.User), "Notes", global::System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(HRHiringTool.DataAccess2.Model.Notes))]
+[assembly: global::System.Data.Objects.DataClasses.EdmRelationshipAttribute("HRHiringTool", "FK_OpeningNotes_User", "User", global::System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(HRHiringTool.DataAccess2.Model.User), "OpeningNotes", global::System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(HRHiringTool.DataAccess2.Model.OpeningNotes))]
+[assembly: global::System.Data.Objects.DataClasses.EdmRelationshipAttribute("HRHiringTool", "FK_UserRoles_Role", "Role", global::System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(HRHiringTool.DataAccess2.Model.Role), "UserRoles", global::System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(HRHiringTool.DataAccess2.Model.UserRoles))]
+[assembly: global::System.Data.Objects.DataClasses.EdmRelationshipAttribute("HRHiringTool", "FK_Skill_SkillCategory", "SkillCategory", global::System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(HRHiringTool.DataAccess2.Model.SkillCategory), "Skill", global::System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(HRHiringTool.DataAccess2.Model.Skill))]
+[assembly: global::System.Data.Objects.DataClasses.EdmRelationshipAttribute("HRHiringTool", "FK_UserRoles_User", "User", global::System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(HRHiringTool.DataAccess2.Model.User), "UserRoles", global::System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(HRHiringTool.DataAccess2.Model.UserRoles))]
 
 // Original file name:
-// Generation date: 6/7/2011 3:23:46 PM
-namespace HRHiringTool.DataAccess.Model
+// Generation date: 6/13/2011 4:25:23 PM
+namespace HRHiringTool.DataAccess2.Model
 {
     
     /// <summary>
@@ -46,71 +73,4068 @@ namespace HRHiringTool.DataAccess.Model
         }
         partial void OnContextCreated();
         /// <summary>
-        /// There are no comments for Entity1Set in the schema.
+        /// There are no comments for Candidate in the schema.
         /// </summary>
-        public global::System.Data.Objects.ObjectQuery<Entity1> Entity1Set
+        public global::System.Data.Objects.ObjectQuery<Candidate> Candidate
         {
             get
             {
-                if ((this._Entity1Set == null))
+                if ((this._Candidate == null))
                 {
-                    this._Entity1Set = base.CreateQuery<Entity1>("[Entity1Set]");
+                    this._Candidate = base.CreateQuery<Candidate>("[Candidate]");
                 }
-                return this._Entity1Set;
+                return this._Candidate;
             }
         }
-        private global::System.Data.Objects.ObjectQuery<Entity1> _Entity1Set;
+        private global::System.Data.Objects.ObjectQuery<Candidate> _Candidate;
         /// <summary>
-        /// There are no comments for Entity1Set in the schema.
+        /// There are no comments for CandidateDocuments in the schema.
         /// </summary>
-        public void AddToEntity1Set(Entity1 entity1)
+        public global::System.Data.Objects.ObjectQuery<CandidateDocuments> CandidateDocuments
         {
-            base.AddObject("Entity1Set", entity1);
+            get
+            {
+                if ((this._CandidateDocuments == null))
+                {
+                    this._CandidateDocuments = base.CreateQuery<CandidateDocuments>("[CandidateDocuments]");
+                }
+                return this._CandidateDocuments;
+            }
+        }
+        private global::System.Data.Objects.ObjectQuery<CandidateDocuments> _CandidateDocuments;
+        /// <summary>
+        /// There are no comments for CandidateInOpeningStatus in the schema.
+        /// </summary>
+        public global::System.Data.Objects.ObjectQuery<CandidateInOpeningStatus> CandidateInOpeningStatus
+        {
+            get
+            {
+                if ((this._CandidateInOpeningStatus == null))
+                {
+                    this._CandidateInOpeningStatus = base.CreateQuery<CandidateInOpeningStatus>("[CandidateInOpeningStatus]");
+                }
+                return this._CandidateInOpeningStatus;
+            }
+        }
+        private global::System.Data.Objects.ObjectQuery<CandidateInOpeningStatus> _CandidateInOpeningStatus;
+        /// <summary>
+        /// There are no comments for CandidateInOpeningStatusRegistry in the schema.
+        /// </summary>
+        public global::System.Data.Objects.ObjectQuery<CandidateInOpeningStatusRegistry> CandidateInOpeningStatusRegistry
+        {
+            get
+            {
+                if ((this._CandidateInOpeningStatusRegistry == null))
+                {
+                    this._CandidateInOpeningStatusRegistry = base.CreateQuery<CandidateInOpeningStatusRegistry>("[CandidateInOpeningStatusRegistry]");
+                }
+                return this._CandidateInOpeningStatusRegistry;
+            }
+        }
+        private global::System.Data.Objects.ObjectQuery<CandidateInOpeningStatusRegistry> _CandidateInOpeningStatusRegistry;
+        /// <summary>
+        /// There are no comments for CandidatePhones in the schema.
+        /// </summary>
+        public global::System.Data.Objects.ObjectQuery<CandidatePhones> CandidatePhones
+        {
+            get
+            {
+                if ((this._CandidatePhones == null))
+                {
+                    this._CandidatePhones = base.CreateQuery<CandidatePhones>("[CandidatePhones]");
+                }
+                return this._CandidatePhones;
+            }
+        }
+        private global::System.Data.Objects.ObjectQuery<CandidatePhones> _CandidatePhones;
+        /// <summary>
+        /// There are no comments for CandidateSkills in the schema.
+        /// </summary>
+        public global::System.Data.Objects.ObjectQuery<CandidateSkills> CandidateSkills
+        {
+            get
+            {
+                if ((this._CandidateSkills == null))
+                {
+                    this._CandidateSkills = base.CreateQuery<CandidateSkills>("[CandidateSkills]");
+                }
+                return this._CandidateSkills;
+            }
+        }
+        private global::System.Data.Objects.ObjectQuery<CandidateSkills> _CandidateSkills;
+        /// <summary>
+        /// There are no comments for CandidateStatus in the schema.
+        /// </summary>
+        public global::System.Data.Objects.ObjectQuery<CandidateStatus> CandidateStatus
+        {
+            get
+            {
+                if ((this._CandidateStatus == null))
+                {
+                    this._CandidateStatus = base.CreateQuery<CandidateStatus>("[CandidateStatus]");
+                }
+                return this._CandidateStatus;
+            }
+        }
+        private global::System.Data.Objects.ObjectQuery<CandidateStatus> _CandidateStatus;
+        /// <summary>
+        /// There are no comments for CandidateStatusRegistry in the schema.
+        /// </summary>
+        public global::System.Data.Objects.ObjectQuery<CandidateStatusRegistry> CandidateStatusRegistry
+        {
+            get
+            {
+                if ((this._CandidateStatusRegistry == null))
+                {
+                    this._CandidateStatusRegistry = base.CreateQuery<CandidateStatusRegistry>("[CandidateStatusRegistry]");
+                }
+                return this._CandidateStatusRegistry;
+            }
+        }
+        private global::System.Data.Objects.ObjectQuery<CandidateStatusRegistry> _CandidateStatusRegistry;
+        /// <summary>
+        /// There are no comments for Department in the schema.
+        /// </summary>
+        public global::System.Data.Objects.ObjectQuery<Department> Department
+        {
+            get
+            {
+                if ((this._Department == null))
+                {
+                    this._Department = base.CreateQuery<Department>("[Department]");
+                }
+                return this._Department;
+            }
+        }
+        private global::System.Data.Objects.ObjectQuery<Department> _Department;
+        /// <summary>
+        /// There are no comments for Document in the schema.
+        /// </summary>
+        public global::System.Data.Objects.ObjectQuery<Document> Document
+        {
+            get
+            {
+                if ((this._Document == null))
+                {
+                    this._Document = base.CreateQuery<Document>("[Document]");
+                }
+                return this._Document;
+            }
+        }
+        private global::System.Data.Objects.ObjectQuery<Document> _Document;
+        /// <summary>
+        /// There are no comments for JobOpening in the schema.
+        /// </summary>
+        public global::System.Data.Objects.ObjectQuery<JobOpening> JobOpening
+        {
+            get
+            {
+                if ((this._JobOpening == null))
+                {
+                    this._JobOpening = base.CreateQuery<JobOpening>("[JobOpening]");
+                }
+                return this._JobOpening;
+            }
+        }
+        private global::System.Data.Objects.ObjectQuery<JobOpening> _JobOpening;
+        /// <summary>
+        /// There are no comments for JobPosition in the schema.
+        /// </summary>
+        public global::System.Data.Objects.ObjectQuery<JobPosition> JobPosition
+        {
+            get
+            {
+                if ((this._JobPosition == null))
+                {
+                    this._JobPosition = base.CreateQuery<JobPosition>("[JobPosition]");
+                }
+                return this._JobPosition;
+            }
+        }
+        private global::System.Data.Objects.ObjectQuery<JobPosition> _JobPosition;
+        /// <summary>
+        /// There are no comments for JobPositionSkills in the schema.
+        /// </summary>
+        public global::System.Data.Objects.ObjectQuery<JobPositionSkills> JobPositionSkills
+        {
+            get
+            {
+                if ((this._JobPositionSkills == null))
+                {
+                    this._JobPositionSkills = base.CreateQuery<JobPositionSkills>("[JobPositionSkills]");
+                }
+                return this._JobPositionSkills;
+            }
+        }
+        private global::System.Data.Objects.ObjectQuery<JobPositionSkills> _JobPositionSkills;
+        /// <summary>
+        /// There are no comments for Notes in the schema.
+        /// </summary>
+        public global::System.Data.Objects.ObjectQuery<Notes> Notes
+        {
+            get
+            {
+                if ((this._Notes == null))
+                {
+                    this._Notes = base.CreateQuery<Notes>("[Notes]");
+                }
+                return this._Notes;
+            }
+        }
+        private global::System.Data.Objects.ObjectQuery<Notes> _Notes;
+        /// <summary>
+        /// There are no comments for OpeningCandidates in the schema.
+        /// </summary>
+        public global::System.Data.Objects.ObjectQuery<OpeningCandidates> OpeningCandidates
+        {
+            get
+            {
+                if ((this._OpeningCandidates == null))
+                {
+                    this._OpeningCandidates = base.CreateQuery<OpeningCandidates>("[OpeningCandidates]");
+                }
+                return this._OpeningCandidates;
+            }
+        }
+        private global::System.Data.Objects.ObjectQuery<OpeningCandidates> _OpeningCandidates;
+        /// <summary>
+        /// There are no comments for OpeningNotes in the schema.
+        /// </summary>
+        public global::System.Data.Objects.ObjectQuery<OpeningNotes> OpeningNotes
+        {
+            get
+            {
+                if ((this._OpeningNotes == null))
+                {
+                    this._OpeningNotes = base.CreateQuery<OpeningNotes>("[OpeningNotes]");
+                }
+                return this._OpeningNotes;
+            }
+        }
+        private global::System.Data.Objects.ObjectQuery<OpeningNotes> _OpeningNotes;
+        /// <summary>
+        /// There are no comments for PhoneType in the schema.
+        /// </summary>
+        public global::System.Data.Objects.ObjectQuery<PhoneType> PhoneType
+        {
+            get
+            {
+                if ((this._PhoneType == null))
+                {
+                    this._PhoneType = base.CreateQuery<PhoneType>("[PhoneType]");
+                }
+                return this._PhoneType;
+            }
+        }
+        private global::System.Data.Objects.ObjectQuery<PhoneType> _PhoneType;
+        /// <summary>
+        /// There are no comments for Role in the schema.
+        /// </summary>
+        public global::System.Data.Objects.ObjectQuery<Role> Role
+        {
+            get
+            {
+                if ((this._Role == null))
+                {
+                    this._Role = base.CreateQuery<Role>("[Role]");
+                }
+                return this._Role;
+            }
+        }
+        private global::System.Data.Objects.ObjectQuery<Role> _Role;
+        /// <summary>
+        /// There are no comments for Skill in the schema.
+        /// </summary>
+        public global::System.Data.Objects.ObjectQuery<Skill> Skill
+        {
+            get
+            {
+                if ((this._Skill == null))
+                {
+                    this._Skill = base.CreateQuery<Skill>("[Skill]");
+                }
+                return this._Skill;
+            }
+        }
+        private global::System.Data.Objects.ObjectQuery<Skill> _Skill;
+        /// <summary>
+        /// There are no comments for SkillCategory in the schema.
+        /// </summary>
+        public global::System.Data.Objects.ObjectQuery<SkillCategory> SkillCategory
+        {
+            get
+            {
+                if ((this._SkillCategory == null))
+                {
+                    this._SkillCategory = base.CreateQuery<SkillCategory>("[SkillCategory]");
+                }
+                return this._SkillCategory;
+            }
+        }
+        private global::System.Data.Objects.ObjectQuery<SkillCategory> _SkillCategory;
+        /// <summary>
+        /// There are no comments for User in the schema.
+        /// </summary>
+        public global::System.Data.Objects.ObjectQuery<User> User
+        {
+            get
+            {
+                if ((this._User == null))
+                {
+                    this._User = base.CreateQuery<User>("[User]");
+                }
+                return this._User;
+            }
+        }
+        private global::System.Data.Objects.ObjectQuery<User> _User;
+        /// <summary>
+        /// There are no comments for UserRoles in the schema.
+        /// </summary>
+        public global::System.Data.Objects.ObjectQuery<UserRoles> UserRoles
+        {
+            get
+            {
+                if ((this._UserRoles == null))
+                {
+                    this._UserRoles = base.CreateQuery<UserRoles>("[UserRoles]");
+                }
+                return this._UserRoles;
+            }
+        }
+        private global::System.Data.Objects.ObjectQuery<UserRoles> _UserRoles;
+        /// <summary>
+        /// There are no comments for Candidate in the schema.
+        /// </summary>
+        public void AddToCandidate(Candidate candidate)
+        {
+            base.AddObject("Candidate", candidate);
+        }
+        /// <summary>
+        /// There are no comments for CandidateDocuments in the schema.
+        /// </summary>
+        public void AddToCandidateDocuments(CandidateDocuments candidateDocuments)
+        {
+            base.AddObject("CandidateDocuments", candidateDocuments);
+        }
+        /// <summary>
+        /// There are no comments for CandidateInOpeningStatus in the schema.
+        /// </summary>
+        public void AddToCandidateInOpeningStatus(CandidateInOpeningStatus candidateInOpeningStatus)
+        {
+            base.AddObject("CandidateInOpeningStatus", candidateInOpeningStatus);
+        }
+        /// <summary>
+        /// There are no comments for CandidateInOpeningStatusRegistry in the schema.
+        /// </summary>
+        public void AddToCandidateInOpeningStatusRegistry(CandidateInOpeningStatusRegistry candidateInOpeningStatusRegistry)
+        {
+            base.AddObject("CandidateInOpeningStatusRegistry", candidateInOpeningStatusRegistry);
+        }
+        /// <summary>
+        /// There are no comments for CandidatePhones in the schema.
+        /// </summary>
+        public void AddToCandidatePhones(CandidatePhones candidatePhones)
+        {
+            base.AddObject("CandidatePhones", candidatePhones);
+        }
+        /// <summary>
+        /// There are no comments for CandidateSkills in the schema.
+        /// </summary>
+        public void AddToCandidateSkills(CandidateSkills candidateSkills)
+        {
+            base.AddObject("CandidateSkills", candidateSkills);
+        }
+        /// <summary>
+        /// There are no comments for CandidateStatus in the schema.
+        /// </summary>
+        public void AddToCandidateStatus(CandidateStatus candidateStatus)
+        {
+            base.AddObject("CandidateStatus", candidateStatus);
+        }
+        /// <summary>
+        /// There are no comments for CandidateStatusRegistry in the schema.
+        /// </summary>
+        public void AddToCandidateStatusRegistry(CandidateStatusRegistry candidateStatusRegistry)
+        {
+            base.AddObject("CandidateStatusRegistry", candidateStatusRegistry);
+        }
+        /// <summary>
+        /// There are no comments for Department in the schema.
+        /// </summary>
+        public void AddToDepartment(Department department)
+        {
+            base.AddObject("Department", department);
+        }
+        /// <summary>
+        /// There are no comments for Document in the schema.
+        /// </summary>
+        public void AddToDocument(Document document)
+        {
+            base.AddObject("Document", document);
+        }
+        /// <summary>
+        /// There are no comments for JobOpening in the schema.
+        /// </summary>
+        public void AddToJobOpening(JobOpening jobOpening)
+        {
+            base.AddObject("JobOpening", jobOpening);
+        }
+        /// <summary>
+        /// There are no comments for JobPosition in the schema.
+        /// </summary>
+        public void AddToJobPosition(JobPosition jobPosition)
+        {
+            base.AddObject("JobPosition", jobPosition);
+        }
+        /// <summary>
+        /// There are no comments for JobPositionSkills in the schema.
+        /// </summary>
+        public void AddToJobPositionSkills(JobPositionSkills jobPositionSkills)
+        {
+            base.AddObject("JobPositionSkills", jobPositionSkills);
+        }
+        /// <summary>
+        /// There are no comments for Notes in the schema.
+        /// </summary>
+        public void AddToNotes(Notes notes)
+        {
+            base.AddObject("Notes", notes);
+        }
+        /// <summary>
+        /// There are no comments for OpeningCandidates in the schema.
+        /// </summary>
+        public void AddToOpeningCandidates(OpeningCandidates openingCandidates)
+        {
+            base.AddObject("OpeningCandidates", openingCandidates);
+        }
+        /// <summary>
+        /// There are no comments for OpeningNotes in the schema.
+        /// </summary>
+        public void AddToOpeningNotes(OpeningNotes openingNotes)
+        {
+            base.AddObject("OpeningNotes", openingNotes);
+        }
+        /// <summary>
+        /// There are no comments for PhoneType in the schema.
+        /// </summary>
+        public void AddToPhoneType(PhoneType phoneType)
+        {
+            base.AddObject("PhoneType", phoneType);
+        }
+        /// <summary>
+        /// There are no comments for Role in the schema.
+        /// </summary>
+        public void AddToRole(Role role)
+        {
+            base.AddObject("Role", role);
+        }
+        /// <summary>
+        /// There are no comments for Skill in the schema.
+        /// </summary>
+        public void AddToSkill(Skill skill)
+        {
+            base.AddObject("Skill", skill);
+        }
+        /// <summary>
+        /// There are no comments for SkillCategory in the schema.
+        /// </summary>
+        public void AddToSkillCategory(SkillCategory skillCategory)
+        {
+            base.AddObject("SkillCategory", skillCategory);
+        }
+        /// <summary>
+        /// There are no comments for User in the schema.
+        /// </summary>
+        public void AddToUser(User user)
+        {
+            base.AddObject("User", user);
+        }
+        /// <summary>
+        /// There are no comments for UserRoles in the schema.
+        /// </summary>
+        public void AddToUserRoles(UserRoles userRoles)
+        {
+            base.AddObject("UserRoles", userRoles);
         }
     }
     /// <summary>
-    /// There are no comments for HRHiringTool.Entity1 in the schema.
+    /// There are no comments for HRHiringTool.Candidate in the schema.
     /// </summary>
     /// <KeyProperties>
-    /// Id
+    /// ID_Candidate
     /// </KeyProperties>
-    [global::System.Data.Objects.DataClasses.EdmEntityTypeAttribute(NamespaceName="HRHiringTool", Name="Entity1")]
+    [global::System.Data.Objects.DataClasses.EdmEntityTypeAttribute(NamespaceName="HRHiringTool", Name="Candidate")]
     [global::System.Runtime.Serialization.DataContractAttribute(IsReference=true)]
     [global::System.Serializable()]
-    public partial class Entity1 : global::System.Data.Objects.DataClasses.EntityObject
+    public partial class Candidate : global::System.Data.Objects.DataClasses.EntityObject
     {
         /// <summary>
-        /// Create a new Entity1 object.
+        /// Create a new Candidate object.
         /// </summary>
-        /// <param name="id">Initial value of Id.</param>
-        public static Entity1 CreateEntity1(int id)
+        /// <param name="iD_Candidate">Initial value of ID_Candidate.</param>
+        /// <param name="name">Initial value of Name.</param>
+        /// <param name="lastname">Initial value of Lastname.</param>
+        public static Candidate CreateCandidate(long iD_Candidate, string name, string lastname)
         {
-            Entity1 entity1 = new Entity1();
-            entity1.Id = id;
-            return entity1;
+            Candidate candidate = new Candidate();
+            candidate.ID_Candidate = iD_Candidate;
+            candidate.Name = name;
+            candidate.Lastname = lastname;
+            return candidate;
         }
         /// <summary>
-        /// There are no comments for Property Id in the schema.
+        /// There are no comments for Property ID_Candidate in the schema.
         /// </summary>
         [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
         [global::System.Runtime.Serialization.DataMemberAttribute()]
-        public int Id
+        public long ID_Candidate
         {
             get
             {
-                return this._Id;
+                return this._ID_Candidate;
             }
             set
             {
-                this.OnIdChanging(value);
-                this.ReportPropertyChanging("Id");
-                this._Id = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value);
-                this.ReportPropertyChanged("Id");
-                this.OnIdChanged();
+                this.OnID_CandidateChanging(value);
+                this.ReportPropertyChanging("ID_Candidate");
+                this._ID_Candidate = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value);
+                this.ReportPropertyChanged("ID_Candidate");
+                this.OnID_CandidateChanged();
             }
         }
-        private int _Id;
-        partial void OnIdChanging(int value);
-        partial void OnIdChanged();
+        private long _ID_Candidate;
+        partial void OnID_CandidateChanging(long value);
+        partial void OnID_CandidateChanged();
+        /// <summary>
+        /// There are no comments for Property Name in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute(IsNullable=false)]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public string Name
+        {
+            get
+            {
+                return this._Name;
+            }
+            set
+            {
+                this.OnNameChanging(value);
+                this.ReportPropertyChanging("Name");
+                this._Name = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value, false);
+                this.ReportPropertyChanged("Name");
+                this.OnNameChanged();
+            }
+        }
+        private string _Name;
+        partial void OnNameChanging(string value);
+        partial void OnNameChanged();
+        /// <summary>
+        /// There are no comments for Property Lastname in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute(IsNullable=false)]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public string Lastname
+        {
+            get
+            {
+                return this._Lastname;
+            }
+            set
+            {
+                this.OnLastnameChanging(value);
+                this.ReportPropertyChanging("Lastname");
+                this._Lastname = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value, false);
+                this.ReportPropertyChanged("Lastname");
+                this.OnLastnameChanged();
+            }
+        }
+        private string _Lastname;
+        partial void OnLastnameChanging(string value);
+        partial void OnLastnameChanged();
+        /// <summary>
+        /// There are no comments for Property SLastName in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public string SLastName
+        {
+            get
+            {
+                return this._SLastName;
+            }
+            set
+            {
+                this.OnSLastNameChanging(value);
+                this.ReportPropertyChanging("SLastName");
+                this._SLastName = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value, true);
+                this.ReportPropertyChanged("SLastName");
+                this.OnSLastNameChanged();
+            }
+        }
+        private string _SLastName;
+        partial void OnSLastNameChanging(string value);
+        partial void OnSLastNameChanged();
+        /// <summary>
+        /// There are no comments for Property SalaryExpectation in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public global::System.Nullable<decimal> SalaryExpectation
+        {
+            get
+            {
+                return this._SalaryExpectation;
+            }
+            set
+            {
+                this.OnSalaryExpectationChanging(value);
+                this.ReportPropertyChanging("SalaryExpectation");
+                this._SalaryExpectation = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value);
+                this.ReportPropertyChanged("SalaryExpectation");
+                this.OnSalaryExpectationChanged();
+            }
+        }
+        private global::System.Nullable<decimal> _SalaryExpectation;
+        partial void OnSalaryExpectationChanging(global::System.Nullable<decimal> value);
+        partial void OnSalaryExpectationChanged();
+        /// <summary>
+        /// There are no comments for Property Photo in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public byte[] Photo
+        {
+            get
+            {
+                return global::System.Data.Objects.DataClasses.StructuralObject.GetValidValue(this._Photo);
+            }
+            set
+            {
+                this.OnPhotoChanging(value);
+                this.ReportPropertyChanging("Photo");
+                this._Photo = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value, true);
+                this.ReportPropertyChanged("Photo");
+                this.OnPhotoChanged();
+            }
+        }
+        private byte[] _Photo;
+        partial void OnPhotoChanging(byte[] value);
+        partial void OnPhotoChanged();
+        /// <summary>
+        /// There are no comments for Property Email in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public string Email
+        {
+            get
+            {
+                return this._Email;
+            }
+            set
+            {
+                this.OnEmailChanging(value);
+                this.ReportPropertyChanging("Email");
+                this._Email = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value, true);
+                this.ReportPropertyChanged("Email");
+                this.OnEmailChanged();
+            }
+        }
+        private string _Email;
+        partial void OnEmailChanging(string value);
+        partial void OnEmailChanged();
+        /// <summary>
+        /// There are no comments for Property Address in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public string Address
+        {
+            get
+            {
+                return this._Address;
+            }
+            set
+            {
+                this.OnAddressChanging(value);
+                this.ReportPropertyChanging("Address");
+                this._Address = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value, true);
+                this.ReportPropertyChanged("Address");
+                this.OnAddressChanged();
+            }
+        }
+        private string _Address;
+        partial void OnAddressChanging(string value);
+        partial void OnAddressChanged();
+        /// <summary>
+        /// There are no comments for Property Status in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public string Status
+        {
+            get
+            {
+                return this._Status;
+            }
+            set
+            {
+                this.OnStatusChanging(value);
+                this.ReportPropertyChanging("Status");
+                this._Status = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value, true);
+                this.ReportPropertyChanged("Status");
+                this.OnStatusChanged();
+            }
+        }
+        private string _Status;
+        partial void OnStatusChanging(string value);
+        partial void OnStatusChanged();
+        /// <summary>
+        /// There are no comments for JobOpening in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmRelationshipNavigationPropertyAttribute("HRHiringTool", "FK_Candidate_JobOpening", "JobOpening")]
+        [global::System.Xml.Serialization.XmlIgnoreAttribute()]
+        [global::System.Xml.Serialization.SoapIgnoreAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public JobOpening JobOpening
+        {
+            get
+            {
+                return ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedReference<JobOpening>("HRHiringTool.FK_Candidate_JobOpening", "JobOpening").Value;
+            }
+            set
+            {
+                ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedReference<JobOpening>("HRHiringTool.FK_Candidate_JobOpening", "JobOpening").Value = value;
+            }
+        }
+        /// <summary>
+        /// There are no comments for JobOpening in the schema.
+        /// </summary>
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public global::System.Data.Objects.DataClasses.EntityReference<JobOpening> JobOpeningReference
+        {
+            get
+            {
+                return ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedReference<JobOpening>("HRHiringTool.FK_Candidate_JobOpening", "JobOpening");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.InitializeRelatedReference<JobOpening>("HRHiringTool.FK_Candidate_JobOpening", "JobOpening", value);
+                }
+            }
+        }
+        /// <summary>
+        /// There are no comments for CandidateDocuments in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmRelationshipNavigationPropertyAttribute("HRHiringTool", "FK_CandidateDocuments_Candidate", "CandidateDocuments")]
+        [global::System.Xml.Serialization.XmlIgnoreAttribute()]
+        [global::System.Xml.Serialization.SoapIgnoreAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public global::System.Data.Objects.DataClasses.EntityCollection<CandidateDocuments> CandidateDocuments
+        {
+            get
+            {
+                return ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedCollection<CandidateDocuments>("HRHiringTool.FK_CandidateDocuments_Candidate", "CandidateDocuments");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.InitializeRelatedCollection<CandidateDocuments>("HRHiringTool.FK_CandidateDocuments_Candidate", "CandidateDocuments", value);
+                }
+            }
+        }
+        /// <summary>
+        /// There are no comments for CandidatePhones in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmRelationshipNavigationPropertyAttribute("HRHiringTool", "FK_CandidatePhones_Candidate", "CandidatePhones")]
+        [global::System.Xml.Serialization.XmlIgnoreAttribute()]
+        [global::System.Xml.Serialization.SoapIgnoreAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public global::System.Data.Objects.DataClasses.EntityCollection<CandidatePhones> CandidatePhones
+        {
+            get
+            {
+                return ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedCollection<CandidatePhones>("HRHiringTool.FK_CandidatePhones_Candidate", "CandidatePhones");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.InitializeRelatedCollection<CandidatePhones>("HRHiringTool.FK_CandidatePhones_Candidate", "CandidatePhones", value);
+                }
+            }
+        }
+        /// <summary>
+        /// There are no comments for CandidateSkills in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmRelationshipNavigationPropertyAttribute("HRHiringTool", "FK_CandidateSkills_Candidate", "CandidateSkills")]
+        [global::System.Xml.Serialization.XmlIgnoreAttribute()]
+        [global::System.Xml.Serialization.SoapIgnoreAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public global::System.Data.Objects.DataClasses.EntityCollection<CandidateSkills> CandidateSkills
+        {
+            get
+            {
+                return ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedCollection<CandidateSkills>("HRHiringTool.FK_CandidateSkills_Candidate", "CandidateSkills");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.InitializeRelatedCollection<CandidateSkills>("HRHiringTool.FK_CandidateSkills_Candidate", "CandidateSkills", value);
+                }
+            }
+        }
+        /// <summary>
+        /// There are no comments for CandidateStatusRegistry in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmRelationshipNavigationPropertyAttribute("HRHiringTool", "FK_CandidateStatusRegistry_Candidate", "CandidateStatusRegistry")]
+        [global::System.Xml.Serialization.XmlIgnoreAttribute()]
+        [global::System.Xml.Serialization.SoapIgnoreAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public global::System.Data.Objects.DataClasses.EntityCollection<CandidateStatusRegistry> CandidateStatusRegistry
+        {
+            get
+            {
+                return ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedCollection<CandidateStatusRegistry>("HRHiringTool.FK_CandidateStatusRegistry_Candidate", "CandidateStatusRegistry");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.InitializeRelatedCollection<CandidateStatusRegistry>("HRHiringTool.FK_CandidateStatusRegistry_Candidate", "CandidateStatusRegistry", value);
+                }
+            }
+        }
+        /// <summary>
+        /// There are no comments for Notes in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmRelationshipNavigationPropertyAttribute("HRHiringTool", "FK_Notes_Candidate", "Notes")]
+        [global::System.Xml.Serialization.XmlIgnoreAttribute()]
+        [global::System.Xml.Serialization.SoapIgnoreAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public global::System.Data.Objects.DataClasses.EntityCollection<Notes> Notes
+        {
+            get
+            {
+                return ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedCollection<Notes>("HRHiringTool.FK_Notes_Candidate", "Notes");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.InitializeRelatedCollection<Notes>("HRHiringTool.FK_Notes_Candidate", "Notes", value);
+                }
+            }
+        }
+        /// <summary>
+        /// There are no comments for OpeningCandidates in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmRelationshipNavigationPropertyAttribute("HRHiringTool", "FK_OpeningCandidates_Candidate", "OpeningCandidates")]
+        [global::System.Xml.Serialization.XmlIgnoreAttribute()]
+        [global::System.Xml.Serialization.SoapIgnoreAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public global::System.Data.Objects.DataClasses.EntityCollection<OpeningCandidates> OpeningCandidates
+        {
+            get
+            {
+                return ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedCollection<OpeningCandidates>("HRHiringTool.FK_OpeningCandidates_Candidate", "OpeningCandidates");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.InitializeRelatedCollection<OpeningCandidates>("HRHiringTool.FK_OpeningCandidates_Candidate", "OpeningCandidates", value);
+                }
+            }
+        }
+    }
+    /// <summary>
+    /// There are no comments for HRHiringTool.CandidateDocuments in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// ID_CandidateDocs
+    /// </KeyProperties>
+    [global::System.Data.Objects.DataClasses.EdmEntityTypeAttribute(NamespaceName="HRHiringTool", Name="CandidateDocuments")]
+    [global::System.Runtime.Serialization.DataContractAttribute(IsReference=true)]
+    [global::System.Serializable()]
+    public partial class CandidateDocuments : global::System.Data.Objects.DataClasses.EntityObject
+    {
+        /// <summary>
+        /// Create a new CandidateDocuments object.
+        /// </summary>
+        /// <param name="iD_CandidateDocs">Initial value of ID_CandidateDocs.</param>
+        public static CandidateDocuments CreateCandidateDocuments(long iD_CandidateDocs)
+        {
+            CandidateDocuments candidateDocuments = new CandidateDocuments();
+            candidateDocuments.ID_CandidateDocs = iD_CandidateDocs;
+            return candidateDocuments;
+        }
+        /// <summary>
+        /// There are no comments for Property ID_CandidateDocs in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public long ID_CandidateDocs
+        {
+            get
+            {
+                return this._ID_CandidateDocs;
+            }
+            set
+            {
+                this.OnID_CandidateDocsChanging(value);
+                this.ReportPropertyChanging("ID_CandidateDocs");
+                this._ID_CandidateDocs = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value);
+                this.ReportPropertyChanged("ID_CandidateDocs");
+                this.OnID_CandidateDocsChanged();
+            }
+        }
+        private long _ID_CandidateDocs;
+        partial void OnID_CandidateDocsChanging(long value);
+        partial void OnID_CandidateDocsChanged();
+        /// <summary>
+        /// There are no comments for Property LastUpdate in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public global::System.Nullable<global::System.DateTime> LastUpdate
+        {
+            get
+            {
+                return this._LastUpdate;
+            }
+            set
+            {
+                this.OnLastUpdateChanging(value);
+                this.ReportPropertyChanging("LastUpdate");
+                this._LastUpdate = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value);
+                this.ReportPropertyChanged("LastUpdate");
+                this.OnLastUpdateChanged();
+            }
+        }
+        private global::System.Nullable<global::System.DateTime> _LastUpdate;
+        partial void OnLastUpdateChanging(global::System.Nullable<global::System.DateTime> value);
+        partial void OnLastUpdateChanged();
+        /// <summary>
+        /// There are no comments for Candidate in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmRelationshipNavigationPropertyAttribute("HRHiringTool", "FK_CandidateDocuments_Candidate", "Candidate")]
+        [global::System.Xml.Serialization.XmlIgnoreAttribute()]
+        [global::System.Xml.Serialization.SoapIgnoreAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public Candidate Candidate
+        {
+            get
+            {
+                return ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedReference<Candidate>("HRHiringTool.FK_CandidateDocuments_Candidate", "Candidate").Value;
+            }
+            set
+            {
+                ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedReference<Candidate>("HRHiringTool.FK_CandidateDocuments_Candidate", "Candidate").Value = value;
+            }
+        }
+        /// <summary>
+        /// There are no comments for Candidate in the schema.
+        /// </summary>
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public global::System.Data.Objects.DataClasses.EntityReference<Candidate> CandidateReference
+        {
+            get
+            {
+                return ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedReference<Candidate>("HRHiringTool.FK_CandidateDocuments_Candidate", "Candidate");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.InitializeRelatedReference<Candidate>("HRHiringTool.FK_CandidateDocuments_Candidate", "Candidate", value);
+                }
+            }
+        }
+        /// <summary>
+        /// There are no comments for Document in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmRelationshipNavigationPropertyAttribute("HRHiringTool", "FK_CandidateDocuments_Document", "Document")]
+        [global::System.Xml.Serialization.XmlIgnoreAttribute()]
+        [global::System.Xml.Serialization.SoapIgnoreAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public Document Document
+        {
+            get
+            {
+                return ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedReference<Document>("HRHiringTool.FK_CandidateDocuments_Document", "Document").Value;
+            }
+            set
+            {
+                ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedReference<Document>("HRHiringTool.FK_CandidateDocuments_Document", "Document").Value = value;
+            }
+        }
+        /// <summary>
+        /// There are no comments for Document in the schema.
+        /// </summary>
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public global::System.Data.Objects.DataClasses.EntityReference<Document> DocumentReference
+        {
+            get
+            {
+                return ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedReference<Document>("HRHiringTool.FK_CandidateDocuments_Document", "Document");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.InitializeRelatedReference<Document>("HRHiringTool.FK_CandidateDocuments_Document", "Document", value);
+                }
+            }
+        }
+        /// <summary>
+        /// There are no comments for User in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmRelationshipNavigationPropertyAttribute("HRHiringTool", "FK_CandidateDocuments_User", "User")]
+        [global::System.Xml.Serialization.XmlIgnoreAttribute()]
+        [global::System.Xml.Serialization.SoapIgnoreAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public User User
+        {
+            get
+            {
+                return ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedReference<User>("HRHiringTool.FK_CandidateDocuments_User", "User").Value;
+            }
+            set
+            {
+                ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedReference<User>("HRHiringTool.FK_CandidateDocuments_User", "User").Value = value;
+            }
+        }
+        /// <summary>
+        /// There are no comments for User in the schema.
+        /// </summary>
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public global::System.Data.Objects.DataClasses.EntityReference<User> UserReference
+        {
+            get
+            {
+                return ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedReference<User>("HRHiringTool.FK_CandidateDocuments_User", "User");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.InitializeRelatedReference<User>("HRHiringTool.FK_CandidateDocuments_User", "User", value);
+                }
+            }
+        }
+    }
+    /// <summary>
+    /// There are no comments for HRHiringTool.CandidateInOpeningStatus in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// ID_CandidateInOpeningStatus
+    /// </KeyProperties>
+    [global::System.Data.Objects.DataClasses.EdmEntityTypeAttribute(NamespaceName="HRHiringTool", Name="CandidateInOpeningStatus")]
+    [global::System.Runtime.Serialization.DataContractAttribute(IsReference=true)]
+    [global::System.Serializable()]
+    public partial class CandidateInOpeningStatus : global::System.Data.Objects.DataClasses.EntityObject
+    {
+        /// <summary>
+        /// Create a new CandidateInOpeningStatus object.
+        /// </summary>
+        /// <param name="iD_CandidateInOpeningStatus">Initial value of ID_CandidateInOpeningStatus.</param>
+        public static CandidateInOpeningStatus CreateCandidateInOpeningStatus(long iD_CandidateInOpeningStatus)
+        {
+            CandidateInOpeningStatus candidateInOpeningStatus = new CandidateInOpeningStatus();
+            candidateInOpeningStatus.ID_CandidateInOpeningStatus = iD_CandidateInOpeningStatus;
+            return candidateInOpeningStatus;
+        }
+        /// <summary>
+        /// There are no comments for Property ID_CandidateInOpeningStatus in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public long ID_CandidateInOpeningStatus
+        {
+            get
+            {
+                return this._ID_CandidateInOpeningStatus;
+            }
+            set
+            {
+                this.OnID_CandidateInOpeningStatusChanging(value);
+                this.ReportPropertyChanging("ID_CandidateInOpeningStatus");
+                this._ID_CandidateInOpeningStatus = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value);
+                this.ReportPropertyChanged("ID_CandidateInOpeningStatus");
+                this.OnID_CandidateInOpeningStatusChanged();
+            }
+        }
+        private long _ID_CandidateInOpeningStatus;
+        partial void OnID_CandidateInOpeningStatusChanging(long value);
+        partial void OnID_CandidateInOpeningStatusChanged();
+        /// <summary>
+        /// There are no comments for Property Name in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public string Name
+        {
+            get
+            {
+                return this._Name;
+            }
+            set
+            {
+                this.OnNameChanging(value);
+                this.ReportPropertyChanging("Name");
+                this._Name = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value, true);
+                this.ReportPropertyChanged("Name");
+                this.OnNameChanged();
+            }
+        }
+        private string _Name;
+        partial void OnNameChanging(string value);
+        partial void OnNameChanged();
+        /// <summary>
+        /// There are no comments for Property Description in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public string Description
+        {
+            get
+            {
+                return this._Description;
+            }
+            set
+            {
+                this.OnDescriptionChanging(value);
+                this.ReportPropertyChanging("Description");
+                this._Description = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value, true);
+                this.ReportPropertyChanged("Description");
+                this.OnDescriptionChanged();
+            }
+        }
+        private string _Description;
+        partial void OnDescriptionChanging(string value);
+        partial void OnDescriptionChanged();
+        /// <summary>
+        /// There are no comments for CandidateInOpeningStatusRegistry in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmRelationshipNavigationPropertyAttribute("HRHiringTool", "FK_CandidateInOpeningStatusRegistry_CandidateInOpeningStatus", "CandidateInOpeningStatusRegistry")]
+        [global::System.Xml.Serialization.XmlIgnoreAttribute()]
+        [global::System.Xml.Serialization.SoapIgnoreAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public global::System.Data.Objects.DataClasses.EntityCollection<CandidateInOpeningStatusRegistry> CandidateInOpeningStatusRegistry
+        {
+            get
+            {
+                return ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedCollection<CandidateInOpeningStatusRegistry>("HRHiringTool.FK_CandidateInOpeningStatusRegistry_CandidateInOpeningStatus", "CandidateInOpeningStatusRegistry");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.InitializeRelatedCollection<CandidateInOpeningStatusRegistry>("HRHiringTool.FK_CandidateInOpeningStatusRegistry_CandidateInOpeningStatus", "CandidateInOpeningStatusRegistry", value);
+                }
+            }
+        }
+    }
+    /// <summary>
+    /// There are no comments for HRHiringTool.CandidateInOpeningStatusRegistry in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// ID_CandidateInOpeningStatusRegistry
+    /// </KeyProperties>
+    [global::System.Data.Objects.DataClasses.EdmEntityTypeAttribute(NamespaceName="HRHiringTool", Name="CandidateInOpeningStatusRegistry")]
+    [global::System.Runtime.Serialization.DataContractAttribute(IsReference=true)]
+    [global::System.Serializable()]
+    public partial class CandidateInOpeningStatusRegistry : global::System.Data.Objects.DataClasses.EntityObject
+    {
+        /// <summary>
+        /// Create a new CandidateInOpeningStatusRegistry object.
+        /// </summary>
+        /// <param name="iD_CandidateInOpeningStatusRegistry">Initial value of ID_CandidateInOpeningStatusRegistry.</param>
+        public static CandidateInOpeningStatusRegistry CreateCandidateInOpeningStatusRegistry(long iD_CandidateInOpeningStatusRegistry)
+        {
+            CandidateInOpeningStatusRegistry candidateInOpeningStatusRegistry = new CandidateInOpeningStatusRegistry();
+            candidateInOpeningStatusRegistry.ID_CandidateInOpeningStatusRegistry = iD_CandidateInOpeningStatusRegistry;
+            return candidateInOpeningStatusRegistry;
+        }
+        /// <summary>
+        /// There are no comments for Property ID_CandidateInOpeningStatusRegistry in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public long ID_CandidateInOpeningStatusRegistry
+        {
+            get
+            {
+                return this._ID_CandidateInOpeningStatusRegistry;
+            }
+            set
+            {
+                this.OnID_CandidateInOpeningStatusRegistryChanging(value);
+                this.ReportPropertyChanging("ID_CandidateInOpeningStatusRegistry");
+                this._ID_CandidateInOpeningStatusRegistry = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value);
+                this.ReportPropertyChanged("ID_CandidateInOpeningStatusRegistry");
+                this.OnID_CandidateInOpeningStatusRegistryChanged();
+            }
+        }
+        private long _ID_CandidateInOpeningStatusRegistry;
+        partial void OnID_CandidateInOpeningStatusRegistryChanging(long value);
+        partial void OnID_CandidateInOpeningStatusRegistryChanged();
+        /// <summary>
+        /// There are no comments for Property DateTime in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public global::System.Nullable<global::System.DateTime> DateTime
+        {
+            get
+            {
+                return this._DateTime;
+            }
+            set
+            {
+                this.OnDateTimeChanging(value);
+                this.ReportPropertyChanging("DateTime");
+                this._DateTime = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value);
+                this.ReportPropertyChanged("DateTime");
+                this.OnDateTimeChanged();
+            }
+        }
+        private global::System.Nullable<global::System.DateTime> _DateTime;
+        partial void OnDateTimeChanging(global::System.Nullable<global::System.DateTime> value);
+        partial void OnDateTimeChanged();
+        /// <summary>
+        /// There are no comments for Property Comment in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public string Comment
+        {
+            get
+            {
+                return this._Comment;
+            }
+            set
+            {
+                this.OnCommentChanging(value);
+                this.ReportPropertyChanging("Comment");
+                this._Comment = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value, true);
+                this.ReportPropertyChanged("Comment");
+                this.OnCommentChanged();
+            }
+        }
+        private string _Comment;
+        partial void OnCommentChanging(string value);
+        partial void OnCommentChanged();
+        /// <summary>
+        /// There are no comments for CandidateInOpeningStatus in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmRelationshipNavigationPropertyAttribute("HRHiringTool", "FK_CandidateInOpeningStatusRegistry_CandidateInOpeningStatus", "CandidateInOpeningStatus")]
+        [global::System.Xml.Serialization.XmlIgnoreAttribute()]
+        [global::System.Xml.Serialization.SoapIgnoreAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public CandidateInOpeningStatus CandidateInOpeningStatus
+        {
+            get
+            {
+                return ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedReference<CandidateInOpeningStatus>("HRHiringTool.FK_CandidateInOpeningStatusRegistry_CandidateInOpeningStatus", "CandidateInOpeningStatus").Value;
+            }
+            set
+            {
+                ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedReference<CandidateInOpeningStatus>("HRHiringTool.FK_CandidateInOpeningStatusRegistry_CandidateInOpeningStatus", "CandidateInOpeningStatus").Value = value;
+            }
+        }
+        /// <summary>
+        /// There are no comments for CandidateInOpeningStatus in the schema.
+        /// </summary>
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public global::System.Data.Objects.DataClasses.EntityReference<CandidateInOpeningStatus> CandidateInOpeningStatusReference
+        {
+            get
+            {
+                return ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedReference<CandidateInOpeningStatus>("HRHiringTool.FK_CandidateInOpeningStatusRegistry_CandidateInOpeningStatus", "CandidateInOpeningStatus");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.InitializeRelatedReference<CandidateInOpeningStatus>("HRHiringTool.FK_CandidateInOpeningStatusRegistry_CandidateInOpeningStatus", "CandidateInOpeningStatus", value);
+                }
+            }
+        }
+        /// <summary>
+        /// There are no comments for OpeningCandidates in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmRelationshipNavigationPropertyAttribute("HRHiringTool", "FK_CandidateInOpeningStatusRegistry_OpeningCandidates", "OpeningCandidates")]
+        [global::System.Xml.Serialization.XmlIgnoreAttribute()]
+        [global::System.Xml.Serialization.SoapIgnoreAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public OpeningCandidates OpeningCandidates
+        {
+            get
+            {
+                return ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedReference<OpeningCandidates>("HRHiringTool.FK_CandidateInOpeningStatusRegistry_OpeningCandidates", "OpeningCandidates").Value;
+            }
+            set
+            {
+                ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedReference<OpeningCandidates>("HRHiringTool.FK_CandidateInOpeningStatusRegistry_OpeningCandidates", "OpeningCandidates").Value = value;
+            }
+        }
+        /// <summary>
+        /// There are no comments for OpeningCandidates in the schema.
+        /// </summary>
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public global::System.Data.Objects.DataClasses.EntityReference<OpeningCandidates> OpeningCandidatesReference
+        {
+            get
+            {
+                return ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedReference<OpeningCandidates>("HRHiringTool.FK_CandidateInOpeningStatusRegistry_OpeningCandidates", "OpeningCandidates");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.InitializeRelatedReference<OpeningCandidates>("HRHiringTool.FK_CandidateInOpeningStatusRegistry_OpeningCandidates", "OpeningCandidates", value);
+                }
+            }
+        }
+        /// <summary>
+        /// There are no comments for User in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmRelationshipNavigationPropertyAttribute("HRHiringTool", "FK_CandidateInOpeningStatusRegistry_User", "User")]
+        [global::System.Xml.Serialization.XmlIgnoreAttribute()]
+        [global::System.Xml.Serialization.SoapIgnoreAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public User User
+        {
+            get
+            {
+                return ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedReference<User>("HRHiringTool.FK_CandidateInOpeningStatusRegistry_User", "User").Value;
+            }
+            set
+            {
+                ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedReference<User>("HRHiringTool.FK_CandidateInOpeningStatusRegistry_User", "User").Value = value;
+            }
+        }
+        /// <summary>
+        /// There are no comments for User in the schema.
+        /// </summary>
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public global::System.Data.Objects.DataClasses.EntityReference<User> UserReference
+        {
+            get
+            {
+                return ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedReference<User>("HRHiringTool.FK_CandidateInOpeningStatusRegistry_User", "User");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.InitializeRelatedReference<User>("HRHiringTool.FK_CandidateInOpeningStatusRegistry_User", "User", value);
+                }
+            }
+        }
+    }
+    /// <summary>
+    /// There are no comments for HRHiringTool.CandidatePhones in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// ID_CandidatePhone
+    /// </KeyProperties>
+    [global::System.Data.Objects.DataClasses.EdmEntityTypeAttribute(NamespaceName="HRHiringTool", Name="CandidatePhones")]
+    [global::System.Runtime.Serialization.DataContractAttribute(IsReference=true)]
+    [global::System.Serializable()]
+    public partial class CandidatePhones : global::System.Data.Objects.DataClasses.EntityObject
+    {
+        /// <summary>
+        /// Create a new CandidatePhones object.
+        /// </summary>
+        /// <param name="iD_CandidatePhone">Initial value of ID_CandidatePhone.</param>
+        public static CandidatePhones CreateCandidatePhones(long iD_CandidatePhone)
+        {
+            CandidatePhones candidatePhones = new CandidatePhones();
+            candidatePhones.ID_CandidatePhone = iD_CandidatePhone;
+            return candidatePhones;
+        }
+        /// <summary>
+        /// There are no comments for Property ID_CandidatePhone in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public long ID_CandidatePhone
+        {
+            get
+            {
+                return this._ID_CandidatePhone;
+            }
+            set
+            {
+                this.OnID_CandidatePhoneChanging(value);
+                this.ReportPropertyChanging("ID_CandidatePhone");
+                this._ID_CandidatePhone = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value);
+                this.ReportPropertyChanged("ID_CandidatePhone");
+                this.OnID_CandidatePhoneChanged();
+            }
+        }
+        private long _ID_CandidatePhone;
+        partial void OnID_CandidatePhoneChanging(long value);
+        partial void OnID_CandidatePhoneChanged();
+        /// <summary>
+        /// There are no comments for Property Phone in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public string Phone
+        {
+            get
+            {
+                return this._Phone;
+            }
+            set
+            {
+                this.OnPhoneChanging(value);
+                this.ReportPropertyChanging("Phone");
+                this._Phone = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value, true);
+                this.ReportPropertyChanged("Phone");
+                this.OnPhoneChanged();
+            }
+        }
+        private string _Phone;
+        partial void OnPhoneChanging(string value);
+        partial void OnPhoneChanged();
+        /// <summary>
+        /// There are no comments for Property Status in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public string Status
+        {
+            get
+            {
+                return this._Status;
+            }
+            set
+            {
+                this.OnStatusChanging(value);
+                this.ReportPropertyChanging("Status");
+                this._Status = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value, true);
+                this.ReportPropertyChanged("Status");
+                this.OnStatusChanged();
+            }
+        }
+        private string _Status;
+        partial void OnStatusChanging(string value);
+        partial void OnStatusChanged();
+        /// <summary>
+        /// There are no comments for Candidate in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmRelationshipNavigationPropertyAttribute("HRHiringTool", "FK_CandidatePhones_Candidate", "Candidate")]
+        [global::System.Xml.Serialization.XmlIgnoreAttribute()]
+        [global::System.Xml.Serialization.SoapIgnoreAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public Candidate Candidate
+        {
+            get
+            {
+                return ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedReference<Candidate>("HRHiringTool.FK_CandidatePhones_Candidate", "Candidate").Value;
+            }
+            set
+            {
+                ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedReference<Candidate>("HRHiringTool.FK_CandidatePhones_Candidate", "Candidate").Value = value;
+            }
+        }
+        /// <summary>
+        /// There are no comments for Candidate in the schema.
+        /// </summary>
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public global::System.Data.Objects.DataClasses.EntityReference<Candidate> CandidateReference
+        {
+            get
+            {
+                return ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedReference<Candidate>("HRHiringTool.FK_CandidatePhones_Candidate", "Candidate");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.InitializeRelatedReference<Candidate>("HRHiringTool.FK_CandidatePhones_Candidate", "Candidate", value);
+                }
+            }
+        }
+        /// <summary>
+        /// There are no comments for PhoneType in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmRelationshipNavigationPropertyAttribute("HRHiringTool", "FK_CandidatePhones_PhoneType", "PhoneType")]
+        [global::System.Xml.Serialization.XmlIgnoreAttribute()]
+        [global::System.Xml.Serialization.SoapIgnoreAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public PhoneType PhoneType
+        {
+            get
+            {
+                return ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedReference<PhoneType>("HRHiringTool.FK_CandidatePhones_PhoneType", "PhoneType").Value;
+            }
+            set
+            {
+                ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedReference<PhoneType>("HRHiringTool.FK_CandidatePhones_PhoneType", "PhoneType").Value = value;
+            }
+        }
+        /// <summary>
+        /// There are no comments for PhoneType in the schema.
+        /// </summary>
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public global::System.Data.Objects.DataClasses.EntityReference<PhoneType> PhoneTypeReference
+        {
+            get
+            {
+                return ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedReference<PhoneType>("HRHiringTool.FK_CandidatePhones_PhoneType", "PhoneType");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.InitializeRelatedReference<PhoneType>("HRHiringTool.FK_CandidatePhones_PhoneType", "PhoneType", value);
+                }
+            }
+        }
+    }
+    /// <summary>
+    /// There are no comments for HRHiringTool.CandidateSkills in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// ID_CandidateSkill
+    /// </KeyProperties>
+    [global::System.Data.Objects.DataClasses.EdmEntityTypeAttribute(NamespaceName="HRHiringTool", Name="CandidateSkills")]
+    [global::System.Runtime.Serialization.DataContractAttribute(IsReference=true)]
+    [global::System.Serializable()]
+    public partial class CandidateSkills : global::System.Data.Objects.DataClasses.EntityObject
+    {
+        /// <summary>
+        /// Create a new CandidateSkills object.
+        /// </summary>
+        /// <param name="iD_CandidateSkill">Initial value of ID_CandidateSkill.</param>
+        public static CandidateSkills CreateCandidateSkills(long iD_CandidateSkill)
+        {
+            CandidateSkills candidateSkills = new CandidateSkills();
+            candidateSkills.ID_CandidateSkill = iD_CandidateSkill;
+            return candidateSkills;
+        }
+        /// <summary>
+        /// There are no comments for Property ID_CandidateSkill in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public long ID_CandidateSkill
+        {
+            get
+            {
+                return this._ID_CandidateSkill;
+            }
+            set
+            {
+                this.OnID_CandidateSkillChanging(value);
+                this.ReportPropertyChanging("ID_CandidateSkill");
+                this._ID_CandidateSkill = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value);
+                this.ReportPropertyChanged("ID_CandidateSkill");
+                this.OnID_CandidateSkillChanged();
+            }
+        }
+        private long _ID_CandidateSkill;
+        partial void OnID_CandidateSkillChanging(long value);
+        partial void OnID_CandidateSkillChanged();
+        /// <summary>
+        /// There are no comments for Property Score in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public global::System.Nullable<decimal> Score
+        {
+            get
+            {
+                return this._Score;
+            }
+            set
+            {
+                this.OnScoreChanging(value);
+                this.ReportPropertyChanging("Score");
+                this._Score = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value);
+                this.ReportPropertyChanged("Score");
+                this.OnScoreChanged();
+            }
+        }
+        private global::System.Nullable<decimal> _Score;
+        partial void OnScoreChanging(global::System.Nullable<decimal> value);
+        partial void OnScoreChanged();
+        /// <summary>
+        /// There are no comments for Candidate in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmRelationshipNavigationPropertyAttribute("HRHiringTool", "FK_CandidateSkills_Candidate", "Candidate")]
+        [global::System.Xml.Serialization.XmlIgnoreAttribute()]
+        [global::System.Xml.Serialization.SoapIgnoreAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public Candidate Candidate
+        {
+            get
+            {
+                return ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedReference<Candidate>("HRHiringTool.FK_CandidateSkills_Candidate", "Candidate").Value;
+            }
+            set
+            {
+                ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedReference<Candidate>("HRHiringTool.FK_CandidateSkills_Candidate", "Candidate").Value = value;
+            }
+        }
+        /// <summary>
+        /// There are no comments for Candidate in the schema.
+        /// </summary>
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public global::System.Data.Objects.DataClasses.EntityReference<Candidate> CandidateReference
+        {
+            get
+            {
+                return ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedReference<Candidate>("HRHiringTool.FK_CandidateSkills_Candidate", "Candidate");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.InitializeRelatedReference<Candidate>("HRHiringTool.FK_CandidateSkills_Candidate", "Candidate", value);
+                }
+            }
+        }
+        /// <summary>
+        /// There are no comments for Skill in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmRelationshipNavigationPropertyAttribute("HRHiringTool", "FK_CandidateSkills_Skill", "Skill")]
+        [global::System.Xml.Serialization.XmlIgnoreAttribute()]
+        [global::System.Xml.Serialization.SoapIgnoreAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public Skill Skill
+        {
+            get
+            {
+                return ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedReference<Skill>("HRHiringTool.FK_CandidateSkills_Skill", "Skill").Value;
+            }
+            set
+            {
+                ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedReference<Skill>("HRHiringTool.FK_CandidateSkills_Skill", "Skill").Value = value;
+            }
+        }
+        /// <summary>
+        /// There are no comments for Skill in the schema.
+        /// </summary>
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public global::System.Data.Objects.DataClasses.EntityReference<Skill> SkillReference
+        {
+            get
+            {
+                return ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedReference<Skill>("HRHiringTool.FK_CandidateSkills_Skill", "Skill");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.InitializeRelatedReference<Skill>("HRHiringTool.FK_CandidateSkills_Skill", "Skill", value);
+                }
+            }
+        }
+    }
+    /// <summary>
+    /// There are no comments for HRHiringTool.CandidateStatus in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// ID_Status
+    /// </KeyProperties>
+    [global::System.Data.Objects.DataClasses.EdmEntityTypeAttribute(NamespaceName="HRHiringTool", Name="CandidateStatus")]
+    [global::System.Runtime.Serialization.DataContractAttribute(IsReference=true)]
+    [global::System.Serializable()]
+    public partial class CandidateStatus : global::System.Data.Objects.DataClasses.EntityObject
+    {
+        /// <summary>
+        /// Create a new CandidateStatus object.
+        /// </summary>
+        /// <param name="iD_Status">Initial value of ID_Status.</param>
+        public static CandidateStatus CreateCandidateStatus(long iD_Status)
+        {
+            CandidateStatus candidateStatus = new CandidateStatus();
+            candidateStatus.ID_Status = iD_Status;
+            return candidateStatus;
+        }
+        /// <summary>
+        /// There are no comments for Property ID_Status in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public long ID_Status
+        {
+            get
+            {
+                return this._ID_Status;
+            }
+            set
+            {
+                this.OnID_StatusChanging(value);
+                this.ReportPropertyChanging("ID_Status");
+                this._ID_Status = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value);
+                this.ReportPropertyChanged("ID_Status");
+                this.OnID_StatusChanged();
+            }
+        }
+        private long _ID_Status;
+        partial void OnID_StatusChanging(long value);
+        partial void OnID_StatusChanged();
+        /// <summary>
+        /// There are no comments for Property Name in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public string Name
+        {
+            get
+            {
+                return this._Name;
+            }
+            set
+            {
+                this.OnNameChanging(value);
+                this.ReportPropertyChanging("Name");
+                this._Name = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value, true);
+                this.ReportPropertyChanged("Name");
+                this.OnNameChanged();
+            }
+        }
+        private string _Name;
+        partial void OnNameChanging(string value);
+        partial void OnNameChanged();
+        /// <summary>
+        /// There are no comments for Property Description in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public string Description
+        {
+            get
+            {
+                return this._Description;
+            }
+            set
+            {
+                this.OnDescriptionChanging(value);
+                this.ReportPropertyChanging("Description");
+                this._Description = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value, true);
+                this.ReportPropertyChanged("Description");
+                this.OnDescriptionChanged();
+            }
+        }
+        private string _Description;
+        partial void OnDescriptionChanging(string value);
+        partial void OnDescriptionChanged();
+        /// <summary>
+        /// There are no comments for CandidateStatusRegistry in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmRelationshipNavigationPropertyAttribute("HRHiringTool", "FK_CandidateStatusRegistry_CandidateStatus", "CandidateStatusRegistry")]
+        [global::System.Xml.Serialization.XmlIgnoreAttribute()]
+        [global::System.Xml.Serialization.SoapIgnoreAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public global::System.Data.Objects.DataClasses.EntityCollection<CandidateStatusRegistry> CandidateStatusRegistry
+        {
+            get
+            {
+                return ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedCollection<CandidateStatusRegistry>("HRHiringTool.FK_CandidateStatusRegistry_CandidateStatus", "CandidateStatusRegistry");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.InitializeRelatedCollection<CandidateStatusRegistry>("HRHiringTool.FK_CandidateStatusRegistry_CandidateStatus", "CandidateStatusRegistry", value);
+                }
+            }
+        }
+    }
+    /// <summary>
+    /// There are no comments for HRHiringTool.CandidateStatusRegistry in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// ID_StatusRegistry
+    /// </KeyProperties>
+    [global::System.Data.Objects.DataClasses.EdmEntityTypeAttribute(NamespaceName="HRHiringTool", Name="CandidateStatusRegistry")]
+    [global::System.Runtime.Serialization.DataContractAttribute(IsReference=true)]
+    [global::System.Serializable()]
+    public partial class CandidateStatusRegistry : global::System.Data.Objects.DataClasses.EntityObject
+    {
+        /// <summary>
+        /// Create a new CandidateStatusRegistry object.
+        /// </summary>
+        /// <param name="iD_StatusRegistry">Initial value of ID_StatusRegistry.</param>
+        public static CandidateStatusRegistry CreateCandidateStatusRegistry(long iD_StatusRegistry)
+        {
+            CandidateStatusRegistry candidateStatusRegistry = new CandidateStatusRegistry();
+            candidateStatusRegistry.ID_StatusRegistry = iD_StatusRegistry;
+            return candidateStatusRegistry;
+        }
+        /// <summary>
+        /// There are no comments for Property ID_StatusRegistry in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public long ID_StatusRegistry
+        {
+            get
+            {
+                return this._ID_StatusRegistry;
+            }
+            set
+            {
+                this.OnID_StatusRegistryChanging(value);
+                this.ReportPropertyChanging("ID_StatusRegistry");
+                this._ID_StatusRegistry = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value);
+                this.ReportPropertyChanged("ID_StatusRegistry");
+                this.OnID_StatusRegistryChanged();
+            }
+        }
+        private long _ID_StatusRegistry;
+        partial void OnID_StatusRegistryChanging(long value);
+        partial void OnID_StatusRegistryChanged();
+        /// <summary>
+        /// There are no comments for Property Status in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public string Status
+        {
+            get
+            {
+                return this._Status;
+            }
+            set
+            {
+                this.OnStatusChanging(value);
+                this.ReportPropertyChanging("Status");
+                this._Status = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value, true);
+                this.ReportPropertyChanged("Status");
+                this.OnStatusChanged();
+            }
+        }
+        private string _Status;
+        partial void OnStatusChanging(string value);
+        partial void OnStatusChanged();
+        /// <summary>
+        /// There are no comments for Property DateTime in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public global::System.Nullable<global::System.DateTime> DateTime
+        {
+            get
+            {
+                return this._DateTime;
+            }
+            set
+            {
+                this.OnDateTimeChanging(value);
+                this.ReportPropertyChanging("DateTime");
+                this._DateTime = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value);
+                this.ReportPropertyChanged("DateTime");
+                this.OnDateTimeChanged();
+            }
+        }
+        private global::System.Nullable<global::System.DateTime> _DateTime;
+        partial void OnDateTimeChanging(global::System.Nullable<global::System.DateTime> value);
+        partial void OnDateTimeChanged();
+        /// <summary>
+        /// There are no comments for Candidate in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmRelationshipNavigationPropertyAttribute("HRHiringTool", "FK_CandidateStatusRegistry_Candidate", "Candidate")]
+        [global::System.Xml.Serialization.XmlIgnoreAttribute()]
+        [global::System.Xml.Serialization.SoapIgnoreAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public Candidate Candidate
+        {
+            get
+            {
+                return ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedReference<Candidate>("HRHiringTool.FK_CandidateStatusRegistry_Candidate", "Candidate").Value;
+            }
+            set
+            {
+                ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedReference<Candidate>("HRHiringTool.FK_CandidateStatusRegistry_Candidate", "Candidate").Value = value;
+            }
+        }
+        /// <summary>
+        /// There are no comments for Candidate in the schema.
+        /// </summary>
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public global::System.Data.Objects.DataClasses.EntityReference<Candidate> CandidateReference
+        {
+            get
+            {
+                return ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedReference<Candidate>("HRHiringTool.FK_CandidateStatusRegistry_Candidate", "Candidate");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.InitializeRelatedReference<Candidate>("HRHiringTool.FK_CandidateStatusRegistry_Candidate", "Candidate", value);
+                }
+            }
+        }
+        /// <summary>
+        /// There are no comments for CandidateStatus in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmRelationshipNavigationPropertyAttribute("HRHiringTool", "FK_CandidateStatusRegistry_CandidateStatus", "CandidateStatus")]
+        [global::System.Xml.Serialization.XmlIgnoreAttribute()]
+        [global::System.Xml.Serialization.SoapIgnoreAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public CandidateStatus CandidateStatus
+        {
+            get
+            {
+                return ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedReference<CandidateStatus>("HRHiringTool.FK_CandidateStatusRegistry_CandidateStatus", "CandidateStatus").Value;
+            }
+            set
+            {
+                ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedReference<CandidateStatus>("HRHiringTool.FK_CandidateStatusRegistry_CandidateStatus", "CandidateStatus").Value = value;
+            }
+        }
+        /// <summary>
+        /// There are no comments for CandidateStatus in the schema.
+        /// </summary>
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public global::System.Data.Objects.DataClasses.EntityReference<CandidateStatus> CandidateStatusReference
+        {
+            get
+            {
+                return ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedReference<CandidateStatus>("HRHiringTool.FK_CandidateStatusRegistry_CandidateStatus", "CandidateStatus");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.InitializeRelatedReference<CandidateStatus>("HRHiringTool.FK_CandidateStatusRegistry_CandidateStatus", "CandidateStatus", value);
+                }
+            }
+        }
+    }
+    /// <summary>
+    /// There are no comments for HRHiringTool.Department in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// ID_Department
+    /// </KeyProperties>
+    [global::System.Data.Objects.DataClasses.EdmEntityTypeAttribute(NamespaceName="HRHiringTool", Name="Department")]
+    [global::System.Runtime.Serialization.DataContractAttribute(IsReference=true)]
+    [global::System.Serializable()]
+    public partial class Department : global::System.Data.Objects.DataClasses.EntityObject
+    {
+        /// <summary>
+        /// Create a new Department object.
+        /// </summary>
+        /// <param name="iD_Department">Initial value of ID_Department.</param>
+        public static Department CreateDepartment(long iD_Department)
+        {
+            Department department = new Department();
+            department.ID_Department = iD_Department;
+            return department;
+        }
+        /// <summary>
+        /// There are no comments for Property ID_Department in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public long ID_Department
+        {
+            get
+            {
+                return this._ID_Department;
+            }
+            set
+            {
+                this.OnID_DepartmentChanging(value);
+                this.ReportPropertyChanging("ID_Department");
+                this._ID_Department = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value);
+                this.ReportPropertyChanged("ID_Department");
+                this.OnID_DepartmentChanged();
+            }
+        }
+        private long _ID_Department;
+        partial void OnID_DepartmentChanging(long value);
+        partial void OnID_DepartmentChanged();
+        /// <summary>
+        /// There are no comments for Property Name in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public string Name
+        {
+            get
+            {
+                return this._Name;
+            }
+            set
+            {
+                this.OnNameChanging(value);
+                this.ReportPropertyChanging("Name");
+                this._Name = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value, true);
+                this.ReportPropertyChanged("Name");
+                this.OnNameChanged();
+            }
+        }
+        private string _Name;
+        partial void OnNameChanging(string value);
+        partial void OnNameChanged();
+        /// <summary>
+        /// There are no comments for Property Description in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public string Description
+        {
+            get
+            {
+                return this._Description;
+            }
+            set
+            {
+                this.OnDescriptionChanging(value);
+                this.ReportPropertyChanging("Description");
+                this._Description = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value, true);
+                this.ReportPropertyChanged("Description");
+                this.OnDescriptionChanged();
+            }
+        }
+        private string _Description;
+        partial void OnDescriptionChanging(string value);
+        partial void OnDescriptionChanged();
+        /// <summary>
+        /// There are no comments for Property Phone in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public string Phone
+        {
+            get
+            {
+                return this._Phone;
+            }
+            set
+            {
+                this.OnPhoneChanging(value);
+                this.ReportPropertyChanging("Phone");
+                this._Phone = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value, true);
+                this.ReportPropertyChanged("Phone");
+                this.OnPhoneChanged();
+            }
+        }
+        private string _Phone;
+        partial void OnPhoneChanging(string value);
+        partial void OnPhoneChanged();
+        /// <summary>
+        /// There are no comments for User in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmRelationshipNavigationPropertyAttribute("HRHiringTool", "FK_Department_User", "User")]
+        [global::System.Xml.Serialization.XmlIgnoreAttribute()]
+        [global::System.Xml.Serialization.SoapIgnoreAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public User User
+        {
+            get
+            {
+                return ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedReference<User>("HRHiringTool.FK_Department_User", "User").Value;
+            }
+            set
+            {
+                ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedReference<User>("HRHiringTool.FK_Department_User", "User").Value = value;
+            }
+        }
+        /// <summary>
+        /// There are no comments for User in the schema.
+        /// </summary>
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public global::System.Data.Objects.DataClasses.EntityReference<User> UserReference
+        {
+            get
+            {
+                return ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedReference<User>("HRHiringTool.FK_Department_User", "User");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.InitializeRelatedReference<User>("HRHiringTool.FK_Department_User", "User", value);
+                }
+            }
+        }
+        /// <summary>
+        /// There are no comments for JobOpening in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmRelationshipNavigationPropertyAttribute("HRHiringTool", "FK_JobOpening_Department", "JobOpening")]
+        [global::System.Xml.Serialization.XmlIgnoreAttribute()]
+        [global::System.Xml.Serialization.SoapIgnoreAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public global::System.Data.Objects.DataClasses.EntityCollection<JobOpening> JobOpening
+        {
+            get
+            {
+                return ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedCollection<JobOpening>("HRHiringTool.FK_JobOpening_Department", "JobOpening");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.InitializeRelatedCollection<JobOpening>("HRHiringTool.FK_JobOpening_Department", "JobOpening", value);
+                }
+            }
+        }
+    }
+    /// <summary>
+    /// There are no comments for HRHiringTool.Document in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// ID_Document
+    /// </KeyProperties>
+    [global::System.Data.Objects.DataClasses.EdmEntityTypeAttribute(NamespaceName="HRHiringTool", Name="Document")]
+    [global::System.Runtime.Serialization.DataContractAttribute(IsReference=true)]
+    [global::System.Serializable()]
+    public partial class Document : global::System.Data.Objects.DataClasses.EntityObject
+    {
+        /// <summary>
+        /// Create a new Document object.
+        /// </summary>
+        /// <param name="iD_Document">Initial value of ID_Document.</param>
+        /// <param name="name">Initial value of Name.</param>
+        public static Document CreateDocument(long iD_Document, string name)
+        {
+            Document document = new Document();
+            document.ID_Document = iD_Document;
+            document.Name = name;
+            return document;
+        }
+        /// <summary>
+        /// There are no comments for Property ID_Document in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public long ID_Document
+        {
+            get
+            {
+                return this._ID_Document;
+            }
+            set
+            {
+                this.OnID_DocumentChanging(value);
+                this.ReportPropertyChanging("ID_Document");
+                this._ID_Document = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value);
+                this.ReportPropertyChanged("ID_Document");
+                this.OnID_DocumentChanged();
+            }
+        }
+        private long _ID_Document;
+        partial void OnID_DocumentChanging(long value);
+        partial void OnID_DocumentChanged();
+        /// <summary>
+        /// There are no comments for Property Name in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute(IsNullable=false)]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public string Name
+        {
+            get
+            {
+                return this._Name;
+            }
+            set
+            {
+                this.OnNameChanging(value);
+                this.ReportPropertyChanging("Name");
+                this._Name = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value, false);
+                this.ReportPropertyChanged("Name");
+                this.OnNameChanged();
+            }
+        }
+        private string _Name;
+        partial void OnNameChanging(string value);
+        partial void OnNameChanged();
+        /// <summary>
+        /// There are no comments for Property Description in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public string Description
+        {
+            get
+            {
+                return this._Description;
+            }
+            set
+            {
+                this.OnDescriptionChanging(value);
+                this.ReportPropertyChanging("Description");
+                this._Description = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value, true);
+                this.ReportPropertyChanged("Description");
+                this.OnDescriptionChanged();
+            }
+        }
+        private string _Description;
+        partial void OnDescriptionChanging(string value);
+        partial void OnDescriptionChanged();
+        /// <summary>
+        /// There are no comments for CandidateDocuments in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmRelationshipNavigationPropertyAttribute("HRHiringTool", "FK_CandidateDocuments_Document", "CandidateDocuments")]
+        [global::System.Xml.Serialization.XmlIgnoreAttribute()]
+        [global::System.Xml.Serialization.SoapIgnoreAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public global::System.Data.Objects.DataClasses.EntityCollection<CandidateDocuments> CandidateDocuments
+        {
+            get
+            {
+                return ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedCollection<CandidateDocuments>("HRHiringTool.FK_CandidateDocuments_Document", "CandidateDocuments");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.InitializeRelatedCollection<CandidateDocuments>("HRHiringTool.FK_CandidateDocuments_Document", "CandidateDocuments", value);
+                }
+            }
+        }
+    }
+    /// <summary>
+    /// There are no comments for HRHiringTool.JobOpening in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// ID_Opening
+    /// </KeyProperties>
+    [global::System.Data.Objects.DataClasses.EdmEntityTypeAttribute(NamespaceName="HRHiringTool", Name="JobOpening")]
+    [global::System.Runtime.Serialization.DataContractAttribute(IsReference=true)]
+    [global::System.Serializable()]
+    public partial class JobOpening : global::System.Data.Objects.DataClasses.EntityObject
+    {
+        /// <summary>
+        /// Create a new JobOpening object.
+        /// </summary>
+        /// <param name="iD_Opening">Initial value of ID_Opening.</param>
+        public static JobOpening CreateJobOpening(long iD_Opening)
+        {
+            JobOpening jobOpening = new JobOpening();
+            jobOpening.ID_Opening = iD_Opening;
+            return jobOpening;
+        }
+        /// <summary>
+        /// There are no comments for Property ID_Opening in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public long ID_Opening
+        {
+            get
+            {
+                return this._ID_Opening;
+            }
+            set
+            {
+                this.OnID_OpeningChanging(value);
+                this.ReportPropertyChanging("ID_Opening");
+                this._ID_Opening = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value);
+                this.ReportPropertyChanged("ID_Opening");
+                this.OnID_OpeningChanged();
+            }
+        }
+        private long _ID_Opening;
+        partial void OnID_OpeningChanging(long value);
+        partial void OnID_OpeningChanged();
+        /// <summary>
+        /// There are no comments for Property Deadline in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public global::System.Nullable<global::System.DateTime> Deadline
+        {
+            get
+            {
+                return this._Deadline;
+            }
+            set
+            {
+                this.OnDeadlineChanging(value);
+                this.ReportPropertyChanging("Deadline");
+                this._Deadline = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value);
+                this.ReportPropertyChanged("Deadline");
+                this.OnDeadlineChanged();
+            }
+        }
+        private global::System.Nullable<global::System.DateTime> _Deadline;
+        partial void OnDeadlineChanging(global::System.Nullable<global::System.DateTime> value);
+        partial void OnDeadlineChanged();
+        /// <summary>
+        /// There are no comments for Property Quantity in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public global::System.Nullable<int> Quantity
+        {
+            get
+            {
+                return this._Quantity;
+            }
+            set
+            {
+                this.OnQuantityChanging(value);
+                this.ReportPropertyChanging("Quantity");
+                this._Quantity = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value);
+                this.ReportPropertyChanged("Quantity");
+                this.OnQuantityChanged();
+            }
+        }
+        private global::System.Nullable<int> _Quantity;
+        partial void OnQuantityChanging(global::System.Nullable<int> value);
+        partial void OnQuantityChanged();
+        /// <summary>
+        /// There are no comments for Candidate in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmRelationshipNavigationPropertyAttribute("HRHiringTool", "FK_Candidate_JobOpening", "Candidate")]
+        [global::System.Xml.Serialization.XmlIgnoreAttribute()]
+        [global::System.Xml.Serialization.SoapIgnoreAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public global::System.Data.Objects.DataClasses.EntityCollection<Candidate> Candidate
+        {
+            get
+            {
+                return ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedCollection<Candidate>("HRHiringTool.FK_Candidate_JobOpening", "Candidate");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.InitializeRelatedCollection<Candidate>("HRHiringTool.FK_Candidate_JobOpening", "Candidate", value);
+                }
+            }
+        }
+        /// <summary>
+        /// There are no comments for Department in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmRelationshipNavigationPropertyAttribute("HRHiringTool", "FK_JobOpening_Department", "Department")]
+        [global::System.Xml.Serialization.XmlIgnoreAttribute()]
+        [global::System.Xml.Serialization.SoapIgnoreAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public Department Department
+        {
+            get
+            {
+                return ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedReference<Department>("HRHiringTool.FK_JobOpening_Department", "Department").Value;
+            }
+            set
+            {
+                ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedReference<Department>("HRHiringTool.FK_JobOpening_Department", "Department").Value = value;
+            }
+        }
+        /// <summary>
+        /// There are no comments for Department in the schema.
+        /// </summary>
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public global::System.Data.Objects.DataClasses.EntityReference<Department> DepartmentReference
+        {
+            get
+            {
+                return ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedReference<Department>("HRHiringTool.FK_JobOpening_Department", "Department");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.InitializeRelatedReference<Department>("HRHiringTool.FK_JobOpening_Department", "Department", value);
+                }
+            }
+        }
+        /// <summary>
+        /// There are no comments for JobPosition in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmRelationshipNavigationPropertyAttribute("HRHiringTool", "FK_JobOpening_JobPosition", "JobPosition")]
+        [global::System.Xml.Serialization.XmlIgnoreAttribute()]
+        [global::System.Xml.Serialization.SoapIgnoreAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public JobPosition JobPosition
+        {
+            get
+            {
+                return ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedReference<JobPosition>("HRHiringTool.FK_JobOpening_JobPosition", "JobPosition").Value;
+            }
+            set
+            {
+                ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedReference<JobPosition>("HRHiringTool.FK_JobOpening_JobPosition", "JobPosition").Value = value;
+            }
+        }
+        /// <summary>
+        /// There are no comments for JobPosition in the schema.
+        /// </summary>
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public global::System.Data.Objects.DataClasses.EntityReference<JobPosition> JobPositionReference
+        {
+            get
+            {
+                return ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedReference<JobPosition>("HRHiringTool.FK_JobOpening_JobPosition", "JobPosition");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.InitializeRelatedReference<JobPosition>("HRHiringTool.FK_JobOpening_JobPosition", "JobPosition", value);
+                }
+            }
+        }
+        /// <summary>
+        /// There are no comments for OpeningCandidates in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmRelationshipNavigationPropertyAttribute("HRHiringTool", "FK_OpeningCandidates_JobOpening", "OpeningCandidates")]
+        [global::System.Xml.Serialization.XmlIgnoreAttribute()]
+        [global::System.Xml.Serialization.SoapIgnoreAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public global::System.Data.Objects.DataClasses.EntityCollection<OpeningCandidates> OpeningCandidates
+        {
+            get
+            {
+                return ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedCollection<OpeningCandidates>("HRHiringTool.FK_OpeningCandidates_JobOpening", "OpeningCandidates");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.InitializeRelatedCollection<OpeningCandidates>("HRHiringTool.FK_OpeningCandidates_JobOpening", "OpeningCandidates", value);
+                }
+            }
+        }
+        /// <summary>
+        /// There are no comments for OpeningNotes in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmRelationshipNavigationPropertyAttribute("HRHiringTool", "FK_OpeningNotes_JobOpening", "OpeningNotes")]
+        [global::System.Xml.Serialization.XmlIgnoreAttribute()]
+        [global::System.Xml.Serialization.SoapIgnoreAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public global::System.Data.Objects.DataClasses.EntityCollection<OpeningNotes> OpeningNotes
+        {
+            get
+            {
+                return ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedCollection<OpeningNotes>("HRHiringTool.FK_OpeningNotes_JobOpening", "OpeningNotes");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.InitializeRelatedCollection<OpeningNotes>("HRHiringTool.FK_OpeningNotes_JobOpening", "OpeningNotes", value);
+                }
+            }
+        }
+    }
+    /// <summary>
+    /// There are no comments for HRHiringTool.JobPosition in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// ID_JobPosition
+    /// </KeyProperties>
+    [global::System.Data.Objects.DataClasses.EdmEntityTypeAttribute(NamespaceName="HRHiringTool", Name="JobPosition")]
+    [global::System.Runtime.Serialization.DataContractAttribute(IsReference=true)]
+    [global::System.Serializable()]
+    public partial class JobPosition : global::System.Data.Objects.DataClasses.EntityObject
+    {
+        /// <summary>
+        /// Create a new JobPosition object.
+        /// </summary>
+        /// <param name="iD_JobPosition">Initial value of ID_JobPosition.</param>
+        public static JobPosition CreateJobPosition(long iD_JobPosition)
+        {
+            JobPosition jobPosition = new JobPosition();
+            jobPosition.ID_JobPosition = iD_JobPosition;
+            return jobPosition;
+        }
+        /// <summary>
+        /// There are no comments for Property ID_JobPosition in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public long ID_JobPosition
+        {
+            get
+            {
+                return this._ID_JobPosition;
+            }
+            set
+            {
+                this.OnID_JobPositionChanging(value);
+                this.ReportPropertyChanging("ID_JobPosition");
+                this._ID_JobPosition = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value);
+                this.ReportPropertyChanged("ID_JobPosition");
+                this.OnID_JobPositionChanged();
+            }
+        }
+        private long _ID_JobPosition;
+        partial void OnID_JobPositionChanging(long value);
+        partial void OnID_JobPositionChanged();
+        /// <summary>
+        /// There are no comments for Property Name in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public string Name
+        {
+            get
+            {
+                return this._Name;
+            }
+            set
+            {
+                this.OnNameChanging(value);
+                this.ReportPropertyChanging("Name");
+                this._Name = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value, true);
+                this.ReportPropertyChanged("Name");
+                this.OnNameChanged();
+            }
+        }
+        private string _Name;
+        partial void OnNameChanging(string value);
+        partial void OnNameChanged();
+        /// <summary>
+        /// There are no comments for Property Status in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public string Status
+        {
+            get
+            {
+                return this._Status;
+            }
+            set
+            {
+                this.OnStatusChanging(value);
+                this.ReportPropertyChanging("Status");
+                this._Status = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value, true);
+                this.ReportPropertyChanged("Status");
+                this.OnStatusChanged();
+            }
+        }
+        private string _Status;
+        partial void OnStatusChanging(string value);
+        partial void OnStatusChanged();
+        /// <summary>
+        /// There are no comments for JobOpening in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmRelationshipNavigationPropertyAttribute("HRHiringTool", "FK_JobOpening_JobPosition", "JobOpening")]
+        [global::System.Xml.Serialization.XmlIgnoreAttribute()]
+        [global::System.Xml.Serialization.SoapIgnoreAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public global::System.Data.Objects.DataClasses.EntityCollection<JobOpening> JobOpening
+        {
+            get
+            {
+                return ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedCollection<JobOpening>("HRHiringTool.FK_JobOpening_JobPosition", "JobOpening");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.InitializeRelatedCollection<JobOpening>("HRHiringTool.FK_JobOpening_JobPosition", "JobOpening", value);
+                }
+            }
+        }
+        /// <summary>
+        /// There are no comments for JobPositionSkills in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmRelationshipNavigationPropertyAttribute("HRHiringTool", "FK_JobPositionSkills_JobPosition", "JobPositionSkills")]
+        [global::System.Xml.Serialization.XmlIgnoreAttribute()]
+        [global::System.Xml.Serialization.SoapIgnoreAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public global::System.Data.Objects.DataClasses.EntityCollection<JobPositionSkills> JobPositionSkills
+        {
+            get
+            {
+                return ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedCollection<JobPositionSkills>("HRHiringTool.FK_JobPositionSkills_JobPosition", "JobPositionSkills");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.InitializeRelatedCollection<JobPositionSkills>("HRHiringTool.FK_JobPositionSkills_JobPosition", "JobPositionSkills", value);
+                }
+            }
+        }
+    }
+    /// <summary>
+    /// There are no comments for HRHiringTool.JobPositionSkills in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// ID_PositionSkill
+    /// </KeyProperties>
+    [global::System.Data.Objects.DataClasses.EdmEntityTypeAttribute(NamespaceName="HRHiringTool", Name="JobPositionSkills")]
+    [global::System.Runtime.Serialization.DataContractAttribute(IsReference=true)]
+    [global::System.Serializable()]
+    public partial class JobPositionSkills : global::System.Data.Objects.DataClasses.EntityObject
+    {
+        /// <summary>
+        /// Create a new JobPositionSkills object.
+        /// </summary>
+        /// <param name="iD_PositionSkill">Initial value of ID_PositionSkill.</param>
+        public static JobPositionSkills CreateJobPositionSkills(long iD_PositionSkill)
+        {
+            JobPositionSkills jobPositionSkills = new JobPositionSkills();
+            jobPositionSkills.ID_PositionSkill = iD_PositionSkill;
+            return jobPositionSkills;
+        }
+        /// <summary>
+        /// There are no comments for Property ID_PositionSkill in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public long ID_PositionSkill
+        {
+            get
+            {
+                return this._ID_PositionSkill;
+            }
+            set
+            {
+                this.OnID_PositionSkillChanging(value);
+                this.ReportPropertyChanging("ID_PositionSkill");
+                this._ID_PositionSkill = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value);
+                this.ReportPropertyChanged("ID_PositionSkill");
+                this.OnID_PositionSkillChanged();
+            }
+        }
+        private long _ID_PositionSkill;
+        partial void OnID_PositionSkillChanging(long value);
+        partial void OnID_PositionSkillChanged();
+        /// <summary>
+        /// There are no comments for JobPosition in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmRelationshipNavigationPropertyAttribute("HRHiringTool", "FK_JobPositionSkills_JobPosition", "JobPosition")]
+        [global::System.Xml.Serialization.XmlIgnoreAttribute()]
+        [global::System.Xml.Serialization.SoapIgnoreAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public JobPosition JobPosition
+        {
+            get
+            {
+                return ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedReference<JobPosition>("HRHiringTool.FK_JobPositionSkills_JobPosition", "JobPosition").Value;
+            }
+            set
+            {
+                ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedReference<JobPosition>("HRHiringTool.FK_JobPositionSkills_JobPosition", "JobPosition").Value = value;
+            }
+        }
+        /// <summary>
+        /// There are no comments for JobPosition in the schema.
+        /// </summary>
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public global::System.Data.Objects.DataClasses.EntityReference<JobPosition> JobPositionReference
+        {
+            get
+            {
+                return ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedReference<JobPosition>("HRHiringTool.FK_JobPositionSkills_JobPosition", "JobPosition");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.InitializeRelatedReference<JobPosition>("HRHiringTool.FK_JobPositionSkills_JobPosition", "JobPosition", value);
+                }
+            }
+        }
+        /// <summary>
+        /// There are no comments for Skill in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmRelationshipNavigationPropertyAttribute("HRHiringTool", "FK_JobPositionSkills_Skill", "Skill")]
+        [global::System.Xml.Serialization.XmlIgnoreAttribute()]
+        [global::System.Xml.Serialization.SoapIgnoreAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public Skill Skill
+        {
+            get
+            {
+                return ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedReference<Skill>("HRHiringTool.FK_JobPositionSkills_Skill", "Skill").Value;
+            }
+            set
+            {
+                ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedReference<Skill>("HRHiringTool.FK_JobPositionSkills_Skill", "Skill").Value = value;
+            }
+        }
+        /// <summary>
+        /// There are no comments for Skill in the schema.
+        /// </summary>
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public global::System.Data.Objects.DataClasses.EntityReference<Skill> SkillReference
+        {
+            get
+            {
+                return ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedReference<Skill>("HRHiringTool.FK_JobPositionSkills_Skill", "Skill");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.InitializeRelatedReference<Skill>("HRHiringTool.FK_JobPositionSkills_Skill", "Skill", value);
+                }
+            }
+        }
+    }
+    /// <summary>
+    /// There are no comments for HRHiringTool.Notes in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// ID_Note
+    /// </KeyProperties>
+    [global::System.Data.Objects.DataClasses.EdmEntityTypeAttribute(NamespaceName="HRHiringTool", Name="Notes")]
+    [global::System.Runtime.Serialization.DataContractAttribute(IsReference=true)]
+    [global::System.Serializable()]
+    public partial class Notes : global::System.Data.Objects.DataClasses.EntityObject
+    {
+        /// <summary>
+        /// Create a new Notes object.
+        /// </summary>
+        /// <param name="iD_Note">Initial value of ID_Note.</param>
+        /// <param name="dateTime">Initial value of DateTime.</param>
+        public static Notes CreateNotes(long iD_Note, global::System.DateTime dateTime)
+        {
+            Notes notes = new Notes();
+            notes.ID_Note = iD_Note;
+            notes.DateTime = dateTime;
+            return notes;
+        }
+        /// <summary>
+        /// There are no comments for Property ID_Note in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public long ID_Note
+        {
+            get
+            {
+                return this._ID_Note;
+            }
+            set
+            {
+                this.OnID_NoteChanging(value);
+                this.ReportPropertyChanging("ID_Note");
+                this._ID_Note = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value);
+                this.ReportPropertyChanged("ID_Note");
+                this.OnID_NoteChanged();
+            }
+        }
+        private long _ID_Note;
+        partial void OnID_NoteChanging(long value);
+        partial void OnID_NoteChanged();
+        /// <summary>
+        /// There are no comments for Property Note in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public string Note
+        {
+            get
+            {
+                return this._Note;
+            }
+            set
+            {
+                this.OnNoteChanging(value);
+                this.ReportPropertyChanging("Note");
+                this._Note = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value, true);
+                this.ReportPropertyChanged("Note");
+                this.OnNoteChanged();
+            }
+        }
+        private string _Note;
+        partial void OnNoteChanging(string value);
+        partial void OnNoteChanged();
+        /// <summary>
+        /// There are no comments for Property DateTime in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute(IsNullable=false)]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public global::System.DateTime DateTime
+        {
+            get
+            {
+                return this._DateTime;
+            }
+            set
+            {
+                this.OnDateTimeChanging(value);
+                this.ReportPropertyChanging("DateTime");
+                this._DateTime = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value);
+                this.ReportPropertyChanged("DateTime");
+                this.OnDateTimeChanged();
+            }
+        }
+        private global::System.DateTime _DateTime;
+        partial void OnDateTimeChanging(global::System.DateTime value);
+        partial void OnDateTimeChanged();
+        /// <summary>
+        /// There are no comments for Candidate in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmRelationshipNavigationPropertyAttribute("HRHiringTool", "FK_Notes_Candidate", "Candidate")]
+        [global::System.Xml.Serialization.XmlIgnoreAttribute()]
+        [global::System.Xml.Serialization.SoapIgnoreAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public Candidate Candidate
+        {
+            get
+            {
+                return ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedReference<Candidate>("HRHiringTool.FK_Notes_Candidate", "Candidate").Value;
+            }
+            set
+            {
+                ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedReference<Candidate>("HRHiringTool.FK_Notes_Candidate", "Candidate").Value = value;
+            }
+        }
+        /// <summary>
+        /// There are no comments for Candidate in the schema.
+        /// </summary>
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public global::System.Data.Objects.DataClasses.EntityReference<Candidate> CandidateReference
+        {
+            get
+            {
+                return ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedReference<Candidate>("HRHiringTool.FK_Notes_Candidate", "Candidate");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.InitializeRelatedReference<Candidate>("HRHiringTool.FK_Notes_Candidate", "Candidate", value);
+                }
+            }
+        }
+        /// <summary>
+        /// There are no comments for User in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmRelationshipNavigationPropertyAttribute("HRHiringTool", "FK_Notes_User", "User")]
+        [global::System.Xml.Serialization.XmlIgnoreAttribute()]
+        [global::System.Xml.Serialization.SoapIgnoreAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public User User
+        {
+            get
+            {
+                return ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedReference<User>("HRHiringTool.FK_Notes_User", "User").Value;
+            }
+            set
+            {
+                ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedReference<User>("HRHiringTool.FK_Notes_User", "User").Value = value;
+            }
+        }
+        /// <summary>
+        /// There are no comments for User in the schema.
+        /// </summary>
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public global::System.Data.Objects.DataClasses.EntityReference<User> UserReference
+        {
+            get
+            {
+                return ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedReference<User>("HRHiringTool.FK_Notes_User", "User");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.InitializeRelatedReference<User>("HRHiringTool.FK_Notes_User", "User", value);
+                }
+            }
+        }
+    }
+    /// <summary>
+    /// There are no comments for HRHiringTool.OpeningCandidates in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// ID_OpeningCandidate
+    /// </KeyProperties>
+    [global::System.Data.Objects.DataClasses.EdmEntityTypeAttribute(NamespaceName="HRHiringTool", Name="OpeningCandidates")]
+    [global::System.Runtime.Serialization.DataContractAttribute(IsReference=true)]
+    [global::System.Serializable()]
+    public partial class OpeningCandidates : global::System.Data.Objects.DataClasses.EntityObject
+    {
+        /// <summary>
+        /// Create a new OpeningCandidates object.
+        /// </summary>
+        /// <param name="iD_OpeningCandidate">Initial value of ID_OpeningCandidate.</param>
+        public static OpeningCandidates CreateOpeningCandidates(long iD_OpeningCandidate)
+        {
+            OpeningCandidates openingCandidates = new OpeningCandidates();
+            openingCandidates.ID_OpeningCandidate = iD_OpeningCandidate;
+            return openingCandidates;
+        }
+        /// <summary>
+        /// There are no comments for Property ID_OpeningCandidate in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public long ID_OpeningCandidate
+        {
+            get
+            {
+                return this._ID_OpeningCandidate;
+            }
+            set
+            {
+                this.OnID_OpeningCandidateChanging(value);
+                this.ReportPropertyChanging("ID_OpeningCandidate");
+                this._ID_OpeningCandidate = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value);
+                this.ReportPropertyChanged("ID_OpeningCandidate");
+                this.OnID_OpeningCandidateChanged();
+            }
+        }
+        private long _ID_OpeningCandidate;
+        partial void OnID_OpeningCandidateChanging(long value);
+        partial void OnID_OpeningCandidateChanged();
+        /// <summary>
+        /// There are no comments for Candidate in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmRelationshipNavigationPropertyAttribute("HRHiringTool", "FK_OpeningCandidates_Candidate", "Candidate")]
+        [global::System.Xml.Serialization.XmlIgnoreAttribute()]
+        [global::System.Xml.Serialization.SoapIgnoreAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public Candidate Candidate
+        {
+            get
+            {
+                return ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedReference<Candidate>("HRHiringTool.FK_OpeningCandidates_Candidate", "Candidate").Value;
+            }
+            set
+            {
+                ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedReference<Candidate>("HRHiringTool.FK_OpeningCandidates_Candidate", "Candidate").Value = value;
+            }
+        }
+        /// <summary>
+        /// There are no comments for Candidate in the schema.
+        /// </summary>
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public global::System.Data.Objects.DataClasses.EntityReference<Candidate> CandidateReference
+        {
+            get
+            {
+                return ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedReference<Candidate>("HRHiringTool.FK_OpeningCandidates_Candidate", "Candidate");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.InitializeRelatedReference<Candidate>("HRHiringTool.FK_OpeningCandidates_Candidate", "Candidate", value);
+                }
+            }
+        }
+        /// <summary>
+        /// There are no comments for CandidateInOpeningStatusRegistry in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmRelationshipNavigationPropertyAttribute("HRHiringTool", "FK_CandidateInOpeningStatusRegistry_OpeningCandidates", "CandidateInOpeningStatusRegistry")]
+        [global::System.Xml.Serialization.XmlIgnoreAttribute()]
+        [global::System.Xml.Serialization.SoapIgnoreAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public global::System.Data.Objects.DataClasses.EntityCollection<CandidateInOpeningStatusRegistry> CandidateInOpeningStatusRegistry
+        {
+            get
+            {
+                return ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedCollection<CandidateInOpeningStatusRegistry>("HRHiringTool.FK_CandidateInOpeningStatusRegistry_OpeningCandidates", "CandidateInOpeningStatusRegistry");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.InitializeRelatedCollection<CandidateInOpeningStatusRegistry>("HRHiringTool.FK_CandidateInOpeningStatusRegistry_OpeningCandidates", "CandidateInOpeningStatusRegistry", value);
+                }
+            }
+        }
+        /// <summary>
+        /// There are no comments for JobOpening in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmRelationshipNavigationPropertyAttribute("HRHiringTool", "FK_OpeningCandidates_JobOpening", "JobOpening")]
+        [global::System.Xml.Serialization.XmlIgnoreAttribute()]
+        [global::System.Xml.Serialization.SoapIgnoreAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public JobOpening JobOpening
+        {
+            get
+            {
+                return ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedReference<JobOpening>("HRHiringTool.FK_OpeningCandidates_JobOpening", "JobOpening").Value;
+            }
+            set
+            {
+                ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedReference<JobOpening>("HRHiringTool.FK_OpeningCandidates_JobOpening", "JobOpening").Value = value;
+            }
+        }
+        /// <summary>
+        /// There are no comments for JobOpening in the schema.
+        /// </summary>
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public global::System.Data.Objects.DataClasses.EntityReference<JobOpening> JobOpeningReference
+        {
+            get
+            {
+                return ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedReference<JobOpening>("HRHiringTool.FK_OpeningCandidates_JobOpening", "JobOpening");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.InitializeRelatedReference<JobOpening>("HRHiringTool.FK_OpeningCandidates_JobOpening", "JobOpening", value);
+                }
+            }
+        }
+    }
+    /// <summary>
+    /// There are no comments for HRHiringTool.OpeningNotes in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// ID_Note
+    /// </KeyProperties>
+    [global::System.Data.Objects.DataClasses.EdmEntityTypeAttribute(NamespaceName="HRHiringTool", Name="OpeningNotes")]
+    [global::System.Runtime.Serialization.DataContractAttribute(IsReference=true)]
+    [global::System.Serializable()]
+    public partial class OpeningNotes : global::System.Data.Objects.DataClasses.EntityObject
+    {
+        /// <summary>
+        /// Create a new OpeningNotes object.
+        /// </summary>
+        /// <param name="iD_Note">Initial value of ID_Note.</param>
+        public static OpeningNotes CreateOpeningNotes(long iD_Note)
+        {
+            OpeningNotes openingNotes = new OpeningNotes();
+            openingNotes.ID_Note = iD_Note;
+            return openingNotes;
+        }
+        /// <summary>
+        /// There are no comments for Property ID_Note in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public long ID_Note
+        {
+            get
+            {
+                return this._ID_Note;
+            }
+            set
+            {
+                this.OnID_NoteChanging(value);
+                this.ReportPropertyChanging("ID_Note");
+                this._ID_Note = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value);
+                this.ReportPropertyChanged("ID_Note");
+                this.OnID_NoteChanged();
+            }
+        }
+        private long _ID_Note;
+        partial void OnID_NoteChanging(long value);
+        partial void OnID_NoteChanged();
+        /// <summary>
+        /// There are no comments for Property Note in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public string Note
+        {
+            get
+            {
+                return this._Note;
+            }
+            set
+            {
+                this.OnNoteChanging(value);
+                this.ReportPropertyChanging("Note");
+                this._Note = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value, true);
+                this.ReportPropertyChanged("Note");
+                this.OnNoteChanged();
+            }
+        }
+        private string _Note;
+        partial void OnNoteChanging(string value);
+        partial void OnNoteChanged();
+        /// <summary>
+        /// There are no comments for Property DateTime in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public global::System.Nullable<global::System.DateTime> DateTime
+        {
+            get
+            {
+                return this._DateTime;
+            }
+            set
+            {
+                this.OnDateTimeChanging(value);
+                this.ReportPropertyChanging("DateTime");
+                this._DateTime = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value);
+                this.ReportPropertyChanged("DateTime");
+                this.OnDateTimeChanged();
+            }
+        }
+        private global::System.Nullable<global::System.DateTime> _DateTime;
+        partial void OnDateTimeChanging(global::System.Nullable<global::System.DateTime> value);
+        partial void OnDateTimeChanged();
+        /// <summary>
+        /// There are no comments for JobOpening in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmRelationshipNavigationPropertyAttribute("HRHiringTool", "FK_OpeningNotes_JobOpening", "JobOpening")]
+        [global::System.Xml.Serialization.XmlIgnoreAttribute()]
+        [global::System.Xml.Serialization.SoapIgnoreAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public JobOpening JobOpening
+        {
+            get
+            {
+                return ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedReference<JobOpening>("HRHiringTool.FK_OpeningNotes_JobOpening", "JobOpening").Value;
+            }
+            set
+            {
+                ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedReference<JobOpening>("HRHiringTool.FK_OpeningNotes_JobOpening", "JobOpening").Value = value;
+            }
+        }
+        /// <summary>
+        /// There are no comments for JobOpening in the schema.
+        /// </summary>
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public global::System.Data.Objects.DataClasses.EntityReference<JobOpening> JobOpeningReference
+        {
+            get
+            {
+                return ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedReference<JobOpening>("HRHiringTool.FK_OpeningNotes_JobOpening", "JobOpening");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.InitializeRelatedReference<JobOpening>("HRHiringTool.FK_OpeningNotes_JobOpening", "JobOpening", value);
+                }
+            }
+        }
+        /// <summary>
+        /// There are no comments for User in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmRelationshipNavigationPropertyAttribute("HRHiringTool", "FK_OpeningNotes_User", "User")]
+        [global::System.Xml.Serialization.XmlIgnoreAttribute()]
+        [global::System.Xml.Serialization.SoapIgnoreAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public User User
+        {
+            get
+            {
+                return ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedReference<User>("HRHiringTool.FK_OpeningNotes_User", "User").Value;
+            }
+            set
+            {
+                ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedReference<User>("HRHiringTool.FK_OpeningNotes_User", "User").Value = value;
+            }
+        }
+        /// <summary>
+        /// There are no comments for User in the schema.
+        /// </summary>
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public global::System.Data.Objects.DataClasses.EntityReference<User> UserReference
+        {
+            get
+            {
+                return ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedReference<User>("HRHiringTool.FK_OpeningNotes_User", "User");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.InitializeRelatedReference<User>("HRHiringTool.FK_OpeningNotes_User", "User", value);
+                }
+            }
+        }
+    }
+    /// <summary>
+    /// There are no comments for HRHiringTool.PhoneType in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// ID_PhoneType
+    /// </KeyProperties>
+    [global::System.Data.Objects.DataClasses.EdmEntityTypeAttribute(NamespaceName="HRHiringTool", Name="PhoneType")]
+    [global::System.Runtime.Serialization.DataContractAttribute(IsReference=true)]
+    [global::System.Serializable()]
+    public partial class PhoneType : global::System.Data.Objects.DataClasses.EntityObject
+    {
+        /// <summary>
+        /// Create a new PhoneType object.
+        /// </summary>
+        /// <param name="iD_PhoneType">Initial value of ID_PhoneType.</param>
+        public static PhoneType CreatePhoneType(long iD_PhoneType)
+        {
+            PhoneType phoneType = new PhoneType();
+            phoneType.ID_PhoneType = iD_PhoneType;
+            return phoneType;
+        }
+        /// <summary>
+        /// There are no comments for Property ID_PhoneType in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public long ID_PhoneType
+        {
+            get
+            {
+                return this._ID_PhoneType;
+            }
+            set
+            {
+                this.OnID_PhoneTypeChanging(value);
+                this.ReportPropertyChanging("ID_PhoneType");
+                this._ID_PhoneType = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value);
+                this.ReportPropertyChanged("ID_PhoneType");
+                this.OnID_PhoneTypeChanged();
+            }
+        }
+        private long _ID_PhoneType;
+        partial void OnID_PhoneTypeChanging(long value);
+        partial void OnID_PhoneTypeChanged();
+        /// <summary>
+        /// There are no comments for Property Type in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public string Type
+        {
+            get
+            {
+                return this._Type;
+            }
+            set
+            {
+                this.OnTypeChanging(value);
+                this.ReportPropertyChanging("Type");
+                this._Type = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value, true);
+                this.ReportPropertyChanged("Type");
+                this.OnTypeChanged();
+            }
+        }
+        private string _Type;
+        partial void OnTypeChanging(string value);
+        partial void OnTypeChanged();
+        /// <summary>
+        /// There are no comments for CandidatePhones in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmRelationshipNavigationPropertyAttribute("HRHiringTool", "FK_CandidatePhones_PhoneType", "CandidatePhones")]
+        [global::System.Xml.Serialization.XmlIgnoreAttribute()]
+        [global::System.Xml.Serialization.SoapIgnoreAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public global::System.Data.Objects.DataClasses.EntityCollection<CandidatePhones> CandidatePhones
+        {
+            get
+            {
+                return ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedCollection<CandidatePhones>("HRHiringTool.FK_CandidatePhones_PhoneType", "CandidatePhones");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.InitializeRelatedCollection<CandidatePhones>("HRHiringTool.FK_CandidatePhones_PhoneType", "CandidatePhones", value);
+                }
+            }
+        }
+    }
+    /// <summary>
+    /// There are no comments for HRHiringTool.Role in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// ID_Rol
+    /// </KeyProperties>
+    [global::System.Data.Objects.DataClasses.EdmEntityTypeAttribute(NamespaceName="HRHiringTool", Name="Role")]
+    [global::System.Runtime.Serialization.DataContractAttribute(IsReference=true)]
+    [global::System.Serializable()]
+    public partial class Role : global::System.Data.Objects.DataClasses.EntityObject
+    {
+        /// <summary>
+        /// Create a new Role object.
+        /// </summary>
+        /// <param name="iD_Rol">Initial value of ID_Rol.</param>
+        /// <param name="name">Initial value of Name.</param>
+        public static Role CreateRole(long iD_Rol, string name)
+        {
+            Role role = new Role();
+            role.ID_Rol = iD_Rol;
+            role.Name = name;
+            return role;
+        }
+        /// <summary>
+        /// There are no comments for Property ID_Rol in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public long ID_Rol
+        {
+            get
+            {
+                return this._ID_Rol;
+            }
+            set
+            {
+                this.OnID_RolChanging(value);
+                this.ReportPropertyChanging("ID_Rol");
+                this._ID_Rol = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value);
+                this.ReportPropertyChanged("ID_Rol");
+                this.OnID_RolChanged();
+            }
+        }
+        private long _ID_Rol;
+        partial void OnID_RolChanging(long value);
+        partial void OnID_RolChanged();
+        /// <summary>
+        /// There are no comments for Property Name in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute(IsNullable=false)]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public string Name
+        {
+            get
+            {
+                return this._Name;
+            }
+            set
+            {
+                this.OnNameChanging(value);
+                this.ReportPropertyChanging("Name");
+                this._Name = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value, false);
+                this.ReportPropertyChanged("Name");
+                this.OnNameChanged();
+            }
+        }
+        private string _Name;
+        partial void OnNameChanging(string value);
+        partial void OnNameChanged();
+        /// <summary>
+        /// There are no comments for Property Description in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public string Description
+        {
+            get
+            {
+                return this._Description;
+            }
+            set
+            {
+                this.OnDescriptionChanging(value);
+                this.ReportPropertyChanging("Description");
+                this._Description = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value, true);
+                this.ReportPropertyChanged("Description");
+                this.OnDescriptionChanged();
+            }
+        }
+        private string _Description;
+        partial void OnDescriptionChanging(string value);
+        partial void OnDescriptionChanged();
+        /// <summary>
+        /// There are no comments for UserRoles in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmRelationshipNavigationPropertyAttribute("HRHiringTool", "FK_UserRoles_Role", "UserRoles")]
+        [global::System.Xml.Serialization.XmlIgnoreAttribute()]
+        [global::System.Xml.Serialization.SoapIgnoreAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public global::System.Data.Objects.DataClasses.EntityCollection<UserRoles> UserRoles
+        {
+            get
+            {
+                return ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedCollection<UserRoles>("HRHiringTool.FK_UserRoles_Role", "UserRoles");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.InitializeRelatedCollection<UserRoles>("HRHiringTool.FK_UserRoles_Role", "UserRoles", value);
+                }
+            }
+        }
+    }
+    /// <summary>
+    /// There are no comments for HRHiringTool.Skill in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// ID_Skill
+    /// </KeyProperties>
+    [global::System.Data.Objects.DataClasses.EdmEntityTypeAttribute(NamespaceName="HRHiringTool", Name="Skill")]
+    [global::System.Runtime.Serialization.DataContractAttribute(IsReference=true)]
+    [global::System.Serializable()]
+    public partial class Skill : global::System.Data.Objects.DataClasses.EntityObject
+    {
+        /// <summary>
+        /// Create a new Skill object.
+        /// </summary>
+        /// <param name="iD_Skill">Initial value of ID_Skill.</param>
+        public static Skill CreateSkill(long iD_Skill)
+        {
+            Skill skill = new Skill();
+            skill.ID_Skill = iD_Skill;
+            return skill;
+        }
+        /// <summary>
+        /// There are no comments for Property ID_Skill in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public long ID_Skill
+        {
+            get
+            {
+                return this._ID_Skill;
+            }
+            set
+            {
+                this.OnID_SkillChanging(value);
+                this.ReportPropertyChanging("ID_Skill");
+                this._ID_Skill = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value);
+                this.ReportPropertyChanged("ID_Skill");
+                this.OnID_SkillChanged();
+            }
+        }
+        private long _ID_Skill;
+        partial void OnID_SkillChanging(long value);
+        partial void OnID_SkillChanged();
+        /// <summary>
+        /// There are no comments for Property Name in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public string Name
+        {
+            get
+            {
+                return this._Name;
+            }
+            set
+            {
+                this.OnNameChanging(value);
+                this.ReportPropertyChanging("Name");
+                this._Name = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value, true);
+                this.ReportPropertyChanged("Name");
+                this.OnNameChanged();
+            }
+        }
+        private string _Name;
+        partial void OnNameChanging(string value);
+        partial void OnNameChanged();
+        /// <summary>
+        /// There are no comments for Property Description in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public string Description
+        {
+            get
+            {
+                return this._Description;
+            }
+            set
+            {
+                this.OnDescriptionChanging(value);
+                this.ReportPropertyChanging("Description");
+                this._Description = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value, true);
+                this.ReportPropertyChanged("Description");
+                this.OnDescriptionChanged();
+            }
+        }
+        private string _Description;
+        partial void OnDescriptionChanging(string value);
+        partial void OnDescriptionChanged();
+        /// <summary>
+        /// There are no comments for CandidateSkills in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmRelationshipNavigationPropertyAttribute("HRHiringTool", "FK_CandidateSkills_Skill", "CandidateSkills")]
+        [global::System.Xml.Serialization.XmlIgnoreAttribute()]
+        [global::System.Xml.Serialization.SoapIgnoreAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public global::System.Data.Objects.DataClasses.EntityCollection<CandidateSkills> CandidateSkills
+        {
+            get
+            {
+                return ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedCollection<CandidateSkills>("HRHiringTool.FK_CandidateSkills_Skill", "CandidateSkills");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.InitializeRelatedCollection<CandidateSkills>("HRHiringTool.FK_CandidateSkills_Skill", "CandidateSkills", value);
+                }
+            }
+        }
+        /// <summary>
+        /// There are no comments for JobPositionSkills in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmRelationshipNavigationPropertyAttribute("HRHiringTool", "FK_JobPositionSkills_Skill", "JobPositionSkills")]
+        [global::System.Xml.Serialization.XmlIgnoreAttribute()]
+        [global::System.Xml.Serialization.SoapIgnoreAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public global::System.Data.Objects.DataClasses.EntityCollection<JobPositionSkills> JobPositionSkills
+        {
+            get
+            {
+                return ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedCollection<JobPositionSkills>("HRHiringTool.FK_JobPositionSkills_Skill", "JobPositionSkills");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.InitializeRelatedCollection<JobPositionSkills>("HRHiringTool.FK_JobPositionSkills_Skill", "JobPositionSkills", value);
+                }
+            }
+        }
+        /// <summary>
+        /// There are no comments for SkillCategory in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmRelationshipNavigationPropertyAttribute("HRHiringTool", "FK_Skill_SkillCategory", "SkillCategory")]
+        [global::System.Xml.Serialization.XmlIgnoreAttribute()]
+        [global::System.Xml.Serialization.SoapIgnoreAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public SkillCategory SkillCategory
+        {
+            get
+            {
+                return ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedReference<SkillCategory>("HRHiringTool.FK_Skill_SkillCategory", "SkillCategory").Value;
+            }
+            set
+            {
+                ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedReference<SkillCategory>("HRHiringTool.FK_Skill_SkillCategory", "SkillCategory").Value = value;
+            }
+        }
+        /// <summary>
+        /// There are no comments for SkillCategory in the schema.
+        /// </summary>
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public global::System.Data.Objects.DataClasses.EntityReference<SkillCategory> SkillCategoryReference
+        {
+            get
+            {
+                return ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedReference<SkillCategory>("HRHiringTool.FK_Skill_SkillCategory", "SkillCategory");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.InitializeRelatedReference<SkillCategory>("HRHiringTool.FK_Skill_SkillCategory", "SkillCategory", value);
+                }
+            }
+        }
+    }
+    /// <summary>
+    /// There are no comments for HRHiringTool.SkillCategory in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// ID_SkillCategory
+    /// </KeyProperties>
+    [global::System.Data.Objects.DataClasses.EdmEntityTypeAttribute(NamespaceName="HRHiringTool", Name="SkillCategory")]
+    [global::System.Runtime.Serialization.DataContractAttribute(IsReference=true)]
+    [global::System.Serializable()]
+    public partial class SkillCategory : global::System.Data.Objects.DataClasses.EntityObject
+    {
+        /// <summary>
+        /// Create a new SkillCategory object.
+        /// </summary>
+        /// <param name="iD_SkillCategory">Initial value of ID_SkillCategory.</param>
+        public static SkillCategory CreateSkillCategory(long iD_SkillCategory)
+        {
+            SkillCategory skillCategory = new SkillCategory();
+            skillCategory.ID_SkillCategory = iD_SkillCategory;
+            return skillCategory;
+        }
+        /// <summary>
+        /// There are no comments for Property ID_SkillCategory in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public long ID_SkillCategory
+        {
+            get
+            {
+                return this._ID_SkillCategory;
+            }
+            set
+            {
+                this.OnID_SkillCategoryChanging(value);
+                this.ReportPropertyChanging("ID_SkillCategory");
+                this._ID_SkillCategory = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value);
+                this.ReportPropertyChanged("ID_SkillCategory");
+                this.OnID_SkillCategoryChanged();
+            }
+        }
+        private long _ID_SkillCategory;
+        partial void OnID_SkillCategoryChanging(long value);
+        partial void OnID_SkillCategoryChanged();
+        /// <summary>
+        /// There are no comments for Property Name in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public string Name
+        {
+            get
+            {
+                return this._Name;
+            }
+            set
+            {
+                this.OnNameChanging(value);
+                this.ReportPropertyChanging("Name");
+                this._Name = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value, true);
+                this.ReportPropertyChanged("Name");
+                this.OnNameChanged();
+            }
+        }
+        private string _Name;
+        partial void OnNameChanging(string value);
+        partial void OnNameChanged();
+        /// <summary>
+        /// There are no comments for Property Description in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public string Description
+        {
+            get
+            {
+                return this._Description;
+            }
+            set
+            {
+                this.OnDescriptionChanging(value);
+                this.ReportPropertyChanging("Description");
+                this._Description = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value, true);
+                this.ReportPropertyChanged("Description");
+                this.OnDescriptionChanged();
+            }
+        }
+        private string _Description;
+        partial void OnDescriptionChanging(string value);
+        partial void OnDescriptionChanged();
+        /// <summary>
+        /// There are no comments for Skill in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmRelationshipNavigationPropertyAttribute("HRHiringTool", "FK_Skill_SkillCategory", "Skill")]
+        [global::System.Xml.Serialization.XmlIgnoreAttribute()]
+        [global::System.Xml.Serialization.SoapIgnoreAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public global::System.Data.Objects.DataClasses.EntityCollection<Skill> Skill
+        {
+            get
+            {
+                return ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedCollection<Skill>("HRHiringTool.FK_Skill_SkillCategory", "Skill");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.InitializeRelatedCollection<Skill>("HRHiringTool.FK_Skill_SkillCategory", "Skill", value);
+                }
+            }
+        }
+    }
+    /// <summary>
+    /// There are no comments for HRHiringTool.User in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// ID_User
+    /// </KeyProperties>
+    [global::System.Data.Objects.DataClasses.EdmEntityTypeAttribute(NamespaceName="HRHiringTool", Name="User")]
+    [global::System.Runtime.Serialization.DataContractAttribute(IsReference=true)]
+    [global::System.Serializable()]
+    public partial class User : global::System.Data.Objects.DataClasses.EntityObject
+    {
+        /// <summary>
+        /// Create a new User object.
+        /// </summary>
+        /// <param name="iD_User">Initial value of ID_User.</param>
+        /// <param name="name">Initial value of Name.</param>
+        public static User CreateUser(long iD_User, string name)
+        {
+            User user = new User();
+            user.ID_User = iD_User;
+            user.Name = name;
+            return user;
+        }
+        /// <summary>
+        /// There are no comments for Property ID_User in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public long ID_User
+        {
+            get
+            {
+                return this._ID_User;
+            }
+            set
+            {
+                this.OnID_UserChanging(value);
+                this.ReportPropertyChanging("ID_User");
+                this._ID_User = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value);
+                this.ReportPropertyChanged("ID_User");
+                this.OnID_UserChanged();
+            }
+        }
+        private long _ID_User;
+        partial void OnID_UserChanging(long value);
+        partial void OnID_UserChanged();
+        /// <summary>
+        /// There are no comments for Property Name in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute(IsNullable=false)]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public string Name
+        {
+            get
+            {
+                return this._Name;
+            }
+            set
+            {
+                this.OnNameChanging(value);
+                this.ReportPropertyChanging("Name");
+                this._Name = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value, false);
+                this.ReportPropertyChanged("Name");
+                this.OnNameChanged();
+            }
+        }
+        private string _Name;
+        partial void OnNameChanging(string value);
+        partial void OnNameChanged();
+        /// <summary>
+        /// There are no comments for Property Lastname in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public string Lastname
+        {
+            get
+            {
+                return this._Lastname;
+            }
+            set
+            {
+                this.OnLastnameChanging(value);
+                this.ReportPropertyChanging("Lastname");
+                this._Lastname = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value, true);
+                this.ReportPropertyChanged("Lastname");
+                this.OnLastnameChanged();
+            }
+        }
+        private string _Lastname;
+        partial void OnLastnameChanging(string value);
+        partial void OnLastnameChanged();
+        /// <summary>
+        /// There are no comments for Property Password in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public string Password
+        {
+            get
+            {
+                return this._Password;
+            }
+            set
+            {
+                this.OnPasswordChanging(value);
+                this.ReportPropertyChanging("Password");
+                this._Password = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value, true);
+                this.ReportPropertyChanged("Password");
+                this.OnPasswordChanged();
+            }
+        }
+        private string _Password;
+        partial void OnPasswordChanging(string value);
+        partial void OnPasswordChanged();
+        /// <summary>
+        /// There are no comments for Property Status in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public string Status
+        {
+            get
+            {
+                return this._Status;
+            }
+            set
+            {
+                this.OnStatusChanging(value);
+                this.ReportPropertyChanging("Status");
+                this._Status = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value, true);
+                this.ReportPropertyChanged("Status");
+                this.OnStatusChanged();
+            }
+        }
+        private string _Status;
+        partial void OnStatusChanging(string value);
+        partial void OnStatusChanged();
+        /// <summary>
+        /// There are no comments for CandidateDocuments in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmRelationshipNavigationPropertyAttribute("HRHiringTool", "FK_CandidateDocuments_User", "CandidateDocuments")]
+        [global::System.Xml.Serialization.XmlIgnoreAttribute()]
+        [global::System.Xml.Serialization.SoapIgnoreAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public global::System.Data.Objects.DataClasses.EntityCollection<CandidateDocuments> CandidateDocuments
+        {
+            get
+            {
+                return ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedCollection<CandidateDocuments>("HRHiringTool.FK_CandidateDocuments_User", "CandidateDocuments");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.InitializeRelatedCollection<CandidateDocuments>("HRHiringTool.FK_CandidateDocuments_User", "CandidateDocuments", value);
+                }
+            }
+        }
+        /// <summary>
+        /// There are no comments for CandidateInOpeningStatusRegistry in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmRelationshipNavigationPropertyAttribute("HRHiringTool", "FK_CandidateInOpeningStatusRegistry_User", "CandidateInOpeningStatusRegistry")]
+        [global::System.Xml.Serialization.XmlIgnoreAttribute()]
+        [global::System.Xml.Serialization.SoapIgnoreAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public global::System.Data.Objects.DataClasses.EntityCollection<CandidateInOpeningStatusRegistry> CandidateInOpeningStatusRegistry
+        {
+            get
+            {
+                return ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedCollection<CandidateInOpeningStatusRegistry>("HRHiringTool.FK_CandidateInOpeningStatusRegistry_User", "CandidateInOpeningStatusRegistry");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.InitializeRelatedCollection<CandidateInOpeningStatusRegistry>("HRHiringTool.FK_CandidateInOpeningStatusRegistry_User", "CandidateInOpeningStatusRegistry", value);
+                }
+            }
+        }
+        /// <summary>
+        /// There are no comments for Department in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmRelationshipNavigationPropertyAttribute("HRHiringTool", "FK_Department_User", "Department")]
+        [global::System.Xml.Serialization.XmlIgnoreAttribute()]
+        [global::System.Xml.Serialization.SoapIgnoreAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public global::System.Data.Objects.DataClasses.EntityCollection<Department> Department
+        {
+            get
+            {
+                return ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedCollection<Department>("HRHiringTool.FK_Department_User", "Department");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.InitializeRelatedCollection<Department>("HRHiringTool.FK_Department_User", "Department", value);
+                }
+            }
+        }
+        /// <summary>
+        /// There are no comments for Notes in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmRelationshipNavigationPropertyAttribute("HRHiringTool", "FK_Notes_User", "Notes")]
+        [global::System.Xml.Serialization.XmlIgnoreAttribute()]
+        [global::System.Xml.Serialization.SoapIgnoreAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public global::System.Data.Objects.DataClasses.EntityCollection<Notes> Notes
+        {
+            get
+            {
+                return ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedCollection<Notes>("HRHiringTool.FK_Notes_User", "Notes");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.InitializeRelatedCollection<Notes>("HRHiringTool.FK_Notes_User", "Notes", value);
+                }
+            }
+        }
+        /// <summary>
+        /// There are no comments for OpeningNotes in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmRelationshipNavigationPropertyAttribute("HRHiringTool", "FK_OpeningNotes_User", "OpeningNotes")]
+        [global::System.Xml.Serialization.XmlIgnoreAttribute()]
+        [global::System.Xml.Serialization.SoapIgnoreAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public global::System.Data.Objects.DataClasses.EntityCollection<OpeningNotes> OpeningNotes
+        {
+            get
+            {
+                return ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedCollection<OpeningNotes>("HRHiringTool.FK_OpeningNotes_User", "OpeningNotes");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.InitializeRelatedCollection<OpeningNotes>("HRHiringTool.FK_OpeningNotes_User", "OpeningNotes", value);
+                }
+            }
+        }
+        /// <summary>
+        /// There are no comments for UserRoles in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmRelationshipNavigationPropertyAttribute("HRHiringTool", "FK_UserRoles_User", "UserRoles")]
+        [global::System.Xml.Serialization.XmlIgnoreAttribute()]
+        [global::System.Xml.Serialization.SoapIgnoreAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public global::System.Data.Objects.DataClasses.EntityCollection<UserRoles> UserRoles
+        {
+            get
+            {
+                return ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedCollection<UserRoles>("HRHiringTool.FK_UserRoles_User", "UserRoles");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.InitializeRelatedCollection<UserRoles>("HRHiringTool.FK_UserRoles_User", "UserRoles", value);
+                }
+            }
+        }
+    }
+    /// <summary>
+    /// There are no comments for HRHiringTool.UserRoles in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// ID_UserRoles
+    /// </KeyProperties>
+    [global::System.Data.Objects.DataClasses.EdmEntityTypeAttribute(NamespaceName="HRHiringTool", Name="UserRoles")]
+    [global::System.Runtime.Serialization.DataContractAttribute(IsReference=true)]
+    [global::System.Serializable()]
+    public partial class UserRoles : global::System.Data.Objects.DataClasses.EntityObject
+    {
+        /// <summary>
+        /// Create a new UserRoles object.
+        /// </summary>
+        /// <param name="iD_UserRoles">Initial value of ID_UserRoles.</param>
+        public static UserRoles CreateUserRoles(long iD_UserRoles)
+        {
+            UserRoles userRoles = new UserRoles();
+            userRoles.ID_UserRoles = iD_UserRoles;
+            return userRoles;
+        }
+        /// <summary>
+        /// There are no comments for Property ID_UserRoles in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public long ID_UserRoles
+        {
+            get
+            {
+                return this._ID_UserRoles;
+            }
+            set
+            {
+                this.OnID_UserRolesChanging(value);
+                this.ReportPropertyChanging("ID_UserRoles");
+                this._ID_UserRoles = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value);
+                this.ReportPropertyChanged("ID_UserRoles");
+                this.OnID_UserRolesChanged();
+            }
+        }
+        private long _ID_UserRoles;
+        partial void OnID_UserRolesChanging(long value);
+        partial void OnID_UserRolesChanged();
+        /// <summary>
+        /// There are no comments for Role in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmRelationshipNavigationPropertyAttribute("HRHiringTool", "FK_UserRoles_Role", "Role")]
+        [global::System.Xml.Serialization.XmlIgnoreAttribute()]
+        [global::System.Xml.Serialization.SoapIgnoreAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public Role Role
+        {
+            get
+            {
+                return ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedReference<Role>("HRHiringTool.FK_UserRoles_Role", "Role").Value;
+            }
+            set
+            {
+                ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedReference<Role>("HRHiringTool.FK_UserRoles_Role", "Role").Value = value;
+            }
+        }
+        /// <summary>
+        /// There are no comments for Role in the schema.
+        /// </summary>
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public global::System.Data.Objects.DataClasses.EntityReference<Role> RoleReference
+        {
+            get
+            {
+                return ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedReference<Role>("HRHiringTool.FK_UserRoles_Role", "Role");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.InitializeRelatedReference<Role>("HRHiringTool.FK_UserRoles_Role", "Role", value);
+                }
+            }
+        }
+        /// <summary>
+        /// There are no comments for User in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmRelationshipNavigationPropertyAttribute("HRHiringTool", "FK_UserRoles_User", "User")]
+        [global::System.Xml.Serialization.XmlIgnoreAttribute()]
+        [global::System.Xml.Serialization.SoapIgnoreAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public User User
+        {
+            get
+            {
+                return ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedReference<User>("HRHiringTool.FK_UserRoles_User", "User").Value;
+            }
+            set
+            {
+                ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedReference<User>("HRHiringTool.FK_UserRoles_User", "User").Value = value;
+            }
+        }
+        /// <summary>
+        /// There are no comments for User in the schema.
+        /// </summary>
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public global::System.Data.Objects.DataClasses.EntityReference<User> UserReference
+        {
+            get
+            {
+                return ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.GetRelatedReference<User>("HRHiringTool.FK_UserRoles_User", "User");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((global::System.Data.Objects.DataClasses.IEntityWithRelationships)(this)).RelationshipManager.InitializeRelatedReference<User>("HRHiringTool.FK_UserRoles_User", "User", value);
+                }
+            }
+        }
     }
 }

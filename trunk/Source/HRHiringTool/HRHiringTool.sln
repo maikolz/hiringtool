@@ -2,8 +2,15 @@
 Microsoft Visual Studio Solution File, Format Version 10.00
 # Visual Studio 2008
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HRHiringTool.Presentation", "HRHiringTool\HRHiringTool.Presentation.csproj", "{226BEC82-C180-4E7A-82F4-8732C6E87AAA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6DD3702E-5EE1-43CB-9A3F-6C91DE094491} = {6DD3702E-5EE1-43CB-9A3F-6C91DE094491}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HRHiringTool.DataAccess", "HRHiringTool.DataAccess\HRHiringTool.DataAccess.csproj", "{105B0C9A-968F-4E04-A64B-04F84AFFC65B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HRHiringTool.Services", "HRHiringTool.Services\HRHiringTool.Services.csproj", "{6DD3702E-5EE1-43CB-9A3F-6C91DE094491}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HRHiringTool.Common", "ClassLibrary1\HRHiringTool.Common.csproj", "{100E125D-4062-4B4D-96D9-628E9080DDC7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HRHiringTool.DataAccess", "HRHiringTool.DataAccess2\HRHiringTool.DataAccess.csproj", "{3E4F65B8-3A37-4B95-AA70-130516C3D906}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,10 +22,18 @@ Global
 		{226BEC82-C180-4E7A-82F4-8732C6E87AAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{226BEC82-C180-4E7A-82F4-8732C6E87AAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{226BEC82-C180-4E7A-82F4-8732C6E87AAA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{105B0C9A-968F-4E04-A64B-04F84AFFC65B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{105B0C9A-968F-4E04-A64B-04F84AFFC65B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{105B0C9A-968F-4E04-A64B-04F84AFFC65B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{105B0C9A-968F-4E04-A64B-04F84AFFC65B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DD3702E-5EE1-43CB-9A3F-6C91DE094491}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DD3702E-5EE1-43CB-9A3F-6C91DE094491}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DD3702E-5EE1-43CB-9A3F-6C91DE094491}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DD3702E-5EE1-43CB-9A3F-6C91DE094491}.Release|Any CPU.Build.0 = Release|Any CPU
+		{100E125D-4062-4B4D-96D9-628E9080DDC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{100E125D-4062-4B4D-96D9-628E9080DDC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{100E125D-4062-4B4D-96D9-628E9080DDC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{100E125D-4062-4B4D-96D9-628E9080DDC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E4F65B8-3A37-4B95-AA70-130516C3D906}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E4F65B8-3A37-4B95-AA70-130516C3D906}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E4F65B8-3A37-4B95-AA70-130516C3D906}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E4F65B8-3A37-4B95-AA70-130516C3D906}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
