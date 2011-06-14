@@ -8,9 +8,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HRHiringTool.Presentation",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HRHiringTool.Services", "HRHiringTool.Services\HRHiringTool.Services.csproj", "{6DD3702E-5EE1-43CB-9A3F-6C91DE094491}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HRHiringTool.Common", "ClassLibrary1\HRHiringTool.Common.csproj", "{100E125D-4062-4B4D-96D9-628E9080DDC7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HRHiringTool.Common", "HRHiringTool.Common\HRHiringTool.Common.csproj", "{100E125D-4062-4B4D-96D9-628E9080DDC7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HRHiringTool.DataAccess", "HRHiringTool.DataAccess2\HRHiringTool.DataAccess.csproj", "{3E4F65B8-3A37-4B95-AA70-130516C3D906}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HRHiringTool.DataAccess", "HRHiringTool.DataAccess\HRHiringTool.DataAccess.csproj", "{3E4F65B8-3A37-4B95-AA70-130516C3D906}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

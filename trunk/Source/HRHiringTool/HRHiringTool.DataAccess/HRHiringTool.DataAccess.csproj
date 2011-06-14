@@ -8,8 +8,8 @@
     <ProjectGuid>{3E4F65B8-3A37-4B95-AA70-130516C3D906}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>HRHiringTool.DataAccess2</RootNamespace>
-    <AssemblyName>HRHiringTool.DataAccess2</AssemblyName>
+    <RootNamespace>HRHiringTool.DataAccess</RootNamespace>
+    <AssemblyName>HRHiringTool.DataAccess</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

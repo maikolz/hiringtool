@@ -1,1 +1,10 @@
 C:\Workspace\hiringtool\trunk\Source\HRHiringTool\ClassLibrary1\obj\Debug\ResolveAssemblyReference.cache
+C:\Workspace\HRHiringTool\trunk\Source\HRHiringTool\HRHiringTool.Common\obj\Debug\ResolveAssemblyReference.cache
+C:\Workspace\HRHiringTool\trunk\Source\HRHiringTool\HRHiringTool.Common\bin\Debug\HRHiringTool.Common.dll
+C:\Workspace\HRHiringTool\trunk\Source\HRHiringTool\HRHiringTool.Common\bin\Debug\HRHiringTool.Common.pdb
+C:\Workspace\HRHiringTool\trunk\Source\HRHiringTool\HRHiringTool.Common\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+C:\Workspace\HRHiringTool\trunk\Source\HRHiringTool\HRHiringTool.Common\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\Workspace\HRHiringTool\trunk\Source\HRHiringTool\HRHiringTool.Common\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Workspace\HRHiringTool\trunk\Source\HRHiringTool\HRHiringTool.Common\bin\Debug\Microsoft.Practices.ObjectBuilder2.dll
+C:\Workspace\HRHiringTool\trunk\Source\HRHiringTool\HRHiringTool.Common\obj\Debug\HRHiringTool.Common.dll
+C:\Workspace\HRHiringTool\trunk\Source\HRHiringTool\HRHiringTool.Common\obj\Debug\HRHiringTool.Common.pdb

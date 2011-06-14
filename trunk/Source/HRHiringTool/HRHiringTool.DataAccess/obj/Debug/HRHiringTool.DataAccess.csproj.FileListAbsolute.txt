@@ -3,3 +3,8 @@ C:\Workspace\hiringtool\trunk\Source\HRHiringTool\HRHiringTool.DataAccess2\bin\D
 C:\Workspace\hiringtool\trunk\Source\HRHiringTool\HRHiringTool.DataAccess2\obj\Debug\ResolveAssemblyReference.cache
 C:\Workspace\hiringtool\trunk\Source\HRHiringTool\HRHiringTool.DataAccess2\obj\Debug\HRHiringTool.DataAccess2.dll
 C:\Workspace\hiringtool\trunk\Source\HRHiringTool\HRHiringTool.DataAccess2\obj\Debug\HRHiringTool.DataAccess2.pdb
+C:\Workspace\HRHiringTool\trunk\Source\HRHiringTool\HRHiringTool.DataAccess\obj\Debug\ResolveAssemblyReference.cache
+C:\Workspace\HRHiringTool\trunk\Source\HRHiringTool\HRHiringTool.DataAccess\bin\Debug\HRHiringTool.DataAccess.dll
+C:\Workspace\HRHiringTool\trunk\Source\HRHiringTool\HRHiringTool.DataAccess\bin\Debug\HRHiringTool.DataAccess.pdb
+C:\Workspace\HRHiringTool\trunk\Source\HRHiringTool\HRHiringTool.DataAccess\obj\Debug\HRHiringTool.DataAccess.dll
+C:\Workspace\HRHiringTool\trunk\Source\HRHiringTool\HRHiringTool.DataAccess\obj\Debug\HRHiringTool.DataAccess.pdb
