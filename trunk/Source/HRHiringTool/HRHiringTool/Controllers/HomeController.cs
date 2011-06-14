@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Security;
+using HRHiringTool.Classes;
 
 namespace HRHiringTool.Controllers
 {
@@ -11,8 +13,10 @@ namespace HRHiringTool.Controllers
     {
         public ActionResult Index()
         {
-            ViewData["Message"] = "Welcome to ASP.NET MVC!";
+            ViewData["Message"] = "Welcome to the HR Hiring Tool";
 
+            //if (Roles.IsUserInRole(HRConstants.Admin))
+                                
             return View();
         }
 

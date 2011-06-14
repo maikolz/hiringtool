@@ -12,7 +12,7 @@
 
         <div id="header">
             <div id="title">
-                <h1>My MVC Application</h1>
+                <h1>HR Hiring Tool</h1>
             </div>
               
             <div id="logindisplay">
@@ -30,7 +30,14 @@
         </div>
 
         <div id="main">
-            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" >
+                <div id="leftrail">
+                LEFT RAIL
+                </div>
+                <div id="content">
+                MAIN CONTENT
+                </div>
+            </asp:ContentPlaceHolder>
 
             <div id="footer">
             </div>
