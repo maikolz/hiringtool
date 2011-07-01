@@ -23,11 +23,12 @@
         #content
         {
             height: 414px;
-            width: 515px;
+            width: 543px;
             float: left;
-            margin: 0px 20px 0px 0px;
+            padding-left: 30px;
+            border: 1px solid #696969;
         }
-        #leftrail span,#leftrail a
+        #leftrail span, #leftrail a, #active-openings span, #active-openings a
         {
             width: 120px;
             display: block;
@@ -35,6 +36,7 @@
     </style>
 </head>
 <body>
+    <form runat="server">
     <div class="page">
         <div id="header">
             <div id="title">
@@ -62,9 +64,10 @@
                 <asp:ContentPlaceHolder ID="MainContent" runat="server">
                 </asp:ContentPlaceHolder>
             </div>
-            <div id="footer" style="float:left">
+            <div id="footer" style="float: left">
             </div>
         </div>
     </div>
+    </form>
 </body>
 </html>
