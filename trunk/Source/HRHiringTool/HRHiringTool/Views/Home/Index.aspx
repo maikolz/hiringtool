@@ -19,4 +19,8 @@
     <div style="margin-left: 4em;margin-top:2em;">
         <%Html.RenderPartial("~/Views/Opening/ActiveOpenings.ascx"); %>
     </div>
+    <div >
+        <%Html.RenderPartial("~/Views/Opening/OpeningDetails.ascx"); %>    
+    </div>
+
 </asp:Content>
