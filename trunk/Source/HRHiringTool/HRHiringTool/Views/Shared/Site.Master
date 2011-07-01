@@ -10,22 +10,27 @@
     <style type="text/css">
         #main
         {
-            width: 670px;
+            width: 720px;
             height: 440px;
         }
         #leftrail
         {
             height: 440px;
-            width: 135px;
+            width: 130px;
             float: left;
             padding: 0 15px 0 0;
         }
         #content
         {
             height: 414px;
-            width: 498px;
+            width: 515px;
             float: left;
             margin: 0px 20px 0px 0px;
+        }
+        #leftrail span,#leftrail a
+        {
+            width: 120px;
+            display: block;
         }
     </style>
 </head>

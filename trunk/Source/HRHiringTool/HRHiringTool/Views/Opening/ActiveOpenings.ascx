@@ -1,7 +1,7 @@
 ﻿<%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl" %>
 <div>
-<H2>Active Openings</H2>
-<span>IS Pool</span>
+<span style="font-weight: bold;">Active Openings</span>
+<span style="margin-top: 10px">IS Pool</span>
 <ul>
 <li><a href="">QA(2)</a></li>
 <li><a href="">Project Manager(1)</a></li>
