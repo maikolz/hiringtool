@@ -14,7 +14,7 @@ namespace HRHiringTool.Controllers
         public ActionResult Index()
         {
             ViewData["Message"] = "Welcome to the HR Hiring Tool";
-
+           
             //if (Roles.IsUserInRole(HRConstants.Admin))
                                 
             return View();

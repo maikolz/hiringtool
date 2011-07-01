@@ -78,6 +78,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Models\OpeningModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service References\HiringService\Reference.cs">
       <AutoGen>True</AutoGen>
@@ -96,6 +97,7 @@
     </None>
     <Content Include="Views\Home\HRUserHome.ascx" />
     <Content Include="Views\Opening\ActiveOpenings.ascx" />
+    <Content Include="Views\Opening\OpeningDetails.ascx" />
     <Content Include="Web.config" />
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\jquery-1.4.1.js" />
