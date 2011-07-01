@@ -73,12 +73,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\HRConstants.cs" />
+    <Compile Include="Classes\Message.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Models\MessagesModel.cs" />
     <Compile Include="Models\OpeningModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service References\HiringService\Reference.cs">
@@ -102,6 +104,7 @@
     <Content Include="Views\Opening\OpeningCandidatesList.ascx" />
     <Content Include="Views\Opening\OpeningDetails.ascx" />
     <Content Include="Views\Opening\silueta.png" />
+    <Content Include="Views\Shared\LatestUpdates.ascx" />
     <Content Include="Web.config" />
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\jquery-1.4.1.js" />
