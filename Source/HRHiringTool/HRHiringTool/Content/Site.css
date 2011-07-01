@@ -226,14 +226,14 @@ input[type="password"]
 
 table 
 {
-  border: solid 1px #e8eef4;
+  /*border: solid 1px #0000FF;*/
   border-collapse: collapse;
 }
 
 table td 
 {
-  padding: 5px;   
-  border: solid 1px #e8eef4;
+  padding: 2px;   
+  /*border: solid 1px #FF0000;*/
 }
 
 table th
