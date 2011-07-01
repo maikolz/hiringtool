@@ -10,7 +10,7 @@
     <style type="text/css">
         #main
         {
-            width: 650px;
+            width: 670px;
             height: 440px;
         }
         #leftrail
