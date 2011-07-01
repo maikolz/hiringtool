@@ -8,3 +8,8 @@ C:\Workspace\HRHiringTool\trunk\Source\HRHiringTool\HRHiringTool.Services\bin\HR
 C:\Workspace\HRHiringTool\trunk\Source\HRHiringTool\HRHiringTool.Services\obj\Debug\ResolveAssemblyReference.cache
 C:\Workspace\HRHiringTool\trunk\Source\HRHiringTool\HRHiringTool.Services\obj\Debug\HRHiringTool.Services.dll
 C:\Workspace\HRHiringTool\trunk\Source\HRHiringTool\HRHiringTool.Services\obj\Debug\HRHiringTool.Services.pdb
+D:\UCR\Maestria\Sistemas Colaborativos\Lab\HiringTool\trunk\Source\HRHiringTool\HRHiringTool.Services\bin\HRHiringTool.Services.dll
+D:\UCR\Maestria\Sistemas Colaborativos\Lab\HiringTool\trunk\Source\HRHiringTool\HRHiringTool.Services\bin\HRHiringTool.Services.pdb
+D:\UCR\Maestria\Sistemas Colaborativos\Lab\HiringTool\trunk\Source\HRHiringTool\HRHiringTool.Services\obj\Debug\ResolveAssemblyReference.cache
+D:\UCR\Maestria\Sistemas Colaborativos\Lab\HiringTool\trunk\Source\HRHiringTool\HRHiringTool.Services\obj\Debug\HRHiringTool.Services.dll
+D:\UCR\Maestria\Sistemas Colaborativos\Lab\HiringTool\trunk\Source\HRHiringTool\HRHiringTool.Services\obj\Debug\HRHiringTool.Services.pdb

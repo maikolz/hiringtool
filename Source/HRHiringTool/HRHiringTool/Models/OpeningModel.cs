@@ -9,5 +9,7 @@ namespace HRHiringTool.Models
     {
         public bool BodyNav { get; set; }
         public IList<string> Departments { get; set; }
+        public IList<string> Positions { get; set; }
+
     }
 }
