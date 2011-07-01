@@ -7,10 +7,7 @@ namespace HRHiringTool.Models
 {
     public class OpeningModel
     {
-        public OpeningModel() 
-        {
- 
-        }
+        public bool BodyNav { get; set; }
         public IList<string> Departments { get; set; }
     }
 }
