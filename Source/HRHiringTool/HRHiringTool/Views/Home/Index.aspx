@@ -1,4 +1,5 @@
 ﻿<%@ Page Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage" %>
+<%@ Import Namespace="HRHiringTool.Models" %>
 
 <asp:Content ID="title" ContentPlaceHolderID="TitleContent" runat="server">
     Home Page
@@ -19,8 +20,8 @@
     <div style="margin-left: 4em;margin-top:2em;">
         <%Html.RenderPartial("~/Views/Opening/ActiveOpenings.ascx"); %>
     </div>
-    <div >
-        <%Html.RenderPartial("~/Views/Opening/OpeningDetails.ascx"); %>    
+    <div>
+    <%Html.RenderPartial("~/Views/Shared/LatestUpdates.ascx",new MessagesModel{Messages = new MessagesModel().GetMessages()}); %>
     </div>
 
 </asp:Content>
