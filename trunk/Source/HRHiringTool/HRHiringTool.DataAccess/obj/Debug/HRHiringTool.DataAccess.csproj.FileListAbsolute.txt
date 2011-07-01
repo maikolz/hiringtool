@@ -8,3 +8,8 @@ C:\Workspace\HRHiringTool\trunk\Source\HRHiringTool\HRHiringTool.DataAccess\bin\
 C:\Workspace\HRHiringTool\trunk\Source\HRHiringTool\HRHiringTool.DataAccess\bin\Debug\HRHiringTool.DataAccess.pdb
 C:\Workspace\HRHiringTool\trunk\Source\HRHiringTool\HRHiringTool.DataAccess\obj\Debug\HRHiringTool.DataAccess.dll
 C:\Workspace\HRHiringTool\trunk\Source\HRHiringTool\HRHiringTool.DataAccess\obj\Debug\HRHiringTool.DataAccess.pdb
+D:\UCR\Maestria\Sistemas Colaborativos\Lab\HiringTool\trunk\Source\HRHiringTool\HRHiringTool.DataAccess\bin\Debug\HRHiringTool.DataAccess.dll
+D:\UCR\Maestria\Sistemas Colaborativos\Lab\HiringTool\trunk\Source\HRHiringTool\HRHiringTool.DataAccess\bin\Debug\HRHiringTool.DataAccess.pdb
+D:\UCR\Maestria\Sistemas Colaborativos\Lab\HiringTool\trunk\Source\HRHiringTool\HRHiringTool.DataAccess\obj\Debug\ResolveAssemblyReference.cache
+D:\UCR\Maestria\Sistemas Colaborativos\Lab\HiringTool\trunk\Source\HRHiringTool\HRHiringTool.DataAccess\obj\Debug\HRHiringTool.DataAccess.dll
+D:\UCR\Maestria\Sistemas Colaborativos\Lab\HiringTool\trunk\Source\HRHiringTool\HRHiringTool.DataAccess\obj\Debug\HRHiringTool.DataAccess.pdb

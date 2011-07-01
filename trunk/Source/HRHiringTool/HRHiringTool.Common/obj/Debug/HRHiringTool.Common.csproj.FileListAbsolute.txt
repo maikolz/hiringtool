@@ -8,3 +8,12 @@ C:\Workspace\HRHiringTool\trunk\Source\HRHiringTool\HRHiringTool.Common\bin\Debu
 C:\Workspace\HRHiringTool\trunk\Source\HRHiringTool\HRHiringTool.Common\bin\Debug\Microsoft.Practices.ObjectBuilder2.dll
 C:\Workspace\HRHiringTool\trunk\Source\HRHiringTool\HRHiringTool.Common\obj\Debug\HRHiringTool.Common.dll
 C:\Workspace\HRHiringTool\trunk\Source\HRHiringTool\HRHiringTool.Common\obj\Debug\HRHiringTool.Common.pdb
+D:\UCR\Maestria\Sistemas Colaborativos\Lab\HiringTool\trunk\Source\HRHiringTool\HRHiringTool.Common\bin\Debug\HRHiringTool.Common.dll
+D:\UCR\Maestria\Sistemas Colaborativos\Lab\HiringTool\trunk\Source\HRHiringTool\HRHiringTool.Common\bin\Debug\HRHiringTool.Common.pdb
+D:\UCR\Maestria\Sistemas Colaborativos\Lab\HiringTool\trunk\Source\HRHiringTool\HRHiringTool.Common\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+D:\UCR\Maestria\Sistemas Colaborativos\Lab\HiringTool\trunk\Source\HRHiringTool\HRHiringTool.Common\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\UCR\Maestria\Sistemas Colaborativos\Lab\HiringTool\trunk\Source\HRHiringTool\HRHiringTool.Common\bin\Debug\Microsoft.Practices.Unity.dll
+D:\UCR\Maestria\Sistemas Colaborativos\Lab\HiringTool\trunk\Source\HRHiringTool\HRHiringTool.Common\bin\Debug\Microsoft.Practices.ObjectBuilder2.dll
+D:\UCR\Maestria\Sistemas Colaborativos\Lab\HiringTool\trunk\Source\HRHiringTool\HRHiringTool.Common\obj\Debug\ResolveAssemblyReference.cache
+D:\UCR\Maestria\Sistemas Colaborativos\Lab\HiringTool\trunk\Source\HRHiringTool\HRHiringTool.Common\obj\Debug\HRHiringTool.Common.dll
+D:\UCR\Maestria\Sistemas Colaborativos\Lab\HiringTool\trunk\Source\HRHiringTool\HRHiringTool.Common\obj\Debug\HRHiringTool.Common.pdb

@@ -95,6 +95,8 @@
                     Department:
                 </td>
                 <td class="style4">
+                    <asp:DropDownList ID="ddDepartment" runat="server" Height="24px" Width="86px" >
+                    </asp:DropDownList>                
                 </td>
                 <td class="style5">
                     <table style="width: 100%;" cellpadding="0px" cellspacing="0px" >
