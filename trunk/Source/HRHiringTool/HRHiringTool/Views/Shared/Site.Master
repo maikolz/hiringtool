@@ -10,7 +10,7 @@
     <style type="text/css">
         #main
         {
-            width: 707px;
+            width: 650px;
             height: 440px;
         }
         #leftrail
@@ -18,7 +18,7 @@
             height: 440px;
             width: 135px;
             float: left;
-            margin: 0 15px 0 20px;
+            padding: 0 15px 0 0;
         }
         #content
         {
@@ -57,7 +57,7 @@
                 <asp:ContentPlaceHolder ID="MainContent" runat="server">
                 </asp:ContentPlaceHolder>
             </div>
-            <div id="footer" style="float: left;">
+            <div id="footer" style="float:left">
             </div>
         </div>
     </div>
