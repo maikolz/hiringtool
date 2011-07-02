@@ -2,45 +2,41 @@
 <style type="text/css">
     .style1
     {
-        width: 360px;
-        height: 28px;
+        width: 310px;
+        height: 26px;
     }
     .style2
     {
-        width: 96px;
-        height: 28px;
+        width: 92px;
+        height: 26px;
     }
     .style3
     {
-        width: 96px;
-        height: 32px;
+        width: 92px;
+        height: 26px;
     }
     .style4
     {
-        width: 360px;
-        height: 32px;
+        width: 310px;
+        height: 26px;
     }
     .style5
     {
-        height: 32px;
+        height: 26px;
     }
     .style6
     {
-        width: 96px;
-        height: 27px;
+        width: 92px;
+        height: 26px;
     }
     .style7
     {
-        width: 360px;
-        height: 27px;
+        width: 310px;
+        height: 28;
     }
     .style8
     {
-        height: 27px;
-    }
-    .style12
-    {
-        width: 141px;
+        height: 26px;
     }
     .style13
     {
@@ -48,11 +44,11 @@
     }
     .style14
     {
-        height: 28px;
+        height: 26px;
     }
     .style15
     {
-        height: 32px;
+        height: 26px;
     }
     #txtRemaining
     {
@@ -72,7 +68,7 @@
     }
     .style17
     {
-        width: 360px;
+        width: 310px;
     }
     .style19
     {
@@ -84,22 +80,30 @@
     }
     .style21
     {
-        width: 96px;
+        width: 92px;
+    }
+    .style22
+    {
+        width: 62px;
+    }
+    .style23
+    {
+        width: 121px;
     }
 </style>
-<div style="height: 199px">
+<div style="height: 155px">
 <h1>Opening</h1>
 
-    <div style=" width:600px; border-width:medium; border-color:Black; padding:1;">
+    <div style=" width:555px; border:1px solid Black;">
     
-        <table style="width: 100%; height: 124px;" cellpadding="0px" cellspacing="0px" 
+        <table style="width: 100%; border-color:Black;" cellpadding="0px" cellspacing="0px" 
         border="0px" >
             <tr>
                 <td class="style3">
                     Department:
                 </td>
                 <td class="style4">
-                    <select name="ddDepartment" style=" width:350px">
+                    <select name="ddDepartment" style=" width:300px">
                       <option>department 1</option>
                       <option>department 2</option>
                       <option>department 3</option>
@@ -126,7 +130,7 @@
                    Position:
                 </td>
                 <td class="style7">
-                    <select name="ddStatus" style="width:350px">
+                    <select name="ddStatus" style="width:300px">
                       <option>Junior Developer</option>
                       <option>Senior Developer</option>
                       <option>Junior QA</option>
@@ -149,14 +153,14 @@
                 <td class="style1">
                     <table style="width: 100%;" cellpadding="0px" cellspacing="0px" >
                         <tr>
-                            <td class="style12">
-                                <input id="txtOpenDate" type="text" />                            
+                            <td class="style23">
+                                <input style=" width:110px;" id="txtOpenDate" type="text" />                            
                             </td>
-                            <td class="style13">
+                            <td class="style22">
                                Deadline:
                             </td>
                             <td>
-                                <input id="txtDeadline" type="text" />                                                        
+                                <input style=" width:110px;"id="txtDeadline" type="text" />                                                        
                             </td>
                         </tr>
                     </table>
@@ -175,7 +179,8 @@
                 <td class="style21"></td>
                 <td class="style17"></td>
                 <td>              
-                    <input id="btnUpdate" type="button" value="Update" /></td>
+                    <input id="btnUpdate" type="button" value="Update" />
+                </td>
             </tr>
         </table>
     </div>
