@@ -86,7 +86,7 @@ first child of the left and right table columns */
 page width. Or, you can specify an exact pixel width. */
 .page
 {
-    width: 73%;
+    width: 58%;
     margin-left: auto;
     margin-right: auto;
     height: 572px;
