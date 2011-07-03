@@ -19,7 +19,7 @@
         Welcome to the HR Hiring Tool
     </h2>
     <div >
-        <%Html.RenderPartial("~/Views/Opening/OpeningDetails.ascx"); %>
+        <%Html.RenderPartial("~/Views/Position/SkillSet.ascx"); %>
     </div>        
     <div style="margin-left: 4em;margin-top:2em;">
         <%Html.RenderPartial("~/Views/Opening/ActiveOpenings.ascx", new HRHiringTool.Models.OpeningModel { BodyNav = true }); %>
