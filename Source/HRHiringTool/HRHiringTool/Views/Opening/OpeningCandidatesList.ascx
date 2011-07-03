@@ -5,7 +5,7 @@
             Applying Candidates</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="btnViewSuggestions" type="button" value="View Suggestions" />
     </div>
 <div style="border: 1px solid Black;">
-<uc1:OpeningCandidate ID="OpeningCandidate1" runat="server" />
+<uc1:OpeningCandidate ID="OpeningCandidate1" runat="server" candidateID="1" />
 </div>
 
 

@@ -5,7 +5,7 @@
 <table>
     <tr>
         <td rowspan="3">
-            <img alt="" src="Views/Opening/silueta.png" height="100%" width="100%"/></td>
+            <img alt="IMAGE HERE" src="Views/Opening/silueta.png" height="100%" width="100%"/></td>
         <td style="font-weight:bold">
             Rolando Matarrita</td>
         <td>
@@ -18,7 +18,7 @@
     <tr>
  
         <td>
-            Score [<a href="http://www.scorenowhere.com">90%</a>]</td>
+            Score: [<a href="http://www.scorenowhere.com">90%</a>]</td>
         <td>
             Current Status:</td>
         <td style="font-weight:bold">
@@ -35,7 +35,7 @@
                         <span style="text-align: right"><a href="" >Resume</a></span></td>
                 </tr>
             </table>
-</td>
+        </td>
         <td>
             <a href="http://www.nowhere.com">View History</a></td>
         <td>
