@@ -44,7 +44,6 @@
     }
 </style>
 <div>
-    <h1>Position</h1>
     <div style="border: 1px solid Black; width:600px; padding:5px 0px 5px 5px " >
         <p>Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="Text1" type="text" style="width:300px" onclick="return Text1_onclick()" /></p>
         <div style="width:565px">
@@ -84,9 +83,6 @@
                     </td>
                     <td align="center" class="style23">
                         Expert
-                    </span>
-                        </span>
-                        </span>
                     </td>
                     <td align="center">
                     </td>        
