@@ -72,7 +72,6 @@
     <Reference Include="System.Web.Mobile" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\Candidate.cs" />
     <Compile Include="Classes\HRConstants.cs" />
     <Compile Include="Classes\Message.cs" />
     <Compile Include="Controllers\AccountController.cs" />
@@ -104,6 +103,8 @@
     <Content Include="Views\Opening\OpeningCandidatesList.ascx" />
     <Content Include="Views\Opening\OpeningDetails.ascx" />
     <Content Include="Views\Opening\silueta.png" />
+    <Content Include="Views\Position\PositionView.ascx" />
+    <Content Include="Views\Position\SkillAddToPosition.ascx" />
     <Content Include="Views\Position\SkillFilter.ascx" />
     <Content Include="Views\Position\SkillGradeRadioBtns.ascx" />
     <Content Include="Views\Position\SkillLine.ascx" />
