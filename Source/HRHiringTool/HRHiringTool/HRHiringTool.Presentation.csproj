@@ -103,6 +103,8 @@
     <Content Include="Views\Opening\OpeningCandidatesList.ascx" />
     <Content Include="Views\Opening\OpeningDetails.ascx" />
     <Content Include="Views\Opening\silueta.png" />
+    <Content Include="Views\Position\SkillFilter.ascx" />
+    <Content Include="Views\Position\SkillGradeRadioBtns.ascx" />
     <Content Include="Views\Position\SkillLine.ascx" />
     <Content Include="Views\Position\SkillSet.ascx" />
     <Content Include="Views\Shared\LatestUpdates.ascx" />
