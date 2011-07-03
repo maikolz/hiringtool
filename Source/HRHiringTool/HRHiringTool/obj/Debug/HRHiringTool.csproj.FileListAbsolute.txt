@@ -1,5 +1,0 @@
-C:\Workspace\hiringtool\trunk\Source\HRHiringTool\HRHiringTool\bin\HRHiringTool.dll
-C:\Workspace\hiringtool\trunk\Source\HRHiringTool\HRHiringTool\bin\HRHiringTool.pdb
-C:\Workspace\hiringtool\trunk\Source\HRHiringTool\HRHiringTool\obj\Debug\ResolveAssemblyReference.cache
-C:\Workspace\hiringtool\trunk\Source\HRHiringTool\HRHiringTool\obj\Debug\HRHiringTool.dll
-C:\Workspace\hiringtool\trunk\Source\HRHiringTool\HRHiringTool\obj\Debug\HRHiringTool.pdb
