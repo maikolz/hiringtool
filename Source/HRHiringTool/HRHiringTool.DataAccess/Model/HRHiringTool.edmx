@@ -26,7 +26,6 @@
           <EntitySet Name="Role" EntityType="HRHiringTool.Store.Role" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="Skill" EntityType="HRHiringTool.Store.Skill" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="SkillCategory" EntityType="HRHiringTool.Store.SkillCategory" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="sysdiagrams" EntityType="HRHiringTool.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="User" EntityType="HRHiringTool.Store.User" store:Type="Tables" Schema="dbo" />
           <EntitySet Name="UserRoles" EntityType="HRHiringTool.Store.UserRoles" store:Type="Tables" Schema="dbo" />
           <AssociationSet Name="FK_Candidate_JobOpening" Association="HRHiringTool.Store.FK_Candidate_JobOpening">
@@ -322,16 +321,6 @@
           <Property Name="ID_SkillCategory" Type="bigint" Nullable="false" />
           <Property Name="Name" Type="varchar" MaxLength="100" />
           <Property Name="Description" Type="varchar" MaxLength="255" />
-        </EntityType>
-        <EntityType Name="sysdiagrams">
-          <Key>
-            <PropertyRef Name="diagram_id" />
-          </Key>
-          <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
-          <Property Name="principal_id" Type="int" Nullable="false" />
-          <Property Name="diagram_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
-          <Property Name="version" Type="int" />
-          <Property Name="definition" Type="varbinary(max)" />
         </EntityType>
         <EntityType Name="User">
           <Key>
