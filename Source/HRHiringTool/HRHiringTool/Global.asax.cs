@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
+using System.Collections;
 
 namespace HRHiringTool
 {
@@ -27,7 +28,8 @@ namespace HRHiringTool
         protected void Application_Start()
         {
             AreaRegistration.RegisterAllAreas();
-
+            if (this.Application["awareness"] == null)
+                this.Application["awareness"] = new Hashtable();
             RegisterRoutes(RouteTable.Routes);
         }
     }

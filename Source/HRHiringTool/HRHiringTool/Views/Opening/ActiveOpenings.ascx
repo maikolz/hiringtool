@@ -6,14 +6,14 @@
     if (Model!=null)
        rss = Model.BodyNav ? "opening-rss":"";%>
 <ul>
-<li><a class="<%=rss %>" href="">QA(2)</a></li>
-<li><a class="<%=rss %>" href="">Project Manager(1)</a></li>
-<li><a class="<%=rss %>" href="">Tech Lead(1)</a></li>
+<li><a href="">QA(2)</a><a class="<%=rss %>" href=""/></li>
+<li><a href="">Project Manager(1)</a><a class="<%=rss %>" href=""/></li>
+<li><a href="">Tech Lead(1)</a><a class="<%=rss %>" href=""/></li>
 </ul>
 <span>Whirlpool</span>
 <ul>
-<li><a class="<%=rss %>" href="">QA(1)</a></li>
-<li><a class="<%=rss %>" href="">.Net Developer(3)</a></li>
+<li><a href="">QA(1)</a><a class="<%=rss %>" href=""/></li>
+<li><a href="">.Net Developer(3)</a><a class="<%=rss %>" href=""/></li>
 </ul>
 </div>
 

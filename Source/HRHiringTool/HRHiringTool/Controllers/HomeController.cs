@@ -5,6 +5,8 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Security;
 using HRHiringTool.Classes;
+using System.Web.UI;
+using System.Collections;
 
 namespace HRHiringTool.Controllers
 {
@@ -13,9 +15,8 @@ namespace HRHiringTool.Controllers
     {
         public ActionResult Index()
         {
-           
-            //if (Roles.IsUserInRole(HRConstants.Admin))
-                   
+            Session["currenturl"] = Request.Url.ToString();
+            Session["username"] = User.Identity.Name;
             return View();
         }
 

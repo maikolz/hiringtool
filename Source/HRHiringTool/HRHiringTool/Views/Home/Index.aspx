@@ -1,5 +1,6 @@
 ﻿<%@ Page Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage" %>
 <%@ Import Namespace="HRHiringTool.Models" %>
+<%@ Register TagPrefix="user" TagName="awareness" Src="~/Views/Shared/UserAwareness.ascx" %>
 
 <asp:Content ID="title" ContentPlaceHolderID="TitleContent" runat="server">
     Home Page
@@ -13,6 +14,7 @@
         <li><a href="">Openings</a></li>
     </ul>
     <%Html.RenderPartial("~/Views/Opening/ActiveOpenings.ascx"); %>
+    <user:awareness runat="server" />
 </asp:Content>
 <asp:Content ID="main" ContentPlaceHolderID="MainContent" runat="server">
     <h2>
