@@ -72,6 +72,7 @@
     <Reference Include="System.Web.Mobile" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Candidate.cs" />
     <Compile Include="Classes\HRConstants.cs" />
     <Compile Include="Classes\Message.cs" />
     <Compile Include="Classes\User.cs" />
