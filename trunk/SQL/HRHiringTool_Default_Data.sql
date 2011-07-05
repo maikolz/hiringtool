@@ -182,11 +182,11 @@ INSERT INTO OpeningCandidates (ID_OpeningCandidate, ID_Candidate, ID_Opening, ID
 VALUES (3, 3, 1, 1)
 GO
 
-INSERT INTO OpeningNotes (ID_Note, ID_User, ID_JobOpening, Note, [DateTime] )
+INSERT INTO OpeningNotes (ID_User, ID_JobOpening, Note, [DateTime] )
 VALUES (3, 1, 'Sutanito tiene una calificación muy baja en la revisión de destrezas técnicas que hizo el Líder técnico, sin embargo aparece como sugerencia con alta puntuación para Analista de Negocio. Estoy reasignándolo a como candidato a ese puesto.', '07/02/2011' )
-INSERT INTO OpeningNotes (ID_Note, ID_User, ID_JobOpening, Note, [DateTime] )
-VALUES (4, 1, 'Gente, estoy agregando a Fulanito De Tal como candidato pero todavía no se le ha hecho la entrevista preliminar. Si alguno tiene chance de hacerla esta semana por favor procedan.' )
-INSERT INTO OpeningNotes (ID_Note, ID_User, ID_JobOpening, Note, [DateTime] )
+INSERT INTO OpeningNotes (ID_User, ID_JobOpening, Note, [DateTime] )
+VALUES (4, 1, 'Gente, estoy agregando a Fulanito De Tal como candidato pero todavía no se le ha hecho la entrevista preliminar. Si alguno tiene chance de hacerla esta semana por favor procedan.', '07/01/2011' )
+INSERT INTO OpeningNotes (ID_User, ID_JobOpening, Note, [DateTime] )
 VALUES (3, 2, 'HR note about Junior .Net Dev Opening', '07/01/2011' )
 GO
 
