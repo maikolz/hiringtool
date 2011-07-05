@@ -16,34 +16,8 @@
     {
         width: 79px;
     }
-    .style17
-    {
-        width: 310px;
-    }
-    .style19
-    {
-        width: 123px;
-    }
-    .style20
-    {
-        width: 124px;
-    }
-    .style21
-    {
-        width: 92px;
-    }
-    .style22
-    {
-        width: 62px;
-    }
-    .style23
-    {
-        width: 121px;
-    }
-</style>
+    </style>
 <div>
-<h2>Opening</h2>
-
     <div style=" padding: 4px; width:100%; border:1px solid Black;">
     
         <table style="width: 100%; border-color:White;" cellpadding="0px" cellspacing="3px" 
@@ -54,10 +28,10 @@
                 </td>
                 <td >
                     <select name="ddDepartment" style=" width:100%">
-                      <option>department 1</option>
-                      <option>department 2</option>
-                      <option>department 3</option>
-                      <option>department 4</option>
+                      <option>Dev Department</option>
+                      <option>QA Department</option>
+                      <option>HR Department</option>
+                      <option>IT Department</option>
                     </select>
                 </td>
                 <td >
@@ -67,7 +41,7 @@
                             <td align="right" >
                                 <select name="ddStatus">
                                   <option>Open</option>
-                                  <option>Close</option>
+                                  <option>Closed</option>
                                   <option>On Hold</option>
                                 </select>
                             </td>                        
@@ -81,8 +55,8 @@
                 </td>
                 <td >
                     <select name="ddStatus" style="width:100%">
-                      <option>Junior Developer</option>
-                      <option>Senior Developer</option>
+                      <option>Junior .Net Developer</option>
+                      <option>Senior .Net Developer</option>
                       <option>Junior QA</option>
                     </select>
                 </td>
@@ -91,7 +65,7 @@
                         <tr>
                             <td >Total Quantity:</td>
                             <td align="right" >
-                                <input id="txtTotalQty" type="text" /></td>                            
+                                <input id="txtTotalQty" type="text" value="3" /></td>                            
                         </tr>
                      </table>
                 </td>                                             
@@ -104,9 +78,9 @@
                     <table style="width: 100%;" cellpadding="0px" cellspacing="0px" >
                         <tr>
                             <td >
-                                <input style=" width:110px;" id="txtOpenDate" type="text" />                            
-                               Deadline:
-                                <input style=" width:110px;"id="txtDeadline" type="text" />                                                        
+                                <input style=" width:110px;" id="txtOpenDate" value="06/06/2011"  type="text" />                            
+                                &nbsp;&nbsp;&nbsp;Deadline:&nbsp;
+                                <input style=" width:110px;"id="txtDeadline" value="07/07/2011" type="text" />                                                        
                             </td>
                         </tr>
                     </table>
@@ -116,7 +90,7 @@
                         <tr>
                             <td >Remaining:</td>
                             <td align="right" >
-                                <input id="txtRemaining" type="text" /></td>                            
+                                <input id="txtRemaining" type="text" value="2"  /></td>                            
                         </tr>
                      </table>
                 </td>

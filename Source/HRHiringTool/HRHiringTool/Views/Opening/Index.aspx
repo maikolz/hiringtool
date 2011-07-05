@@ -24,10 +24,12 @@
     
     <div align="left">
         <%Html.RenderPartial("~/Views/Opening/OpeningDetails.ascx"); %>
-    </div>        
-    <div style="margin-left: 4em;margin-top:2em;" align="left">
+    </div>
+    <br />
+    <div align="left">
         <%Html.RenderPartial("~/Views/Opening/OpeningCandidatesList.ascx"); %>
     </div>    
+    <br />
     <div align="left">
         <%Html.RenderPartial("~/Views/Opening/OpeningConversationHistory.ascx"); %>
     </div>
