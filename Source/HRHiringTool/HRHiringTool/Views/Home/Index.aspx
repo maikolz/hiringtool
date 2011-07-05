@@ -2,6 +2,7 @@
 <%@ Import Namespace="HRHiringTool.Models" %>
 <%@ Register TagPrefix="user" TagName="awareness" Src="~/Views/Shared/UserAwareness.ascx" %>
 
+
 <asp:Content ID="title" ContentPlaceHolderID="TitleContent" runat="server">
     Home Page
 </asp:Content>
@@ -14,20 +15,15 @@
         <li><a href="">Openings</a></li>
     </ul>
     <%Html.RenderPartial("~/Views/Opening/ActiveOpenings.ascx"); %>
-    <user:awareness runat="server" />
+    <%Html.RenderPartial("~/Views/Shared/UserAwareness.ascx"); %>
 </asp:Content>
 <asp:Content ID="main" ContentPlaceHolderID="MainContent" runat="server">
     <h2>
         Welcome to the HR Hiring Tool
     </h2>
-    <div >
-        <%Html.RenderPartial("~/Views/Position/SkillSet.ascx"); %>
-    </div>        
     <div style="margin-left: 4em;margin-top:2em;">
         <%Html.RenderPartial("~/Views/Opening/ActiveOpenings.ascx", new HRHiringTool.Models.OpeningModel { BodyNav = true }); %>
     </div>
-
-    
     <div>
     <%Html.RenderPartial("~/Views/Shared/LatestUpdates.ascx",new MessagesModel{Messages = new MessagesModel().GetMessages()}); %>
     </div>
