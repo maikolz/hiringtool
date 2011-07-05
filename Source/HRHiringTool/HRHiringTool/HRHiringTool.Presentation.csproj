@@ -78,6 +78,7 @@
     <Compile Include="Classes\User.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\OpeningController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -89,6 +90,13 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Opening\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Opening\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Shared\UserAwareness.ascx.cs">
       <DependentUpon>UserAwareness.ascx</DependentUpon>
@@ -108,6 +116,7 @@
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
     <Content Include="Views\Opening\ActiveOpenings.ascx" />
+    <Content Include="Views\Opening\Index.aspx" />
     <Content Include="Views\Opening\OpeningCandidate.ascx" />
     <Content Include="Views\Opening\OpeningCandidatesList.ascx" />
     <Content Include="Views\Opening\OpeningConversationHistory.ascx" />
