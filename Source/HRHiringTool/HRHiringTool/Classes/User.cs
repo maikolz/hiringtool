@@ -8,7 +8,7 @@ namespace HRHiringTool.Classes
     public class User
     {
         public string Username { get; set; }
-        public Uri CurrentUrl { get; set; }
+        public string CurrentUrl { get; set; }
         public string SessionId { get; set; }
         public DateTime Timestamp { get; set; }
 
