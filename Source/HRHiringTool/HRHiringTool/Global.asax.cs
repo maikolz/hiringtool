@@ -34,7 +34,13 @@ namespace HRHiringTool
         {
             AreaRegistration.RegisterAllAreas();
             if (Application["awareness"] == null)
+            {
                 Application["awareness"] = new Hashtable();
+            }
+            if (Application["newsfeed"] == null)
+            {
+                Application["newsfeed"] = new Hashtable();
+            }
             RegisterRoutes(RouteTable.Routes);
         }
     }

@@ -75,6 +75,7 @@
     <Compile Include="Classes\Candidate.cs" />
     <Compile Include="Classes\HRConstants.cs" />
     <Compile Include="Classes\Message.cs" />
+    <Compile Include="Classes\OpeningNote.cs" />
     <Compile Include="Classes\User.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
