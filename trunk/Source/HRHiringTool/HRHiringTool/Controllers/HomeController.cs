@@ -38,16 +38,16 @@ namespace HRHiringTool.Controllers
             else
                 Session["username"] = "Guest_" + Session.SessionID;
             Session["sessionId"] = Session.SessionID;
-            UpdateHash();
+            UpdateHash(Session["currenturl"].ToString());
             return View();
         }
 
-        public  ActionResult UpdateUsers()
+        public  ActionResult UpdateUsers(string url)
         {
-            UpdateHash();
+            UpdateHash(url);
             return View("UserAwareness");
         }
-        private void UpdateHash()
+        private void UpdateHash(string url)
         {
             if (UserAwareness != null)
             {
@@ -61,7 +61,8 @@ namespace HRHiringTool.Controllers
                     user = new User();
                 }
                 user.Username = (string)Session["username"];
-                user.CurrentUrl = (Uri)Session["currenturl"];
+                user.CurrentUrl = url;
+                user.SessionId = Session.SessionID;
                 user.Timestamp = DateTime.Now;
                 UserAwareness[Session.SessionID] = user;
             }
