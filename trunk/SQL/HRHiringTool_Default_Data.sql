@@ -11,11 +11,17 @@ VALUES (4, 'Visitor', 'User who only can see data, not modified')
 GO 
 
 INSERT INTO [User] (ID_User, [username] ,Name, Lastname, [Password])
+VALUES (0, 'System', 'System', '', '123')
+INSERT INTO [User] (ID_User, [username] ,Name, Lastname, [Password])
 VALUES (1, 'Admin', 'Admin', '', '123')
 INSERT INTO [User] (ID_User, [username] ,Name, Lastname, [Password])
-VALUES (2, 'HR', 'HR', 'Recluter', '123')
+VALUES (2, 'recruiter1', 'Recruiter1', 'From HR', '123')
 INSERT INTO [User] (ID_User, [username] ,Name, Lastname, [Password])
-VALUES (3, 'Lead', 'Lead', 'Technical', '123')
+VALUES (3, 'recruiter2', 'Recruiter2', 'From HR', '123')
+INSERT INTO [User] (ID_User, [username] ,Name, Lastname, [Password])
+VALUES (4, 'recruiter3', 'Recruiter3', 'From HR', '123')
+INSERT INTO [User] (ID_User, [username] ,Name, Lastname, [Password])
+VALUES (5, 'Lead', 'Lead', 'Technical', '123')
 GO 
 
 /*User Roles*/
@@ -177,9 +183,11 @@ VALUES (3, 3, 1, 1)
 GO
 
 INSERT INTO OpeningNotes (ID_Note, ID_User, ID_JobOpening, Note, [DateTime] )
-VALUES (1, 2, 1, 'HR note about Senior .Net Dev Opening', '07/02/2011' )
+VALUES (3, 1, 'Sutanito tiene una calificación muy baja en la revisión de destrezas técnicas que hizo el Líder técnico, sin embargo aparece como sugerencia con alta puntuación para Analista de Negocio. Estoy reasignándolo a como candidato a ese puesto.', '07/02/2011' )
 INSERT INTO OpeningNotes (ID_Note, ID_User, ID_JobOpening, Note, [DateTime] )
-VALUES (2, 3, 2, 'HR note about Junior .Net Dev Opening', '07/01/2011' )
+VALUES (4, 1, 'Gente, estoy agregando a Fulanito De Tal como candidato pero todavía no se le ha hecho la entrevista preliminar. Si alguno tiene chance de hacerla esta semana por favor procedan.' )
+INSERT INTO OpeningNotes (ID_Note, ID_User, ID_JobOpening, Note, [DateTime] )
+VALUES (3, 2, 'HR note about Junior .Net Dev Opening', '07/01/2011' )
 GO
 
 INSERT INTO CandidateInOpeningStatus (ID_CandidateInOpeningStatus, [Name], [Description])

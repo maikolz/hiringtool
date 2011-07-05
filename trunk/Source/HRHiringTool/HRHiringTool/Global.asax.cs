@@ -39,7 +39,7 @@ namespace HRHiringTool
             }
             if (Application["newsfeed"] == null)
             {
-                Application["newsfeed"] = new Hashtable();
+                Application["newsfeed"] = new ArrayList();
             }
             RegisterRoutes(RouteTable.Routes);
         }

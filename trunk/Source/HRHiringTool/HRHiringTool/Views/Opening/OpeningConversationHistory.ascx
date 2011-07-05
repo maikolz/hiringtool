@@ -1,39 +1,36 @@
 ﻿<%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl" %>
 <%@ Import Namespace="HRHiringTool.Classes" %>
-<div style="width: 100%" align="right">
-    <div align="left" style="font-weight: bold">
-        Conversation History</div>
-    <p style=" padding-left:0px; ">
-        <textarea id="feedarea" rows="5" style="vertical-align: text-top; width: 100%">[12/04/2012 7:34:00] José: Fernando tiene una calificación muy baja en la revisión de destrezas técnicas que hizo el Líder técnico, sin embargo aparece como sugerencia con alta puntuación para Analista de Negocio. Estoy reasignándolo a como candidato a ese puesto.
-[15/04/2012 7:34:00] Ileana: Gente, estoy agregando a Maikol Zumbado como candidato pero todavía no se le ha hecho la entrevista preliminar. Si alguno tiene chance de hacerla esta semana por favor procedan.
-[16/04/2012 7:34:00] Lucía: Ya se entrevistó a Rolando Matarrita. Pasa a entrevista técnica con el líder del departamento.
-
+        <div id="feedarea" style="vertical-align: text-top; text-align:left; width: 100%">
+        <!--
+<p>[12/04/2012 7:34:00] José: Fernando tiene una calificación muy baja en la revisión de destrezas técnicas que hizo el Líder técnico, sin embargo aparece como sugerencia con alta puntuación para Analista de Negocio. Estoy reasignándolo a como candidato a ese puesto.</p>
+<p>[15/04/2012 7:34:00] Ileana: Gente, estoy agregando a Maikol Zumbado como candidato pero todavía no se le ha hecho la entrevista preliminar. Si alguno tiene chance de hacerla esta semana por favor procedan.</p>
+<p>[16/04/2012 7:34:00] Lucía: Ya se entrevistó a Rolando Matarrita. Pasa a entrevista técnica con el líder del departamento.</p>
+-->
     <%
         Object entries;
         Application.Lock();
-        entries = ((Hashtable)Application["newsfeed"]).Clone();
+        entries = ((ArrayList)Application["newsfeed"]).Clone();
         Application.UnLock();
-        foreach (var entry in ((Hashtable)entries).Values)
+        foreach (var entry in ((ArrayList)entries))
         {
             if (((OpeningNote)entry).UserName != null)
             {%>
-                [<%=((OpeningNote)entry).Timestamp %>] <%=((OpeningNote)entry).UserName %>: <%=((OpeningNote)entry).Note %>
-                <%=System.Environment.NewLine %>            
+                <p style="text-align:left">
+                <span class="timestamp">[<%=((OpeningNote)entry).Timestamp %>]</span><span class="username"> <%=((OpeningNote)entry).UserName %>:</span> <%=((OpeningNote)entry).Note %>
+                </p>
           <%}
         } 
     %>
 
 
-</textarea></p>
-    <br />
-    <textarea id="newentry" rows="4" style="vertical-align: text-top; width: 100%">Add Entry...</textarea><br />
-    <input id="addentry" type="button" value="Add Entry" onclick="AddEntry()"/>
 </div>
 <script type="text/javascript" language="javascript">
 
     function AddEntry() {
-        var entry = document.getElementById("newentry").value;
-        UpdateNewsFeed(entry);
+        var entryTextArea = document.getElementById("newentry");
+        entryTextArea.scrollTop = entryTextArea.clientHeight;
+        UpdateNewsFeed(entryTextArea.value);
+        entryTextArea.value = "";
     }
     function UpdateNewsFeed(newEntry) {
         $.ajax({
@@ -43,6 +40,8 @@
             success: function(response) {
                 /*assign retrieved data*/
             $('#feedarea').html(response);
+            var feedArea = document.getElementById("feedarea");
+            feedArea.scrollTop = feedArea.clientHeight;
             }
         });
     }

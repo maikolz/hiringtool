@@ -38,7 +38,7 @@
 [assembly: global::System.Data.Objects.DataClasses.EdmRelationshipAttribute("HRHiringTool", "FK_UserRoles_User", "User", global::System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(HRHiringTool.DataAccess.Model.User), "UserRoles", global::System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(HRHiringTool.DataAccess.Model.UserRoles))]
 
 // Original file name:
-// Generation date: 05/07/2011 1:05:03
+// Generation date: 05/07/2011 7:14:57
 namespace HRHiringTool.DataAccess.Model
 {
     
@@ -2295,6 +2295,29 @@ namespace HRHiringTool.DataAccess.Model
         partial void OnDescriptionChanging(string value);
         partial void OnDescriptionChanged();
         /// <summary>
+        /// There are no comments for Property Document1 in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public byte[] Document1
+        {
+            get
+            {
+                return global::System.Data.Objects.DataClasses.StructuralObject.GetValidValue(this._Document1);
+            }
+            set
+            {
+                this.OnDocument1Changing(value);
+                this.ReportPropertyChanging("Document1");
+                this._Document1 = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value, true);
+                this.ReportPropertyChanged("Document1");
+                this.OnDocument1Changed();
+            }
+        }
+        private byte[] _Document1;
+        partial void OnDocument1Changing(byte[] value);
+        partial void OnDocument1Changed();
+        /// <summary>
         /// There are no comments for CandidateDocuments in the schema.
         /// </summary>
         [global::System.Data.Objects.DataClasses.EdmRelationshipNavigationPropertyAttribute("HRHiringTool", "FK_CandidateDocuments_Document", "CandidateDocuments")]
@@ -2406,6 +2429,29 @@ namespace HRHiringTool.DataAccess.Model
         private global::System.Nullable<int> _Quantity;
         partial void OnQuantityChanging(global::System.Nullable<int> value);
         partial void OnQuantityChanged();
+        /// <summary>
+        /// There are no comments for Property Status in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public string Status
+        {
+            get
+            {
+                return this._Status;
+            }
+            set
+            {
+                this.OnStatusChanging(value);
+                this.ReportPropertyChanging("Status");
+                this._Status = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value, true);
+                this.ReportPropertyChanged("Status");
+                this.OnStatusChanged();
+            }
+        }
+        private string _Status;
+        partial void OnStatusChanging(string value);
+        partial void OnStatusChanged();
         /// <summary>
         /// There are no comments for Candidate in the schema.
         /// </summary>
@@ -2722,6 +2768,29 @@ namespace HRHiringTool.DataAccess.Model
         partial void OnID_PositionSkillChanging(long value);
         partial void OnID_PositionSkillChanged();
         /// <summary>
+        /// There are no comments for Property PositionScore in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public global::System.Nullable<decimal> PositionScore
+        {
+            get
+            {
+                return this._PositionScore;
+            }
+            set
+            {
+                this.OnPositionScoreChanging(value);
+                this.ReportPropertyChanging("PositionScore");
+                this._PositionScore = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value);
+                this.ReportPropertyChanged("PositionScore");
+                this.OnPositionScoreChanged();
+            }
+        }
+        private global::System.Nullable<decimal> _PositionScore;
+        partial void OnPositionScoreChanging(global::System.Nullable<decimal> value);
+        partial void OnPositionScoreChanged();
+        /// <summary>
         /// There are no comments for JobPosition in the schema.
         /// </summary>
         [global::System.Data.Objects.DataClasses.EdmRelationshipNavigationPropertyAttribute("HRHiringTool", "FK_JobPositionSkills_JobPosition", "JobPosition")]
@@ -2978,10 +3047,12 @@ namespace HRHiringTool.DataAccess.Model
         /// Create a new OpeningCandidates object.
         /// </summary>
         /// <param name="iD_OpeningCandidate">Initial value of ID_OpeningCandidate.</param>
-        public static OpeningCandidates CreateOpeningCandidates(long iD_OpeningCandidate)
+        /// <param name="iD_CandidateInOpeningStatus">Initial value of ID_CandidateInOpeningStatus.</param>
+        public static OpeningCandidates CreateOpeningCandidates(long iD_OpeningCandidate, long iD_CandidateInOpeningStatus)
         {
             OpeningCandidates openingCandidates = new OpeningCandidates();
             openingCandidates.ID_OpeningCandidate = iD_OpeningCandidate;
+            openingCandidates.ID_CandidateInOpeningStatus = iD_CandidateInOpeningStatus;
             return openingCandidates;
         }
         /// <summary>
@@ -3007,6 +3078,29 @@ namespace HRHiringTool.DataAccess.Model
         private long _ID_OpeningCandidate;
         partial void OnID_OpeningCandidateChanging(long value);
         partial void OnID_OpeningCandidateChanged();
+        /// <summary>
+        /// There are no comments for Property ID_CandidateInOpeningStatus in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute(IsNullable=false)]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public long ID_CandidateInOpeningStatus
+        {
+            get
+            {
+                return this._ID_CandidateInOpeningStatus;
+            }
+            set
+            {
+                this.OnID_CandidateInOpeningStatusChanging(value);
+                this.ReportPropertyChanging("ID_CandidateInOpeningStatus");
+                this._ID_CandidateInOpeningStatus = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value);
+                this.ReportPropertyChanged("ID_CandidateInOpeningStatus");
+                this.OnID_CandidateInOpeningStatusChanged();
+            }
+        }
+        private long _ID_CandidateInOpeningStatus;
+        partial void OnID_CandidateInOpeningStatusChanging(long value);
+        partial void OnID_CandidateInOpeningStatusChanged();
         /// <summary>
         /// There are no comments for Candidate in the schema.
         /// </summary>
@@ -3769,11 +3863,13 @@ namespace HRHiringTool.DataAccess.Model
         /// </summary>
         /// <param name="iD_User">Initial value of ID_User.</param>
         /// <param name="name">Initial value of Name.</param>
-        public static User CreateUser(long iD_User, string name)
+        /// <param name="username">Initial value of username.</param>
+        public static User CreateUser(long iD_User, string name, string username)
         {
             User user = new User();
             user.ID_User = iD_User;
             user.Name = name;
+            user.username = username;
             return user;
         }
         /// <summary>
@@ -3894,7 +3990,7 @@ namespace HRHiringTool.DataAccess.Model
         /// <summary>
         /// There are no comments for Property username in the schema.
         /// </summary>
-        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute()]
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute(IsNullable=false)]
         [global::System.Runtime.Serialization.DataMemberAttribute()]
         public string username
         {
@@ -3906,7 +4002,7 @@ namespace HRHiringTool.DataAccess.Model
             {
                 this.OnusernameChanging(value);
                 this.ReportPropertyChanging("username");
-                this._username = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value, true);
+                this._username = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value, false);
                 this.ReportPropertyChanged("username");
                 this.OnusernameChanged();
             }
