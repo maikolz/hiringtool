@@ -5,13 +5,13 @@
     function takeAction() {
         var selectBox = document.getElementById("SelectActions");
         selectBox.style.visibility = "visible";
-        var spanTakeAction = = document.getElementById("takeaction");
+        var spanTakeAction = document.getElementById("takeaction");
         spanTakeAction.style.visibility = "hidden";
     }
     function actionDone() {
         var selectBox = document.getElementById("SelectActions");
         selectBox.style.visibility = "hidden";
-        var spanTakeAction = = document.getElementById("takeaction");
+        var spanTakeAction = document.getElementById("takeaction");
         spanTakeAction.style.visibility = "visible";
     }
 </script>
