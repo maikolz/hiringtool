@@ -9,6 +9,9 @@
         spanTakeAction.style.visibility = "hidden";
     }
     function actionDone() {
+        UpdateNewsFeed("System message: Juan Pérez has been discarded as candidate for this opening.");
+        var selectBox = document.getElementById("tablejuanperez");
+        selectBox.style.visibility = "hidden"; 
         var selectBox = document.getElementById("SelectActions");
         selectBox.style.visibility = "hidden";
         var spanTakeAction = document.getElementById("takeaction");
@@ -69,7 +72,7 @@
             </td>
         </tr>
     </table>
-    <table>
+    <table id="tablejuanperez">
         <tr>
             <td rowspan="3">
                 <img alt="IMAGE HERE" src="Views/Opening/silueta.png" height="100%" width="100%" />

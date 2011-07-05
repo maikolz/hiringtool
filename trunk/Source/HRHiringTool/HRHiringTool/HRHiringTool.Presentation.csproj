@@ -112,6 +112,8 @@
     <Content Include="Images\delete.jpg" />
     <Content Include="Images\Home.jpg" />
     <Content Include="Images\logout.jpg" />
+    <Content Include="Images\offline.png" />
+    <Content Include="Images\online.gif" />
     <Content Include="Images\openning.jpg" />
     <Content Include="Images\positions.jpg" />
     <Content Include="Images\rss.jpg" />
