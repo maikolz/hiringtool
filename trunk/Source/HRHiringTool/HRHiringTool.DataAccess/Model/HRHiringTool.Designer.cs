@@ -38,7 +38,7 @@
 [assembly: global::System.Data.Objects.DataClasses.EdmRelationshipAttribute("HRHiringTool", "FK_UserRoles_User", "User", global::System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(HRHiringTool.DataAccess.Model.User), "UserRoles", global::System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(HRHiringTool.DataAccess.Model.UserRoles))]
 
 // Original file name:
-// Generation date: 04/07/2011 16:51:51
+// Generation date: 05/07/2011 1:05:03
 namespace HRHiringTool.DataAccess.Model
 {
     
@@ -3891,6 +3891,29 @@ namespace HRHiringTool.DataAccess.Model
         private string _Status;
         partial void OnStatusChanging(string value);
         partial void OnStatusChanged();
+        /// <summary>
+        /// There are no comments for Property username in the schema.
+        /// </summary>
+        [global::System.Data.Objects.DataClasses.EdmScalarPropertyAttribute()]
+        [global::System.Runtime.Serialization.DataMemberAttribute()]
+        public string username
+        {
+            get
+            {
+                return this._username;
+            }
+            set
+            {
+                this.OnusernameChanging(value);
+                this.ReportPropertyChanging("username");
+                this._username = global::System.Data.Objects.DataClasses.StructuralObject.SetValidValue(value, true);
+                this.ReportPropertyChanged("username");
+                this.OnusernameChanged();
+            }
+        }
+        private string _username;
+        partial void OnusernameChanging(string value);
+        partial void OnusernameChanged();
         /// <summary>
         /// There are no comments for CandidateDocuments in the schema.
         /// </summary>

@@ -330,6 +330,7 @@
           <Property Name="Name" Type="char" Nullable="false" MaxLength="30" />
           <Property Name="Lastname" Type="char" MaxLength="30" />
           <Property Name="Password" Type="varchar" MaxLength="30" />
+          <Property Name="username" Type="varchar" MaxLength="50" />
           <Property Name="Status" Type="char" MaxLength="10" />
         </EntityType>
         <EntityType Name="UserRoles">
@@ -951,7 +952,8 @@
           <NavigationProperty Name="Department" Relationship="HRHiringTool.FK_Department_User" FromRole="User" ToRole="Department" />
           <NavigationProperty Name="Notes" Relationship="HRHiringTool.FK_Notes_User" FromRole="User" ToRole="Notes" />
           <NavigationProperty Name="OpeningNotes" Relationship="HRHiringTool.FK_OpeningNotes_User" FromRole="User" ToRole="OpeningNotes" />
-          <NavigationProperty Name="UserRoles" Relationship="HRHiringTool.FK_UserRoles_User" FromRole="User" ToRole="UserRoles" /></EntityType>
+          <NavigationProperty Name="UserRoles" Relationship="HRHiringTool.FK_UserRoles_User" FromRole="User" ToRole="UserRoles" />
+          <Property Name="username" Type="String" Nullable="true" /></EntityType>
         <EntityType Name="UserRoles">
           <Key>
             <PropertyRef Name="ID_UserRoles" /></Key>
@@ -1169,6 +1171,7 @@
           <EntitySetMapping Name="User">
             <EntityTypeMapping TypeName="IsTypeOf(HRHiringTool.User)">
               <MappingFragment StoreEntitySet="User">
+                <ScalarProperty Name="username" ColumnName="username" />
                 <ScalarProperty Name="Status" ColumnName="Status" />
                 <ScalarProperty Name="Password" ColumnName="Password" />
                 <ScalarProperty Name="Lastname" ColumnName="Lastname" />
