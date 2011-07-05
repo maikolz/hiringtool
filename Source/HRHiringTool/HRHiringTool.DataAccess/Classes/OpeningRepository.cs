@@ -6,17 +6,30 @@ using HRHiringTool.DataAccess.Model;
 
 namespace HRHiringTool.DataAccess.Classes
 {
-    class OpeningRepository
+    public class OpeningRepository
     {
+        public static long noteid = 1;
         public IQueryable GetNotes(long jobOpening)
         {
             using (var HRHiringToolContext = new HRHiringToolContainer())
             {
                 var positionNotes = from notes in HRHiringToolContext.OpeningNotes
                                     where notes.JobOpening.ID_Opening == jobOpening
-                                    orderby notes.DateTime descending
+                                    orderby notes.DateTime ascending
                                     select notes;
                 return positionNotes;
+            }
+        }
+
+        public void CreateOpeningNote(int openingId, string text, DateTime timestamp, string userid)
+        {
+            using (var HRHiringToolContext = new HRHiringToolContainer())
+            {                
+                OpeningNotes newNote = OpeningNotes.CreateOpeningNotes(noteid++);
+                newNote.DateTime = timestamp;
+                newNote.Note = text;
+                newNote.User.ID_User = int.Parse(userid);
+                HRHiringToolContext.AddToOpeningNotes(newNote);
             }
         }
     }

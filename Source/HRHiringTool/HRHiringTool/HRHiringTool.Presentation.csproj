@@ -47,6 +47,9 @@
     <Reference Include="System.Data.DataSetExtensions">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
+    <Reference Include="System.Data.Entity">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
     <Reference Include="System.Runtime.Serialization">
       <RequiredTargetFramework>3.0</RequiredTargetFramework>
     </Reference>
@@ -122,6 +125,7 @@
     <Content Include="Views\Opening\OpeningConversationHistory.ascx" />
     <Content Include="Views\Opening\OpeningDetails.ascx" />
     <Content Include="static\images\silueta.png" />
+    <Content Include="Views\Opening\OpeningNewsFeedSection.ascx" />
     <Content Include="Views\Position\PositionView.ascx" />
     <Content Include="Views\Position\SkillAddToPosition.ascx" />
     <Content Include="Views\Position\SkillFilter.ascx" />

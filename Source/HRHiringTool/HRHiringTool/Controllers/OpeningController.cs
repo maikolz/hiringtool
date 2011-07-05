@@ -5,21 +5,23 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using HRHiringTool.Classes;
+using HRHiringTool.DataAccess.Classes;
+using HRHiringTool.DataAccess.Model;
 
 namespace HRHiringTool.Controllers
 {
     public class OpeningController : Controller
     {
         public const string NewsFeedConstant = "newsfeed";
-        public Hashtable NewsFeed
+        public ArrayList NewsFeed
         {
             get
             {
                 if (HttpContext.Application[NewsFeedConstant] != null)
                 {
-                    return (Hashtable)HttpContext.Application[NewsFeedConstant];
+                    return (ArrayList)HttpContext.Application[NewsFeedConstant];
                 }
-                return new Hashtable();
+                return new ArrayList();
             }
             set
             {
@@ -29,7 +31,7 @@ namespace HRHiringTool.Controllers
             }
         }
 
-        private void UpdateHash(string note)
+        private void UpdateMemoryList(string note)
         {
             if (NewsFeed != null)
             {
@@ -39,14 +41,36 @@ namespace HRHiringTool.Controllers
                 entry.IdUser = 99;
                 entry.Timestamp = DateTime.Now;
                 entry.UserName = (string)Session["username"];
-                int size = NewsFeed.Count;
-                NewsFeed[size] = entry;
+                NewsFeed.Add(entry);
+            }
+        }
+
+        private void UpdateListFromDatabase()
+        {
+            if (NewsFeed != null)
+            {   
+                NewsFeed.Clear();
+                OpeningRepository openingRepository = new OpeningRepository();
+                IOrderedQueryable<OpeningNotes> notes = openingRepository.GetNotes(1) as IOrderedQueryable<OpeningNotes>;
+                foreach (OpeningNotes openingNotes in notes)
+                {
+                    OpeningNote entry = new OpeningNote();
+                    entry.Note = openingNotes.Note;
+                    entry.IdJobOpening = openingNotes.JobOpening.ID_Opening;
+                    entry.IdUser = openingNotes.User.ID_User;
+                    entry.Timestamp = (DateTime)openingNotes.DateTime;
+                    entry.UserName = openingNotes.User.username;
+                    NewsFeed.Add(entry);
+                }
             }
         }
 
         public ActionResult UpdateNewsFeed(string entry)
         {
-            UpdateHash(entry);
+            OpeningRepository openingRepository = new OpeningRepository();
+            openingRepository.CreateOpeningNote(1, entry, DateTime.Now, Session["id_user"].ToString());
+            UpdateMemoryList(entry);
+            UpdateListFromDatabase();
             return View("OpeningConversationHistory");
         }
 
@@ -56,6 +80,7 @@ namespace HRHiringTool.Controllers
         public ActionResult Index()
         {
             //NewsFeedConstant
+            UpdateListFromDatabase();
             return View();
         }
 

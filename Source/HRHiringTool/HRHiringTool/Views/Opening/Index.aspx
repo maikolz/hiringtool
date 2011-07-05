@@ -10,11 +10,11 @@
     <span style="font-weight: bold;">HR View</span> <a style="margin-left: 1em" href="">
         <img alt="" src="../../Images/Home.jpg" style="width: 23px; height: 26px" />Home</a> <span style="font-weight: bold; margin-top: 10px">Menu</span>
         <a href="">
-            <img src="../../Images/Candidates.jpg" /> Candidates</a>
+            <img alt="Candidates" src="../../Images/Candidates.jpg" /> Candidates</a>
         <a href="">
-            <img src="../../Images/positions.jpg" /> Positions</a>
+            <img alt="Positions" src="../../Images/positions.jpg" /> Positions</a>
         <a href="/Opening/">
-        <img alt="" src="../../Images/openning.jpg" style="width: 23px; height: 22px" /> Openings
+        <img alt="Opening" src="../../Images/openning.jpg" style="width: 23px; height: 22px" /> Openings
         </a>
         <br />
     <%Html.RenderPartial("~/Views/Opening/ActiveOpenings.ascx"); %>
@@ -22,7 +22,7 @@
     <user:awareness runat="server" />
     <br />
     <a href="">
-        <img src="../../Images/skills.jpg" style="height: 42px; width: 38px" /> 
+        <img alt="Skills" src="../../Images/skills.jpg" style="height: 42px; width: 38px" /> 
     Skills &amp; Categories</a> 
     
 </asp:Content>
@@ -41,7 +41,7 @@
     </div>    
     <br />
     <div align="left">
-        <%Html.RenderPartial("~/Views/Opening/OpeningConversationHistory.ascx"); %>
+        <%Html.RenderPartial("~/Views/Opening/OpeningNewsFeedSection.ascx"); %>
     </div>
     
     
