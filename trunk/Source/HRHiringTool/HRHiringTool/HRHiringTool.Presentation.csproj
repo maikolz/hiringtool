@@ -102,6 +102,19 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <Content Include="Images\addNew.jpg" />
+    <Content Include="Images\Candidates.jpg" />
+    <Content Include="Images\chat.jpg" />
+    <Content Include="Images\comment.jpg" />
+    <Content Include="Images\delete.jpg" />
+    <Content Include="Images\Home.jpg" />
+    <Content Include="Images\logout.jpg" />
+    <Content Include="Images\openning.jpg" />
+    <Content Include="Images\positions.jpg" />
+    <Content Include="Images\rss.jpg" />
+    <Content Include="Images\skills.jpg" />
+    <Content Include="Images\tag.jpg" />
+    <Content Include="Images\tagG.jpg" />
     <Content Include="Views\Opening\ActiveOpenings.ascx" />
     <Content Include="Views\Opening\Index.aspx" />
     <Content Include="Views\Opening\OpeningCandidate.ascx" />
