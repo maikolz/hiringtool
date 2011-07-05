@@ -121,7 +121,7 @@
     <Content Include="Views\Opening\OpeningCandidatesList.ascx" />
     <Content Include="Views\Opening\OpeningConversationHistory.ascx" />
     <Content Include="Views\Opening\OpeningDetails.ascx" />
-    <Content Include="Views\Opening\silueta.png" />
+    <Content Include="static\images\silueta.png" />
     <Content Include="Views\Position\PositionView.ascx" />
     <Content Include="Views\Position\SkillAddToPosition.ascx" />
     <Content Include="Views\Position\SkillFilter.ascx" />
@@ -171,6 +171,12 @@
     <None Include="Service References\HiringService\HRHiringTool.HiringService.CompositeType.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HRHiringTool.DataAccess\HRHiringTool.DataAccess.csproj">
+      <Project>{3E4F65B8-3A37-4B95-AA70-130516C3D906}</Project>
+      <Name>HRHiringTool.DataAccess</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

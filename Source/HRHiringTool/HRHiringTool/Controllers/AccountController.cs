@@ -8,6 +8,7 @@ using System.Web.Mvc;
 using System.Web.Routing;
 using System.Web.Security;
 using HRHiringTool.Models;
+using HRHiringTool.DataAccess.Classes;
 
 namespace HRHiringTool.Controllers
 {
@@ -50,6 +51,7 @@ namespace HRHiringTool.Controllers
                     }
                     else
                     {
+                        Session["id_user"] = HRHiringTool.DataAccess.Classes.UserQueries.GetUserId(model.UserName);
                         return RedirectToAction("Index", "Home");
                     }
                 }
