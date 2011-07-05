@@ -33,7 +33,7 @@ namespace HRHiringTool.Controllers
 
         private void UpdateMemoryList(string note)
         {
-            if (NewsFeed != null)
+            if ( (NewsFeed != null) && (note != string.Empty) )
             {
                 OpeningNote entry = new OpeningNote();
                 entry.Note = note;
@@ -81,6 +81,7 @@ namespace HRHiringTool.Controllers
         {
             //NewsFeedConstant
             //UpdateListFromDatabase();
+            UpdateMemoryList("");
             return View();
         }
 

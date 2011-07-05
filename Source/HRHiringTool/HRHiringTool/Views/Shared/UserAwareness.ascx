@@ -52,7 +52,7 @@
 
     function timer() {
         UpdateUsers();
-        //setTimeout('timer', 1000);
+        setTimeout('timer', 1000);
     }
 
     $(document).ready(function() {
