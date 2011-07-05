@@ -8,14 +8,14 @@ namespace HRHiringTool.DataAccess.Classes
 {
     public class UserQueries
     {
-        public static string GetUserId(string username)
+        public static User GetUserId(string username)
         {
             using (var HRHiringToolContext = new HRHiringToolContainer())
             {
                 var iduser = from user in HRHiringToolContext.User
                                     where user.username == username                                    
-                                    select user.ID_User;
-                return iduser.ToString();
+                                    select user;
+                return iduser.FirstOrDefault();
             }
         }
     }

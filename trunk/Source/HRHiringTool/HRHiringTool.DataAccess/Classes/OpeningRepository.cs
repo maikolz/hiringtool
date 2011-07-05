@@ -21,14 +21,14 @@ namespace HRHiringTool.DataAccess.Classes
             }
         }
 
-        public void CreateOpeningNote(int openingId, string text, DateTime timestamp, string userid)
+        public void CreateOpeningNote(int openingId, string text, DateTime timestamp, User userid)
         {
             using (var HRHiringToolContext = new HRHiringToolContainer())
             {                
                 OpeningNotes newNote = OpeningNotes.CreateOpeningNotes(noteid++);
                 newNote.DateTime = timestamp;
                 newNote.Note = text;
-                newNote.User.ID_User = long.Parse(userid);
+                newNote.User = userid;
                 HRHiringToolContext.AddToOpeningNotes(newNote);
             }
         }
