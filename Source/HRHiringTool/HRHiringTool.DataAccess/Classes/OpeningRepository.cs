@@ -28,7 +28,7 @@ namespace HRHiringTool.DataAccess.Classes
                 OpeningNotes newNote = OpeningNotes.CreateOpeningNotes(noteid++);
                 newNote.DateTime = timestamp;
                 newNote.Note = text;
-                newNote.User.ID_User = int.Parse(userid);
+                newNote.User.ID_User = long.Parse(userid);
                 HRHiringToolContext.AddToOpeningNotes(newNote);
             }
         }

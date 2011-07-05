@@ -51,7 +51,6 @@ namespace HRHiringTool.Controllers
                     }
                     else
                     {
-                        Session["id_user"] = HRHiringTool.DataAccess.Classes.UserQueries.GetUserId(model.UserName);
                         return RedirectToAction("Index", "Home");
                     }
                 }
