@@ -15,6 +15,14 @@ namespace HRHiringTool.Controllers
 
         public ActionResult Index()
         {
+            //Awareness
+            if (Request.Url != null) Session["currenturl"] = Request.Url;
+            if (User.Identity.IsAuthenticated)
+                Session["username"] = User.Identity.Name;
+            else
+                Session["username"] = "Guest_" + Session.SessionID;
+            Session["sessionId"] = Session.SessionID;
+            //Awareness
             return View();
         }
 

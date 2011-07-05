@@ -20,7 +20,7 @@ namespace HRHiringTool.Controllers
             get
             {
                 if (HttpContext.Application[Awareness] != null)
-                    return (Hashtable)this.HttpContext.Application[Awareness];
+                    return (Hashtable)HttpContext.Application[Awareness];
                 return new Hashtable();
             }
             set
@@ -32,8 +32,7 @@ namespace HRHiringTool.Controllers
         }
         public ActionResult Index()
         {
-            
-            Session["currenturl"] = Request.Url.ToString();
+            if (Request.Url != null) Session["currenturl"] = Request.Url;
             if (User.Identity.IsAuthenticated)
                 Session["username"] = User.Identity.Name;
             else
@@ -62,7 +61,7 @@ namespace HRHiringTool.Controllers
                     user = new User();
                 }
                 user.Username = (string)Session["username"];
-                user.CurrentUrl = (string)Session["currenturl"];
+                user.CurrentUrl = (Uri)Session["currenturl"];
                 user.Timestamp = DateTime.Now;
                 UserAwareness[Session.SessionID] = user;
             }
