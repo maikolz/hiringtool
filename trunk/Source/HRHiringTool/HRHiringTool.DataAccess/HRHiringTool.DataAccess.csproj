@@ -52,6 +52,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\OpeningRepository.cs" />
     <Compile Include="Model\HRHiringTool.Designer.cs">
       <DependentUpon>HRHiringTool.edmx</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -64,9 +65,6 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>HRHiringTool.Designer.cs</LastGenOutput>
     </EntityDeploy>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Classes\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
