@@ -7,15 +7,25 @@
     Home Page
 </asp:Content>
 <asp:Content ID="leftRail" ContentPlaceHolderID="LeftRail" runat="server">
-    <span style="font-weight: bold;">HR View</span> <a style="margin-left: 2em" href="">
-        Home</a> <span style="font-weight: bold; margin-top: 10px">Menu</span>
-    <ul>
-        <li><a href="">Candidates</a></li>
-        <li><a href="">Positions</a></li>
-        <li><a href="">Openings</a></li>
-    </ul>
+    <span style="font-weight: bold;">HR View</span> <a style="margin-left: 1em" href="">
+        <img alt="" src="../../Images/Home.jpg" style="width: 23px; height: 26px" />Home</a> <span style="font-weight: bold; margin-top: 10px">Menu</span>
+        <a href="">
+            <img src="../../Images/Candidates.jpg" /> Candidates</a>
+        <a href="">
+            <img src="../../Images/positions.jpg" /> Positions</a>
+        <a href="/Opening/">
+        <img alt="" src="../../Images/openning.jpg" style="width: 23px; height: 22px" /> Openings
+        </a>
+        <br />
+
     <%Html.RenderPartial("~/Views/Opening/ActiveOpenings.ascx"); %>
+    <br />
     <%Html.RenderPartial("~/Views/Shared/UserAwareness.ascx"); %>
+    <br />
+    <a href="">
+        <img src="../../Images/skills.jpg" style="height: 42px; width: 38px" /> 
+    Skills &amp; Categories</a> 
+    
 </asp:Content>
 <asp:Content ID="main" ContentPlaceHolderID="MainContent" runat="server">
     <h2>
