@@ -159,12 +159,12 @@ INSERT INTO CandidateSkills (ID_CandidateSkill, ID_Candidate, ID_Skill, Score)
 VALUES (6, 1, 21, '2.00')
 GO 
 
-INSERT INTO OpeningCandidates (ID_OpeningCandidate, ID_Candidate, ID_Opening)
-VALUES (1,1,3)
-INSERT INTO OpeningCandidates (ID_OpeningCandidate, ID_Candidate, ID_Opening)
-VALUES (2,2,1)
-INSERT INTO OpeningCandidates (ID_OpeningCandidate, ID_Candidate, ID_Opening)
-VALUES (3,3,1)
+INSERT INTO OpeningCandidates (ID_OpeningCandidate, ID_Candidate, ID_Opening, ID_CandidateInOpeningStatus)
+VALUES (1, 1, 3, 0)
+INSERT INTO OpeningCandidates (ID_OpeningCandidate, ID_Candidate, ID_Opening, ID_CandidateInOpeningStatus)
+VALUES (2, 2, 1, 0)
+INSERT INTO OpeningCandidates (ID_OpeningCandidate, ID_Candidate, ID_Opening, ID_CandidateInOpeningStatus)
+VALUES (3, 3, 1, 1)
 GO
 
 INSERT INTO OpeningNotes (ID_Note, ID_User, ID_JobOpening, Note, [DateTime] )
@@ -172,3 +172,27 @@ VALUES (1, 2, 1, 'HR note about Senior .Net Dev Opening', '07/02/2011' )
 INSERT INTO OpeningNotes (ID_Note, ID_User, ID_JobOpening, Note, [DateTime] )
 VALUES (2, 3, 2, 'HR note about Junior .Net Dev Opening', '07/01/2011' )
 GO
+
+INSERT INTO CandidateInOpeningStatus (ID_CandidateInOpeningStatus, [Name], [Description])
+VALUES (0, 'New', 'New Candidate')
+INSERT INTO CandidateInOpeningStatus (ID_CandidateInOpeningStatus, [Name], [Description])
+VALUES (1, 'Initial Contact', 'Open')
+INSERT INTO CandidateInOpeningStatus (ID_CandidateInOpeningStatus, [Name], [Description])
+VALUES (2, 'HR Scheduled', 'HR Interview Scheduled')
+INSERT INTO CandidateInOpeningStatus (ID_CandidateInOpeningStatus, [Name], [Description])
+VALUES (3, 'HR Done', 'HR Done')
+INSERT INTO CandidateInOpeningStatus (ID_CandidateInOpeningStatus, [Name], [Description])
+VALUES (4, 'Tech Scheduled', 'Tech Interview Scheduled')
+INSERT INTO CandidateInOpeningStatus (ID_CandidateInOpeningStatus, [Name], [Description])
+VALUES (5, 'Tech Done', 'Tech Interview Done')
+INSERT INTO CandidateInOpeningStatus (ID_CandidateInOpeningStatus, [Name], [Description])
+VALUES (6, 'Job Offer', 'Job Offer sent')
+INSERT INTO CandidateInOpeningStatus (ID_CandidateInOpeningStatus, [Name], [Description])
+VALUES (7, 'Discarded', 'Candidate discarted')
+INSERT INTO CandidateInOpeningStatus (ID_CandidateInOpeningStatus, [Name], [Description])
+VALUES (8, 'Hired', 'Hired')
+GO 
+
+INSERT INTO CandidateInOpeningStatusRegistry (ID_CandidateInOpeningStatusRegistry, ID_CandidateInOpening, ID_CandidateInOpeningStatus, ID_User, Comment, [DateTime])
+VALUES (1, 3, 1, 2, 'HR has contact the candidate', '05/05/2011')
+GO 
