@@ -10,12 +10,13 @@ INSERT INTO [Role]
 VALUES (4, 'Visitor', 'User who only can see data, not modified')
 GO 
 
-INSERT INTO [User] (ID_User, Name, Lastname, [Password])
-VALUES (1, 'Admin', '', '123')
-INSERT INTO [User] (ID_User, Name, Lastname, [Password])
-VALUES (2, 'HR', 'Recluter', '123')
-INSERT INTO [User] (ID_User, Name, Lastname, [Password])
-VALUES (3, 'Lead', 'Technical', '123')
+INSERT INTO [User] (ID_User, [username] ,Name, Lastname, [Password])
+VALUES (1, 'Admin', 'Admin', '', '123')
+INSERT INTO [User] (ID_User, [username] ,Name, Lastname, [Password])
+VALUES (2, 'HR', 'HR', 'Recluter', '123')
+INSERT INTO [User] (ID_User, [username] ,Name, Lastname, [Password])
+VALUES (3, 'Lead', 'Lead', 'Technical', '123')
+GO 
 
 /*User Roles*/
 INSERT INTO UserRoles ( ID_UserRoles, ID_User, ID_Role)
