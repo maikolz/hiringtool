@@ -18,8 +18,8 @@ namespace HRHiringTool
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute("Opening", // Route name
-                            "{controller}/{action}/{id}", // URL with parameters
-                        new { controller = "OpeningController", action = "Index", id = UrlParameter.Optional } // Parameter defaults
+                            "Opening/{action}/{id}", // URL with parameters
+                        new { controller = "Opening", action = "Index", id = UrlParameter.Optional } // Parameter defaults
                         );
 
             routes.MapRoute(
@@ -33,8 +33,8 @@ namespace HRHiringTool
         protected void Application_Start()
         {
             AreaRegistration.RegisterAllAreas();
-            if (this.Application["awareness"] == null)
-                this.Application["awareness"] = new Hashtable();
+            if (Application["awareness"] == null)
+                Application["awareness"] = new Hashtable();
             RegisterRoutes(RouteTable.Routes);
         }
     }
