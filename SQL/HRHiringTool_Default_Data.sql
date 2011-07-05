@@ -11,9 +11,9 @@ VALUES (4, 'Visitor', 'User who only can see data, not modified')
 GO 
 
 INSERT INTO [User] (ID_User, [username] ,Name, Lastname, [Password])
-VALUES (0, 'System', 'System', '', '123')
+VALUES (0, 'hruser', 'hruser', '', '123')
 INSERT INTO [User] (ID_User, [username] ,Name, Lastname, [Password])
-VALUES (1, 'Admin', 'Admin', '', '123')
+VALUES (1, 'techlead', 'techlead', '', '123')
 INSERT INTO [User] (ID_User, [username] ,Name, Lastname, [Password])
 VALUES (2, 'recruiter1', 'Recruiter1', 'From HR', '123')
 INSERT INTO [User] (ID_User, [username] ,Name, Lastname, [Password])
@@ -115,9 +115,9 @@ VALUES (4, 3, '85555550', 3)
 GO
 
 INSERT INTO [Notes] (ID_Note, ID_Candidate, ID_User, Note, [DateTime])
-VALUES (1, 2, 3, 'Tech Lead note about Maykol', '01/05/2011')
+VALUES (1, 2, 3, 'Tech Lead note about Maikol', '01/05/2011')
 INSERT INTO [Notes] (ID_Note, ID_Candidate, ID_User, Note, [DateTime])
-VALUES (2, 2, 2, 'HR note about Maykol', '01/12/2011')
+VALUES (2, 2, 2, 'HR note about Maikol', '01/12/2011')
 INSERT INTO [Notes] (ID_Note, ID_Candidate, ID_User, Note, [DateTime])
 VALUES (3, 1, 2, 'HR note about Javier', '02/20/2011')
 INSERT INTO [Notes] (ID_Note, ID_Candidate, ID_User, Note, [DateTime])
