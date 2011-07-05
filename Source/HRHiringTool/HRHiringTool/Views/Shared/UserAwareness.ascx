@@ -14,13 +14,14 @@
                 continue;
             if (((User)user).Timestamp.AddSeconds(5) < DateTime.Now)
             {%>
-    User offline:<%=((User)user).Username.Substring(0,10) %>
-       <%}
-       else
-       {%>
-    <span>
-        <%=((User)user).Timestamp.ToLongTimeString()%>:
-        <%=((User)user).Username.Substring(0, 10)%>
+            <span>
+                <%=((User)user).Username.Substring(0,10) %>: offline
+            </span>
+            <%}
+            else
+            {%>
+        <span>
+        <%=((User)user).Username.Length > 10 ? ((User)user).Username.Substring(0, 10):((User)user).Username %>
         :
         <%=((User)user).CurrentUrl.LocalPath == "/" ? "Home" : ((User)user).CurrentUrl.LocalPath%></span>
     <% 
