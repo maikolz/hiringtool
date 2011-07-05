@@ -11,22 +11,22 @@
     <style type="text/css">
         #main
         {
-            width: 720px;
-            height: 440px;
+            width: 835px;
+            height: 100%;
         }
         #left-rail
         {
-            height: 440px;
+            /*height: 440px;*/
             width: 130px;
             float: left;
             padding: 0 15px 0 0;
         }
         #content
         {
-            height: 414px;
-            width: 543px;
-            float: left;
-            padding-left: 30px;
+            /*height: 414px;*/
+            width: 630px;
+            float:left;
+            padding: 0px 20px 0px 20px;
             border: 1px solid #696969;
         }
         #left-rail span, #left-rail a, #active-openings span, #active-openings a
@@ -38,7 +38,7 @@
 </head>
 <body>
     <form runat="server">
-    <div class="page">
+    <div class="page" >
         <div id="header">
             <div id="title">
                 <h1>

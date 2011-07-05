@@ -86,10 +86,10 @@ first child of the left and right table columns */
 page width. Or, you can specify an exact pixel width. */
 .page
 {
-    width: 58%;
+    width: 900px;
     margin-left: auto;
     margin-right: auto;
-    height: 572px;
+    height: 600px;
 }
 
 #header
@@ -100,7 +100,7 @@ page width. Or, you can specify an exact pixel width. */
     padding: 0;
     top: 0px;
     left: 0px;
-    width: 780px;
+    width: 99%;
 }
 
 #header h1
