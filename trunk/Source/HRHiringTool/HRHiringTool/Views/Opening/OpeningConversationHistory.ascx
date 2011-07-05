@@ -45,4 +45,12 @@
             }
         });
     }
+    function chatTimer() {
+        UpdateNewsFeed("");
+        setTimeout('chatTimer', 2000);
+    }
+
+    $(document).ready(function() {
+        chatTimer();
+    });
 </script>
