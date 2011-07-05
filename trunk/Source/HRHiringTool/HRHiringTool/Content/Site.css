@@ -89,7 +89,7 @@ page width. Or, you can specify an exact pixel width. */
     width: 900px;
     margin-left: auto;
     margin-right: auto;
-    height: 600px;
+/*    height: 100%;*/
 }
 
 #header
@@ -120,7 +120,7 @@ page width. Or, you can specify an exact pixel width. */
     padding: 30px 30px 15px 30px;
     background-color: #fff;
     margin-bottom: 30px;
-    _height: 1px; /* only IE6 applies CSS properties starting with an underscore */
+    height:650px;
 }
 
 #footer
