@@ -68,7 +68,7 @@ namespace HRHiringTool.Controllers
         public ActionResult UpdateNewsFeed(string entry)
         {
             OpeningRepository openingRepository = new OpeningRepository();
-            openingRepository.CreateOpeningNote(1, entry, DateTime.Now, Session["id_user"].ToString());
+            openingRepository.CreateOpeningNote(1, entry, DateTime.Now, (DataAccess.Model.User)Session["id_user"]);
             UpdateMemoryList(entry);
             //UpdateListFromDatabase();
             return View("OpeningConversationHistory");

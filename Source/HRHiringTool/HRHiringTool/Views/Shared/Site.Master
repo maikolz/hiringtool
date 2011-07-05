@@ -34,6 +34,10 @@
             width: 120px;
             display: block;
         }
+        #left-rail img
+        {
+            border: 0;
+        }
     </style>
 </head>
 <body>
