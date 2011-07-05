@@ -30,4 +30,8 @@ DELETE FROM OpeningCandidates
 GO
 DELETE FROM dbo.OpeningNotes
 GO 
+DELETE FROM CandidateInOpeningStatus 
+GO
+DELETE FROM CandidateInOpeningStatusRegistry
+GO
 
