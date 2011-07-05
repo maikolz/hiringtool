@@ -17,6 +17,11 @@ namespace HRHiringTool
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
+            routes.MapRoute("Opening", // Route name
+                            "{controller}/{action}/{id}", // URL with parameters
+                        new { controller = "OpeningController", action = "Index", id = UrlParameter.Optional } // Parameter defaults
+                        );
+
             routes.MapRoute(
                 "Default", // Route name
                 "{controller}/{action}/{id}", // URL with parameters
