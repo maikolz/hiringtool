@@ -7,13 +7,13 @@
         <td rowspan="3">
             <img alt="IMAGE HERE" src="Views/Opening/silueta.png" height="100%" width="100%"/></td>
         <td style="font-weight:bold">
-            Rolando Matarrita</td>
+            Fulanito De Tal</td>
         <td>
            <span style="font-family:Wingdings;"></span><span style="font-family:Arial;">5555-1111</span>
             
            </td>
         <td>
-            <a href="mailto:">javier.ulate@gmail.com</a></td>
+            <a href="mailto:">fulanito@detal.com</a></td>
     </tr>
     <tr>
  

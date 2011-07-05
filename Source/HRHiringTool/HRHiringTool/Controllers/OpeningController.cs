@@ -70,7 +70,7 @@ namespace HRHiringTool.Controllers
             OpeningRepository openingRepository = new OpeningRepository();
             openingRepository.CreateOpeningNote(1, entry, DateTime.Now, Session["id_user"].ToString());
             UpdateMemoryList(entry);
-            UpdateListFromDatabase();
+            //UpdateListFromDatabase();
             return View("OpeningConversationHistory");
         }
 
@@ -80,7 +80,7 @@ namespace HRHiringTool.Controllers
         public ActionResult Index()
         {
             //NewsFeedConstant
-            UpdateListFromDatabase();
+            //UpdateListFromDatabase();
             return View();
         }
 
